@@ -6,7 +6,7 @@
 
 Game Localization ist ein Agent Skill zum Übersetzen, Bearbeiten und Prüfen von Videospieltexten in ChatGPT, Codex und Claude. Er unterstützt Menüs, Tutorials, Dialoge, Untertitel, Shoptexte und Projektdokumentation für Steam, PlayStation, Xbox und Mobile-Spiele.
 
-[Installation](#installation) · [Skill verwenden](#skill-verwenden) · [Aktualisieren oder entfernen](#aktualisieren-oder-entfernen) · [Autor unterstützen](#autor-unterstützen)
+[Installation](#installation) · [Skill verwenden](#skill-verwenden) · [Aktualisieren oder entfernen](#aktualisieren-oder-entfernen) · [Autor unterstützen](#autor-unterstützen) · [Entwicklungsplan](../ROADMAP.md) · [Änderungsprotokoll](../CHANGELOG.md)
 
 ## Funktionen
 
@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.4.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -89,6 +89,10 @@ Verwende im gehosteten ChatGPT und Claude die Upload- oder Installationsoptionen
 ~~~text
 Lokalisiere mit Game Localization diese Steam-Kurzbeschreibung aus dem Englischen ins brasilianische Portugiesisch (pt-BR). Beginne bei Bedarf mit einem Glossarentwurf. Erhalte den Spieltitel und halte das angegebene Zeichenlimit ein. Gib den Shoptext und einen separaten Übergabebericht aus.
 ~~~
+
+### CSV-Übersetzungen prüfen
+
+Gib bei einer CSV-Datei mit stabilen Zeilen-IDs die Spaltenüberschriften für ID, Quelltext und Übersetzung an. Wenn Python 3.9 oder neuer verfügbar ist, vergleicht der Skill die Quelldatei mit der übersetzten Datei und meldet fehlende oder doppelte IDs, leere Übersetzungen, Änderungen an unterstützten Platzhaltern oder Tags und überschrittene Längenlimits. [Anleitung zur CSV-Prüfung](../game-localization/references/csv-qa.md)
 
 ### Unsere Modelleinstellungen
 

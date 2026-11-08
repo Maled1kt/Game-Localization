@@ -6,7 +6,7 @@
 
 Game Localization est une compétence d’agent pour traduire, réviser et contrôler les textes de jeux vidéo dans ChatGPT, Codex et Claude. Elle couvre les menus, tutoriels, dialogues, sous-titres, textes de boutique et documents de projet pour Steam, PlayStation, Xbox et les jeux mobiles.
 
-[Installation](#installation) · [Utiliser la compétence](#utiliser-la-compétence) · [Mettre à jour ou supprimer](#mettre-à-jour-ou-supprimer) · [Soutenir l’auteur](#soutenir-lauteur)
+[Installation](#installation) · [Utiliser la compétence](#utiliser-la-compétence) · [Mettre à jour ou supprimer](#mettre-à-jour-ou-supprimer) · [Soutenir l’auteur](#soutenir-lauteur) · [Plan de développement](../ROADMAP.md) · [Journal des modifications](../CHANGELOG.md)
 
 ## Fonctionnalités
 
@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Sur GitHub, ouvrez le lien du paquet et choisissez **Download raw file**. Importez le ZIP sans le décompresser.
@@ -89,6 +89,10 @@ Utilise Game Localization pour traduire en allemand (de-DE) la colonne ENGLISH d
 ~~~text
 Utilise Game Localization pour traduire cette description courte Steam de l’anglais vers le portugais du Brésil (pt-BR). Prépare un glossaire provisoire si nécessaire. Garde le titre du jeu et respecte la limite de caractères indiquée. Rends le texte et un compte rendu séparé.
 ~~~
+
+### Vérifier les traductions CSV
+
+Pour un fichier CSV avec des identifiants de ligne stables, indiquez les en-têtes des colonnes d’identifiant, de texte source et de traduction. Si Python 3.9 ou une version ultérieure est disponible, la compétence compare les fichiers source et traduit. Elle signale les identifiants manquants ou en double, les traductions vides, les modifications de variables ou de balises prises en charge et les dépassements des limites de longueur. [Instructions de vérification des CSV](../game-localization/references/csv-qa.md)
 
 ### Nos réglages de modèles
 

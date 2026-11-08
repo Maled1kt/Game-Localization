@@ -6,7 +6,7 @@
 
 Game Localization to umiejętność agenta do tłumaczenia, redagowania i sprawdzania tekstów gier w ChatGPT, Codex i Claude. Obsługuje menu, samouczki, dialogi, napisy, teksty sklepowe i dokumentację projektową dla Steam, PlayStation, Xbox i gier mobilnych.
 
-[Instalacja](#instalacja) · [Korzystanie z umiejętności](#korzystanie-z-umiejętności) · [Aktualizacja i usuwanie](#aktualizacja-i-usuwanie) · [Wesprzyj autora](#wesprzyj-autora)
+[Instalacja](#instalacja) · [Korzystanie z umiejętności](#korzystanie-z-umiejętności) · [Aktualizacja i usuwanie](#aktualizacja-i-usuwanie) · [Wesprzyj autora](#wesprzyj-autora) · [Plan rozwoju](../ROADMAP.md) · [Historia zmian](../CHANGELOG.md)
 
 ## Funkcje
 
@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.4.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -89,6 +89,10 @@ Użyj Game Localization, aby przetłumaczyć kolumnę ENGLISH załączonego skor
 ~~~text
 Użyj Game Localization do lokalizacji tego krótkiego opisu Steam z angielskiego na portugalski brazylijski (pt-BR). W razie potrzeby utwórz roboczy glosariusz. Zachowaj tytuł gry i podany limit znaków. Zwróć tekst sklepowy oraz osobny raport.
 ~~~
+
+### Sprawdzanie tłumaczeń w CSV
+
+W przypadku pliku CSV ze stałymi identyfikatorami wierszy podaj nagłówki kolumn z identyfikatorem, tekstem źródłowym i tłumaczeniem. Jeśli dostępny jest Python 3.9 lub nowszy, umiejętność porówna plik źródłowy z plikiem tłumaczenia i wskaże brakujące lub powtarzające się identyfikatory, puste tłumaczenia, zmiany obsługiwanych symboli zastępczych lub znaczników oraz przekroczenia limitów długości. [Instrukcja sprawdzania plików CSV](../game-localization/references/csv-qa.md)
 
 ### Nasze ustawienia modeli
 

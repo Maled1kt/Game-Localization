@@ -6,7 +6,7 @@
 
 Game Localization é uma skill de agente para traduzir, editar e revisar textos de jogos no ChatGPT, no Codex e no Claude. Abrange menus, tutoriais, diálogos, legendas, textos de loja e documentação de projetos para Steam, PlayStation, Xbox e jogos para dispositivos móveis.
 
-[Instalação](#instalação) · [Usar a skill](#usar-a-skill) · [Atualizar ou remover](#atualizar-ou-remover) · [Apoiar o autor](#apoiar-o-autor)
+[Instalação](#instalação) · [Usar a skill](#usar-a-skill) · [Atualizar ou remover](#atualizar-ou-remover) · [Apoiar o autor](#apoiar-o-autor) · [Plano de desenvolvimento](../ROADMAP.md) · [Histórico de alterações](../CHANGELOG.md)
 
 ## Recursos
 
@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -89,6 +89,10 @@ Use Game Localization para traduzir a coluna ENGLISH da livro de cálculo em ane
 ~~~text
 Use Game Localization para localizar esta descrição curta da Steam do inglês para o português do Brasil (pt-BR). Comece um rascunho de glossário, se necessário. Mantenha o título do jogo e respeite o limite de caracteres indicado. Entregue o texto da loja e um relatório separado.
 ~~~
+
+### Verificar traduções em CSV
+
+Para um CSV com IDs de linha estáveis, indique os cabeçalhos das colunas de ID, texto de origem e tradução. Se estiver disponível o Python 3.9 ou uma versão posterior, a skill compara o ficheiro de origem com o traduzido e assinala IDs em falta ou duplicados, traduções vazias, alterações a marcadores ou tags suportados e traduções que excedam os limites de extensão. [Instruções para verificar ficheiros CSV](../game-localization/references/csv-qa.md)
 
 ### As nossas definições dos modelos
 

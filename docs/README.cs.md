@@ -6,7 +6,7 @@
 
 Game Localization je dovednost pro agenty, která překládá, upravuje a kontroluje herní texty v ChatGPT, Codex a Claude. Hodí se pro nabídky, výukové texty, dialogy, titulky, texty obchodů a projektovou dokumentaci pro Steam, PlayStation, Xbox a mobilní hry.
 
-[Instalace](#instalace) · [Používání dovednosti](#používání-dovednosti) · [Aktualizace a odstranění](#aktualizace-a-odstranění) · [Podpora autora](#podpora-autora)
+[Instalace](#instalace) · [Používání dovednosti](#používání-dovednosti) · [Aktualizace a odstranění](#aktualizace-a-odstranění) · [Podpora autora](#podpora-autora) · [Plán vývoje](../ROADMAP.md) · [Přehled změn](../CHANGELOG.md)
 
 ## Funkce
 
@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.4.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 Otevřete odkaz na GitHubu a zvolte **Download raw file**. Nahrajte nerozbalený ZIP.
@@ -89,6 +89,10 @@ Pomocí Game Localization přelož sloupec ENGLISH v přiloženém sešitu do n�
 ~~~text
 Pomocí Game Localization přelož tento krátký popis na Steam z angličtiny do brazilské portugalštiny (pt-BR). Podle potřeby založ návrh glosáře. Zachovej název hry a dodrž zadaný limit znaků. Vrať text obchodu a samostatnou předávací zprávu.
 ~~~
+
+### Kontrola překladů v CSV
+
+U CSV se stálými ID řádků uveďte názvy sloupců s ID, zdrojovým textem a překladem. Je-li k dispozici Python 3.9 nebo novější, dovednost porovná zdrojový soubor se souborem překladu a upozorní na chybějící nebo duplicitní ID, prázdné překlady, změny podporovaných zástupných symbolů či značek a překročení limitů délky. [Pokyny ke kontrole CSV](../game-localization/references/csv-qa.md)
 
 ### Naše nastavení modelů
 

@@ -6,7 +6,7 @@
 
 Game Localization è una skill per agenti che traduce, revisiona e verifica testi di videogiochi in ChatGPT, Codex e Claude. È pensata per menu, tutorial, dialoghi, sottotitoli, testi del negozio e documentazione per Steam, PlayStation, Xbox e giochi per dispositivi mobili.
 
-[Installazione](#installazione) · [Usare la skill](#usare-la-skill) · [Aggiornare o rimuovere](#aggiornare-o-rimuovere) · [Sostenere l’autore](#sostenere-lautore)
+[Installazione](#installazione) · [Usare la skill](#usare-la-skill) · [Aggiornare o rimuovere](#aggiornare-o-rimuovere) · [Sostenere l’autore](#sostenere-lautore) · [Piano di sviluppo](../ROADMAP.md) · [Registro delle modifiche](../CHANGELOG.md)
 
 ## Funzionalità
 
@@ -22,8 +22,8 @@ La skill contiene istruzioni e riferimenti. Funziona senza chiavi API di progett
 
 | Ambiente | Pacchetto |
 | --- | --- |
-| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex locale o Claude Code | [Installa dalla cartella sorgente](#installazione-locale-con-un-comando) |
 
 Su GitHub apri il link del pacchetto e scegli **Download raw file**. Carica lo ZIP senza estrarlo.
@@ -89,6 +89,10 @@ Usa Game Localization per tradurre in tedesco (de-DE) la colonna ENGLISH del fil
 ~~~text
 Usa Game Localization per localizzare questa descrizione breve di Steam dall’inglese al portoghese brasiliano (pt-BR). Avvia una bozza del glossario se serve. Conserva il titolo del gioco e rispetta il limite di caratteri indicato. Restituisci il testo del negozio e un resoconto separato.
 ~~~
+
+### Verificare le traduzioni CSV
+
+Per un file CSV con ID di riga stabili, indica le intestazioni delle colonne con ID, testo sorgente e traduzione. Se è disponibile Python 3.9 o successivo, la skill confronta il file sorgente con quello tradotto e segnala ID mancanti o duplicati, traduzioni vuote, modifiche ai segnaposto o ai tag supportati e superamenti dei limiti di lunghezza. [Istruzioni per la verifica dei CSV](../game-localization/references/csv-qa.md)
 
 ### Le nostre impostazioni dei modelli
 

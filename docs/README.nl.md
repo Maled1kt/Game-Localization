@@ -6,7 +6,7 @@
 
 Game Localization is een agentskill voor het vertalen, bewerken en controleren van gameteksten in ChatGPT, Codex en Claude. De skill ondersteunt menu’s, tutorials, dialogen, ondertiteling, winkelteksten en projectdocumentatie voor Steam, PlayStation, Xbox en mobiele games.
 
-[Installatie](#installatie) · [De skill gebruiken](#de-skill-gebruiken) · [Bijwerken of verwijderen](#bijwerken-of-verwijderen) · [De maker steunen](#de-maker-steunen)
+[Installatie](#installatie) · [De skill gebruiken](#de-skill-gebruiken) · [Bijwerken of verwijderen](#bijwerken-of-verwijderen) · [De maker steunen](#de-maker-steunen) · [Ontwikkelplan](../ROADMAP.md) · [Wijzigingslogboek](../CHANGELOG.md)
 
 ## Functies
 
@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.4.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 Open de pakketlink op GitHub en kies **Download raw file**. Upload het ZIP-bestand zonder het uit te pakken.
@@ -89,6 +89,10 @@ Gebruik Game Localization om de kolom ENGLISH in de bijgevoegde werkmap naar het
 ~~~text
 Gebruik Game Localization om deze korte Steam-beschrijving uit het Engels naar Braziliaans Portugees (pt-BR) te vertalen. Begin indien nodig een conceptwoordenlijst. Behoud de gametitel en houd je aan de opgegeven tekenlimiet. Geef de winkeltekst en een afzonderlijk overdrachtsverslag terug.
 ~~~
+
+### CSV-vertalingen controleren
+
+Geef voor een CSV-bestand met vaste rij-ID’s de kolomkoppen voor ID, brontekst en vertaling op. Als Python 3.9 of hoger beschikbaar is, vergelijkt de skill het bronbestand met het vertaalde bestand en meldt ontbrekende of dubbele ID’s, lege vertalingen, wijzigingen aan ondersteunde tijdelijke aanduidingen of tags en overschrijdingen van de lengtelimiet. [Instructies voor CSV-controle](../game-localization/references/csv-qa.md)
 
 ### Onze modelinstellingen
 

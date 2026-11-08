@@ -6,7 +6,7 @@
 
 Game Localization är en agentfärdighet för att översätta, redigera och granska speltexter i ChatGPT, Codex och Claude. Den omfattar menyer, handledningar, dialog, undertexter, butikstexter och projektdokumentation för Steam, PlayStation, Xbox och mobilspel.
 
-[Installation](#installation) · [Använd färdigheten](#använd-färdigheten) · [Uppdatera eller ta bort](#uppdatera-eller-ta-bort) · [Stöd upphovspersonen](#stöd-upphovspersonen)
+[Installation](#installation) · [Använd färdigheten](#använd-färdigheten) · [Uppdatera eller ta bort](#uppdatera-eller-ta-bort) · [Stöd upphovspersonen](#stöd-upphovspersonen) · [Utvecklingsplan](../ROADMAP.md) · [Ändringslogg](../CHANGELOG.md)
 
 ## Funktioner
 
@@ -22,8 +22,8 @@ Färdigheten innehåller instruktioner och referensfiler. Den kräver ingen proj
 
 | Miljö | Paket |
 | --- | --- |
-| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.4.zip) |
 | Lokal Codex eller Claude Code | [Installera från källmappen](#installera-för-lokala-agenter-med-ett-kommando) |
 
 Öppna paketlänken på GitHub och välj **Download raw file**. Ladda upp ZIP-filen utan att packa upp den.
@@ -89,6 +89,10 @@ Använd Game Localization för att översätta kolumnen ENGLISH i den bifogade a
 ~~~text
 Använd Game Localization för att lokalisera den här korta Steam-beskrivningen från engelska till brasiliansk portugisiska (pt-BR). Börja vid behov på ett ordlisteutkast. Bevara speltiteln och följ angiven teckengräns. Lämna butikstexten och separata leveransanteckningar.
 ~~~
+
+### Kontrollera CSV-översättningar
+
+För en CSV-fil med fasta rad-ID:n anger du kolumnrubrikerna för ID, källtext och översättning. Om Python 3.9 eller senare är tillgängligt jämför färdigheten källfilen med den översatta filen och rapporterar saknade eller dubbla ID:n, tomma översättningar, ändringar i platshållare eller taggar som stöds samt överskridna längdgränser. [Instruktioner för CSV-kontroll](../game-localization/references/csv-qa.md)
 
 ### Våra modellinställningar
 

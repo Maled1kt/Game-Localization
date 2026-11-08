@@ -31,7 +31,11 @@ def main():
     if name != SKILL.name or not re.fullmatch(r"\d+\.\d+\.\d+", version):
         raise ValueError("The plugin name or release version is invalid.")
 
-    shared_files = [SKILL / "SKILL.md", *sorted((SKILL / "references").rglob("*.md"))]
+    shared_files = [
+        SKILL / "SKILL.md",
+        SKILL / "scripts" / "check_csv.py",
+        *sorted((SKILL / "references").rglob("*.md")),
+    ]
     shared_entries = {
         f"{name}/{file.relative_to(SKILL).as_posix()}": file for file in shared_files
     }

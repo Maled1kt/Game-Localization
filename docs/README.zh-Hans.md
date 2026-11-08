@@ -6,7 +6,7 @@
 
 Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中翻译、编辑和校对游戏文本。适用于 Steam、PlayStation、Xbox 和移动游戏的菜单、教程、对白、字幕、商店文案和项目文档。
 
-[安装](#安装) · [使用技能](#使用技能) · [更新或卸载](#更新或卸载) · [支持作者](#支持作者)
+[安装](#安装) · [使用技能](#使用技能) · [更新或卸载](#更新或卸载) · [支持作者](#支持作者) · [开发计划](../ROADMAP.md) · [更新日志](../CHANGELOG.md)
 
 ## 功能
 
@@ -22,8 +22,8 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.3.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.4.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
@@ -89,6 +89,10 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 使用 Game Localization 将这段 Steam 简短描述从英语本地化为巴西葡萄牙语（pt-BR）。如有需要，先起草术语表。保留游戏名称并遵守给定的字符限制。分别提交商店文案和交付说明。
 ~~~
+
+### 检查 CSV 译文
+
+如果 CSV 中的每行都有固定 ID，请指定 ID、原文和译文所在的列名。环境支持 Python 3.9 或更高版本时，技能会比对原文文件和译文文件，报告缺失或重复的 ID、空白译文、受支持的占位符或标签发生的改动，以及超出长度限制的条目。 [CSV 检查说明](../game-localization/references/csv-qa.md)
 
 ### 我们的模型设置
 

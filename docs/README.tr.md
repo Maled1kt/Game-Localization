@@ -6,7 +6,7 @@
 
 Game Localization, ChatGPT, Codex ve Claude’da oyun metinlerini çevirmek, düzenlemek ve incelemek için kullanılan bir ajan becerisidir. Steam, PlayStation, Xbox ve mobil oyunlar için menüleri, eğitimleri, diyalogları, altyazıları, mağaza metinlerini ve proje belgelerini kapsar.
 
-[Kurulum](#kurulum) · [Beceriyi kullanma](#beceriyi-kullanma) · [Güncelleme veya kaldırma](#güncelleme-veya-kaldırma) · [Geliştiriciyi destekleyin](#geliştiriciyi-destekleyin)
+[Kurulum](#kurulum) · [Beceriyi kullanma](#beceriyi-kullanma) · [Güncelleme veya kaldırma](#güncelleme-veya-kaldırma) · [Geliştiriciyi destekleyin](#geliştiriciyi-destekleyin) · [Geliştirme planı](../ROADMAP.md) · [Değişiklik günlüğü](../CHANGELOG.md)
 
 ## Özellikler
 
@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.3.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.4.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 GitHub’da paket bağlantısını açıp **Download raw file** seçeneğini seçin. ZIP dosyasını açmadan yükleyin.
@@ -89,6 +89,10 @@ Ekli çalışma kitabının ENGLISH sütununu Game Localization ile Almancaya (d
 ~~~text
 Bu kısa Steam açıklamasını Game Localization ile İngilizceden Brezilya Portekizcesine (pt-BR) yerelleştir. Gerekirse taslak bir sözlük başlat. Oyun adını koru ve belirtilen karakter sınırına uy. Mağaza metnini ve teslim notlarını ayrı ver.
 ~~~
+
+### CSV çevirilerini kontrol etme
+
+Sabit satır kimlikleri olan bir CSV dosyası için kimlik, kaynak metin ve çeviri sütunlarının başlıklarını belirtin. Python 3.9 veya üstü kullanılabiliyorsa beceri kaynak dosyayı çevrilmiş dosyayla karşılaştırır. Eksik veya yinelenen kimlikleri, boş çevirileri, desteklenen yer tutucu veya etiketlerdeki değişiklikleri ve aşılan uzunluk sınırlarını bildirir. [CSV kontrolü yönergeleri](../game-localization/references/csv-qa.md)
 
 ### Kullandığımız model ayarları
 

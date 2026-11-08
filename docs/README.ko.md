@@ -6,7 +6,7 @@
 
 Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, 편집, 검토하는 에이전트 스킬입니다. Steam, PlayStation, Xbox 및 모바일 게임의 메뉴, 튜토리얼, 대사, 자막, 스토어 문구, 프로젝트 문서에 사용할 수 있습니다.
 
-[설치](#설치) · [스킬 사용](#스킬-사용) · [업데이트 및 제거](#업데이트-및-제거) · [제작자 후원](#제작자-후원)
+[설치](#설치) · [스킬 사용](#스킬-사용) · [업데이트 및 제거](#업데이트-및-제거) · [제작자 후원](#제작자-후원) · [개발 계획](../ROADMAP.md) · [변경 내역](../CHANGELOG.md)
 
 ## 주요 기능
 
@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.3.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.4.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 GitHub에서 패키지 링크를 열고 **Download raw file**을 선택합니다. ZIP의 압축을 풀지 않고 업로드합니다.
@@ -89,6 +89,10 @@ Game Localization으로 첨부 통합 문서의 ENGLISH 열을 독일어(de-DE)�
 ~~~text
 Game Localization으로 이 Steam 짧은 설명을 영어에서 브라질 포르투갈어(pt-BR)로 현지화해 주세요. 필요하면 용어집 초안을 만들어 주세요. 게임 제목을 유지하고 지정된 글자 수 제한을 지켜 주세요. 스토어 문구와 인계 문서는 따로 주세요.
 ~~~
+
+### CSV 번역 확인
+
+각 행에 고정 ID가 있는 CSV를 번역할 때는 ID, 원문, 번역문 열의 제목을 지정하세요. Python 3.9 이상을 사용할 수 있으면 스킬이 원문 파일과 번역 파일을 비교해 누락되거나 중복된 ID, 비어 있는 번역, 지원되는 자리표시자나 태그의 변경, 길이 제한 초과를 알려 줍니다. [CSV 확인 안내](../game-localization/references/csv-qa.md)
 
 ### 사용하는 모델 설정
 

@@ -6,7 +6,7 @@
 
 Game Localization on agenttitaito pelitekstien kääntämiseen, muokkaamiseen ja tarkistamiseen ChatGPT:ssä, Codexissa ja Claudessa. Sillä voi käsitellä valikoita, opastuksia, dialogia, tekstityksiä, kauppatekstejä ja projektiasiakirjoja Steamille, PlayStationille, Xboxille ja mobiilipeleille.
 
-[Asennus](#asennus) · [Taidon käyttäminen](#taidon-käyttäminen) · [Päivittäminen tai poistaminen](#päivittäminen-tai-poistaminen) · [Tue tekijää](#tue-tekijää)
+[Asennus](#asennus) · [Taidon käyttäminen](#taidon-käyttäminen) · [Päivittäminen tai poistaminen](#päivittäminen-tai-poistaminen) · [Tue tekijää](#tue-tekijää) · [Kehityssuunnitelma](../ROADMAP.md) · [Muutosloki](../CHANGELOG.md)
 
 ## Ominaisuudet
 
@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.4.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -89,6 +89,10 @@ Käännä Game Localizationilla liitetyn työkirjan ENGLISH-sarake saksaksi (de-
 ~~~text
 Lokalisoi Game Localizationilla tämä Steamin lyhyt kuvaus englannista brasilianportugaliksi (pt-BR). Laadi tarvittaessa sanastoluonnos. Säilytä pelin nimi ja noudata annettua merkkirajaa. Palauta kauppateksti ja erillinen luovutusraportti.
 ~~~
+
+### CSV-käännösten tarkistaminen
+
+Jos CSV-tiedostossa on pysyvät rivitunnisteet, ilmoita tunniste-, lähdeteksti- ja käännössarakkeiden otsikot. Jos käytössä on Python 3.9 tai uudempi, taito vertaa lähde- ja käännöstiedostoja. Se ilmoittaa puuttuvista tai toistuvista tunnisteista, tyhjistä käännöksistä, tuettujen paikkamerkkien tai tunnisteiden muutoksista ja pituusrajojen ylityksistä. [CSV-tarkistuksen ohjeet](../game-localization/references/csv-qa.md)
 
 ### Käyttämämme malliasetukset
 

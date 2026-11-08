@@ -6,7 +6,7 @@
 
 Game Localization es una habilidad para agentes que permite traducir, editar y revisar textos de videojuegos en ChatGPT, Codex y Claude. Sirve para menús, tutoriales, diálogos, subtítulos, textos de tienda y documentación de proyectos para Steam, PlayStation, Xbox y juegos para móviles.
 
-[Instalación](#instalación) · [Usar la habilidad](#usar-la-habilidad) · [Actualizar o quitar](#actualizar-o-quitar) · [Apoyar al autor](#apoyar-al-autor)
+[Instalación](#instalación) · [Usar la habilidad](#usar-la-habilidad) · [Actualizar o quitar](#actualizar-o-quitar) · [Apoyar al autor](#apoyar-al-autor) · [Plan de desarrollo](../ROADMAP.md) · [Historial de cambios](../CHANGELOG.md)
 
 ## Funciones
 
@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En GitHub, abre el enlace del paquete y pulsa **Download raw file**. Sube el ZIP sin descomprimir.
@@ -89,6 +89,10 @@ Usa Game Localization para traducir al alemán (de-DE) la columna ENGLISH del li
 ~~~text
 Usa Game Localization para traducir esta descripción breve de Steam del inglés al portugués de Brasil (pt-BR). Prepara un borrador de glosario si hace falta. Conserva el título del juego y respeta el límite de caracteres indicado. Devuelve el texto de tienda y un informe de entrega separado.
 ~~~
+
+### Comprobar traducciones en CSV
+
+Si el CSV tiene identificadores de fila estables, indica los encabezados de las columnas de ID, texto original y traducción. Si está disponible Python 3.9 o una versión posterior, la habilidad compara el archivo original con el traducido y señala los ID que faltan o están duplicados, las traducciones vacías, los cambios en marcadores o etiquetas compatibles y los casos en los que se supera el límite de longitud. [Instrucciones para comprobar archivos CSV](../game-localization/references/csv-qa.md)
 
 ### Nuestra configuración de modelos
 

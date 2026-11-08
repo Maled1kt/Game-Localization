@@ -6,7 +6,7 @@
 
 Game Localization adalah skill agen untuk menerjemahkan, menyunting, dan meninjau teks gim di ChatGPT, Codex, dan Claude. Skill ini mencakup menu, tutorial, dialog, takarir, teks toko, dan dokumentasi proyek untuk Steam, PlayStation, Xbox, serta gim seluler.
 
-[Pemasangan](#pemasangan) · [Menggunakan skill](#menggunakan-skill) · [Memperbarui atau menghapus](#memperbarui-atau-menghapus) · [Dukung pembuat](#dukung-pembuat)
+[Pemasangan](#pemasangan) · [Menggunakan skill](#menggunakan-skill) · [Memperbarui atau menghapus](#memperbarui-atau-menghapus) · [Dukung pembuat](#dukung-pembuat) · [Rencana pengembangan](../ROADMAP.md) · [Riwayat perubahan](../CHANGELOG.md)
 
 ## Fitur
 
@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -89,6 +89,10 @@ Gunakan Game Localization untuk menerjemahkan kolom ENGLISH di buku kerja terlam
 ~~~text
 Gunakan Game Localization untuk melokalkan deskripsi singkat Steam ini dari bahasa Inggris ke bahasa Portugis Brasil (pt-BR). Buat draf glosarium jika diperlukan. Pertahankan judul gim dan patuhi batas karakter yang ditentukan. Berikan teks toko dan laporan penyerahan secara terpisah.
 ~~~
+
+### Memeriksa terjemahan CSV
+
+Jika CSV memiliki ID baris yang tetap, sebutkan judul kolom ID, teks sumber, dan terjemahan. Jika Python 3.9 atau versi yang lebih baru tersedia, skill membandingkan file sumber dengan file terjemahan dan menandai ID yang hilang atau ganda, terjemahan kosong, perubahan pada placeholder atau tag yang didukung, dan teks yang melebihi batas panjang. [Petunjuk pemeriksaan CSV](../game-localization/references/csv-qa.md)
 
 ### Setelan model kami
 

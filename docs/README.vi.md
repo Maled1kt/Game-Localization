@@ -6,7 +6,7 @@
 
 Game Localization là kỹ năng dành cho tác nhân để dịch, biên tập và rà soát văn bản trò chơi trong ChatGPT, Codex và Claude. Kỹ năng hỗ trợ menu, hướng dẫn, lời thoại, phụ đề, nội dung cửa hàng và tài liệu dự án cho Steam, PlayStation, Xbox và trò chơi di động.
 
-[Cài đặt](#cài-đặt) · [Sử dụng kỹ năng](#sử-dụng-kỹ-năng) · [Cập nhật hoặc gỡ bỏ](#cập-nhật-hoặc-gỡ-bỏ) · [Ủng hộ tác giả](#ủng-hộ-tác-giả)
+[Cài đặt](#cài-đặt) · [Sử dụng kỹ năng](#sử-dụng-kỹ-năng) · [Cập nhật hoặc gỡ bỏ](#cập-nhật-hoặc-gỡ-bỏ) · [Ủng hộ tác giả](#ủng-hộ-tác-giả) · [Kế hoạch phát triển](../ROADMAP.md) · [Nhật ký thay đổi](../CHANGELOG.md)
 
 ## Tính năng
 
@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
@@ -89,6 +89,10 @@ Dùng Game Localization để dịch cột ENGLISH trong sổ làm việc đính
 ~~~text
 Dùng Game Localization để bản địa hóa mô tả ngắn Steam này từ tiếng Anh sang tiếng Bồ Đào Nha Brazil (pt-BR). Soạn bảng thuật ngữ nháp nếu cần. Giữ nguyên tên trò chơi và tuân thủ giới hạn ký tự đã cho. Trả nội dung cửa hàng và báo cáo bàn giao riêng.
 ~~~
+
+### Kiểm tra bản dịch trong CSV
+
+Nếu tệp CSV có ID cố định cho từng dòng, hãy nêu tên các cột chứa ID, văn bản nguồn và bản dịch. Khi có Python 3.9 trở lên, kỹ năng sẽ so sánh tệp nguồn với tệp đã dịch và báo các ID bị thiếu hoặc trùng, bản dịch để trống, thay đổi ở biến giữ chỗ hoặc thẻ được hỗ trợ và trường hợp vượt giới hạn độ dài. [Hướng dẫn kiểm tra CSV](../game-localization/references/csv-qa.md)
 
 ### Thiết lập mô hình của chúng tôi
 

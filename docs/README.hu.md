@@ -6,7 +6,7 @@
 
 A Game Localization egy ügynökkészség videojátékok szövegeinek fordításához, szerkesztéséhez és ellenőrzéséhez a ChatGPT-ben, a Codexben és a Claude-ban. Menüket, oktatóanyagokat, párbeszédeket, feliratokat, áruházi szövegeket és projektdokumentációt kezel a Steam, a PlayStation, az Xbox és a mobiljátékok számára.
 
-[Telepítés](#telepítés) · [A készség használata](#a-készség-használata) · [Frissítés vagy eltávolítás](#frissítés-vagy-eltávolítás) · [A szerző támogatása](#a-szerző-támogatása)
+[Telepítés](#telepítés) · [A készség használata](#a-készség-használata) · [Frissítés vagy eltávolítás](#frissítés-vagy-eltávolítás) · [A szerző támogatása](#a-szerző-támogatása) · [Fejlesztési terv](../ROADMAP.md) · [Változásnapló](../CHANGELOG.md)
 
 ## Funkciók
 
@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.4.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 Nyisd meg a csomag hivatkozását a GitHubon, és válaszd a **Download raw file** lehetőséget. A ZIP-et kicsomagolás nélkül töltsd fel.
@@ -89,6 +89,10 @@ A Game Localization segítségével fordítsd le a mellékelt munkafüzet ENGLIS
 ~~~text
 A Game Localization segítségével lokalizáld ezt a rövid Steam-leírást angolról brazíliai portugálra (pt-BR). Szükség esetén készíts szójegyzéktervezetet. Őrizd meg a játék címét, és tartsd be a karakterkorlátot. Az áruházi szöveget és az átadási jegyzetet külön add vissza.
 ~~~
+
+### CSV-fordítások ellenőrzése
+
+Ha a CSV-fájl sorai állandó azonosítóval rendelkeznek, adja meg az azonosítót, a forrásszöveget és a fordítást tartalmazó oszlop fejlécét. Python 3.9 vagy újabb verzió esetén a készség összehasonlítja a forrásfájlt a lefordított fájllal, és jelzi a hiányzó vagy ismétlődő azonosítókat, az üres fordításokat, a támogatott helyőrzők vagy címkék változásait és a hosszkorlátok túllépését. [Útmutató a CSV-ellenőrzéshez](../game-localization/references/csv-qa.md)
 
 ### Az általunk használt modellbeállítások
 

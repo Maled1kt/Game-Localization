@@ -6,7 +6,7 @@
 
 Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻訳・編集・レビューするためのエージェントスキルです。Steam、PlayStation、Xbox、モバイルゲームのメニュー、チュートリアル、会話、字幕、ストア文面、プロジェクト文書に対応します。
 
-[インストール](#インストール) · [スキルの使い方](#スキルの使い方) · [更新と削除](#更新と削除) · [作者を支援する](#作者を支援する)
+[インストール](#インストール) · [スキルの使い方](#スキルの使い方) · [更新と削除](#更新と削除) · [作者を支援する](#作者を支援する) · [開発計画](../ROADMAP.md) · [変更履歴](../CHANGELOG.md)
 
 ## 機能
 
@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.3.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.4.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -89,6 +89,10 @@ Game Localization を使って添付のブックの ENGLISH 列をドイツ語�
 ~~~text
 Game Localization を使って、この Steam の短い説明文を英語からブラジルポルトガル語（pt-BR）にローカライズしてください。必要なら用語集の草案を作ってください。ゲームタイトルはそのままにし、指定の文字数制限を守ってください。ストア文面と引き継ぎメモは分けて返してください。
 ~~~
+
+### CSV翻訳をチェックする
+
+各行に固定のIDがあるCSVでは、ID、原文、訳文の列見出しを指定してください。Python 3.9以降を利用できる環境では、スキルが原文ファイルと翻訳ファイルを比較し、IDの欠落や重複、訳文の空欄、対応するプレースホルダーやタグの変更、長さ制限の超過を報告します。 [CSVチェックの手順](../game-localization/references/csv-qa.md)
 
 ### 使用しているモデル設定
 

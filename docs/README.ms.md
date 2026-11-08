@@ -6,7 +6,7 @@
 
 Game Localization ialah kemahiran ejen untuk menterjemah, menyunting dan menyemak teks permainan video dalam ChatGPT, Codex dan Claude. Ia meliputi menu, tutorial, dialog, sari kata, teks kedai dan dokumentasi projek untuk Steam, PlayStation, Xbox serta permainan mudah alih.
 
-[Pemasangan](#pemasangan) · [Menggunakan kemahiran](#menggunakan-kemahiran) · [Kemas kini atau alih keluar](#kemas-kini-atau-alih-keluar) · [Sokong pengarang](#sokong-pengarang)
+[Pemasangan](#pemasangan) · [Menggunakan kemahiran](#menggunakan-kemahiran) · [Kemas kini atau alih keluar](#kemas-kini-atau-alih-keluar) · [Sokong pengarang](#sokong-pengarang) · [Pelan pembangunan](../ROADMAP.md) · [Log perubahan](../CHANGELOG.md)
 
 ## Ciri
 
@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Buka pautan pakej di GitHub dan pilih **Download raw file**. Muat naik ZIP tanpa mengekstraknya.
@@ -89,6 +89,10 @@ Gunakan Game Localization untuk menterjemah lajur ENGLISH dalam buku kerja yang 
 ~~~text
 Gunakan Game Localization untuk menyetempatkan perihalan ringkas Steam ini daripada bahasa Inggeris ke bahasa Portugis Brazil (pt-BR). Sediakan draf glosari jika perlu. Kekalkan tajuk permainan dan patuhi had aksara yang diberi. Berikan teks kedai dan laporan serahan secara berasingan.
 ~~~
+
+### Menyemak terjemahan CSV
+
+Jika fail CSV mempunyai ID baris yang tetap, nyatakan tajuk lajur ID, teks sumber dan terjemahan. Jika Python 3.9 atau versi lebih baharu tersedia, kemahiran membandingkan fail sumber dengan fail terjemahan dan menandakan ID yang hilang atau berulang, terjemahan kosong, perubahan pada pemegang tempat atau tag yang disokong dan terjemahan yang melebihi had panjang. [Panduan semakan CSV](../game-localization/references/csv-qa.md)
 
 ### Tetapan model kami
 

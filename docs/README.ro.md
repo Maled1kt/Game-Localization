@@ -6,7 +6,7 @@
 
 Game Localization este o competență pentru agenți care traduce, editează și verifică texte de joc în ChatGPT, Codex și Claude. Acoperă meniuri, tutoriale, dialoguri, subtitrări, texte de magazin și documentație de proiect pentru Steam, PlayStation, Xbox și jocuri mobile.
 
-[Instalare](#instalare) · [Folosirea competenței](#folosirea-competenței) · [Actualizare sau eliminare](#actualizare-sau-eliminare) · [Sprijină autorul](#sprijină-autorul)
+[Instalare](#instalare) · [Folosirea competenței](#folosirea-competenței) · [Actualizare sau eliminare](#actualizare-sau-eliminare) · [Sprijină autorul](#sprijină-autorul) · [Plan de dezvoltare](../ROADMAP.md) · [Istoricul modificărilor](../CHANGELOG.md)
 
 ## Funcții
 
@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.3.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.4.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -89,6 +89,10 @@ Folosește Game Localization pentru a traduce coloana ENGLISH a registrului ata�
 ~~~text
 Folosește Game Localization pentru a localiza această descriere scurtă Steam din engleză în portugheză braziliană (pt-BR). Creează un glosar provizoriu dacă este necesar. Păstrează titlul jocului și respectă limita de caractere indicată. Livrează textul magazinului și un raport separat.
 ~~~
+
+### Verificarea traducerilor în CSV
+
+Pentru un fișier CSV cu ID-uri stabile pentru rânduri, specificați anteturile coloanelor pentru ID, textul sursă și traducere. Dacă este disponibil Python 3.9 sau o versiune ulterioară, competența compară fișierul sursă cu cel tradus și semnalează ID-urile lipsă sau duplicate, traducerile goale, modificările aduse substituenților sau etichetelor acceptate și depășirile limitelor de lungime. [Instrucțiuni pentru verificarea fișierelor CSV](../game-localization/references/csv-qa.md)
 
 ### Setările de model pe care le folosim
 

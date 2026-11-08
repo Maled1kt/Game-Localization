@@ -25,7 +25,7 @@ Use the [30-edition starter glossary](references/glossary/README.md) for candida
 
 ## Check and hand off
 
-1. Compare source and translation for coverage, meaning, approved terminology, and technical integrity. Check stated limits in the supplied unit. Use format-aware checks if available and review what actual placeholder values render as when examples are available.
+1. Compare source and translation for coverage, meaning, approved terminology, and technical integrity. Check stated limits in the supplied unit. Use format-aware checks when available. For CSV batches with stable IDs, use the [CSV checker](references/csv-qa.md) when the runtime can run it. Review what actual placeholder values render as when examples are available.
 2. Reread the text as it appears in the scene or UI. Track technical checks, target-language review, and build review separately. Record a check as complete only when its required evidence is available. A clean string file alone does not verify layout or render behavior.
 3. Return output in the requested format and a separate handoff identifying unresolved rows, draft term decisions, and actual review status. Report whether all applicable approved term occurrences were checked and whether any conflicts remain.
 4. When the project approves a candidate, carry its new status and exact decision into the next batch. If the user wants a reusable glossary, return the updated entries or update the designated glossary file. Ask for the current glossary in a new session when it is unavailable.
