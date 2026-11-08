@@ -1,0 +1,27 @@
+{
+  "name": "game-localization",
+  "version": "0.1.3",
+  "description": "Translate and review video game text with localization rules and a starter glossary.",
+  "author": {
+    "name": "Localization Skill"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Game Localization",
+    "shortDescription": "Game translation and QA",
+    "longDescription": "Translate and review video game UI, tutorials, dialogue, subtitles, and store text. Apply project-approved terminology, preserve placeholders and tags, and check length limits before delivering import-ready strings. Includes localization rules and a 75-term starter glossary covering 30 languages and locales.",
+    "developerName": "Localization Skill",
+    "category": "Developer Tools",
+    "logo": "./assets/game-localization.png",
+    "composerIcon": "./assets/game-localization.png",
+    "capabilities": [
+      "Translate video game text",
+      "Apply project glossaries",
+      "Check placeholders and length limits"
+    ],
+    "defaultPrompt": [
+      "Translate these game strings using my project glossary and preserve placeholders."
+    ]
+  }
+}

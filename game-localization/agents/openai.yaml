@@ -1,0 +1,4 @@
+interface:
+  display_name: "Game Localization"
+  short_description: "Translate and review video game text"
+  default_prompt: "Use $game-localization to translate these game strings using the project glossary."

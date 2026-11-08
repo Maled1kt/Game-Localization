@@ -1,0 +1,129 @@
+# Game Localization
+
+![แบนเนอร์ Game Localization ที่มีกล่องบทสนทนาในเกมสองกล่องแลกเปลี่ยนตัวอักษรจากหลายภาษา](../assets/game-localization-banner.png)
+
+[English](../README.md) · [ทุกภาษา](../README.md#languages)
+
+Game Localization เป็นสกิลสำหรับเอเจนต์ที่ใช้แปล แก้ไข และตรวจทานข้อความเกมใน ChatGPT, Codex และ Claude รองรับเมนู บทสอนเล่น บทสนทนา คำบรรยาย ข้อความหน้าร้าน และเอกสารโครงการสำหรับ Steam, PlayStation, Xbox และเกมมือถือ
+
+[การติดตั้ง](#การติดตั้ง) · [การใช้สกิล](#การใช้สกิล) · [อัปเดตหรือถอนการติดตั้ง](#อัปเดตหรือถอนการติดตั้ง) · [สนับสนุนผู้สร้าง](#สนับสนุนผู้สร้าง)
+
+## ความสามารถ
+
+- ใช้คำศัพท์ที่โครงการอนุมัติและบันทึกคำใหม่เป็นข้อเสนอ
+- คงคีย์โลคัลไลเซชัน ตัวแทนค่าอย่าง `{player_name}` และ `%s` แท็ก การขึ้นบรรทัดใหม่ที่มีความหมาย และองค์ประกอบที่ต้องรักษาอื่น ๆ
+- ตรวจข้อจำกัดความยาวและแยกคำแปลออกจากคำถาม การแก้ต้นฉบับ และหมายเหตุการตรวจคุณภาพ
+- มี[รายการภาษาและรูปแบบภาษาที่ตั้งไว้ 30 รายการ](../game-localization/references/game-localization-rules-v0.1.md#21-select-target-languages) และรองรับรายการที่กำหนดเอง
+- มี[อภิธานศัพท์เริ่มต้น 75 คำสำหรับทั้ง 30 ภาษาและรูปแบบ](../game-localization/references/glossary/README.md) พร้อมคำนิยามภาษาอังกฤษร่วมกันและคำแปลที่เสนอ
+
+สกิลมีคำแนะนำและไฟล์อ้างอิง ใช้งานได้โดยไม่ต้องมีคีย์ API ของโครงการ ตัวเชื่อมต่อ หรือบริการเบื้องหลัง การแก้ไฟล์ขึ้นอยู่กับเครื่องมือในแชต ก่อนเผยแพร่ ให้ตรวจข้อความ UI ในบิลด์เกมและข้อความหน้าร้านในหน้าตัวอย่างของแพลตฟอร์ม
+
+## การติดตั้ง
+
+| สภาพแวดล้อม | แพ็กเกจ |
+| --- | --- |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.3.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.3.zip) |
+| Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
+
+เปิดลิงก์แพ็กเกจบน GitHub แล้วเลือก **Download raw file** อัปโหลด ZIP โดยไม่ต้องแตกไฟล์
+
+### ChatGPT และ Codex
+
+1. ใน ChatGPT บนเว็บ ให้เปิดตัวเลือกอัปโหลดปลั๊กอินของบัญชี เจ้าของพื้นที่ทำงานและผู้ดูแลที่มีสิทธิ์สามารถใช้ **Admin console → Plugins → Add → Upload plugin**
+2. เลือก ZIP ปลั๊กอิน เมื่อผ่านการตรวจสอบแล้วให้เปิด **Game Localization** ใน **Plugins** แล้วเลือก **Install plugin** หากมี ตัวที่อัปโหลดส่วนตัวอาจอยู่ใน **Personal → Created by me**
+3. เปิดแชตใหม่ใน ChatGPT หรือ Codex พิมพ์ `@` และเลือก **Game Localization** จากรายการแนะนำ
+
+หากพื้นที่ทำงานรองรับสกิลแบบแยก ให้ใช้ **Plugins → Skills → Create → Upload from your computer** เพื่ออัปโหลด ZIP รอการสแกนและทำตามคำแนะนำ ตัวเลือกขึ้นอยู่กับบัญชีและพื้นที่ทำงาน [คู่มือปลั๊กอิน OpenAI](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt) · [คู่มือสกิล OpenAI](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
+
+### Claude
+
+1. เปิด **Code execution and file creation** ในการตั้งค่า Claude หากบัญชีหรือพื้นที่ทำงานกำหนดไว้
+2. ใน Claude บนเว็บหรือ Claude Desktop ให้เปิด **Customize → Skills** ในหน้าตาใหม่ให้เปิด **Plugins** จากแถบด้านข้างและดูส่วนจัดการสกิลใน **Your plugins**
+3. เลือก **+ → Create skill → Upload a skill** แล้วเลือก ZIP สกิลแบบแยก เปิดใช้ `game-localization` เมื่อปรากฏ
+4. เปิดแชตใหม่และขอให้ Claude ใช้ **Game Localization** หากเห็นสกิลในเมนู **+** หรือ **/** ของช่องพิมพ์ ให้เลือกจากตรงนั้น
+
+พื้นที่ทำงานที่มีการจัดการอาจต้องให้ผู้ดูแลเปิดใช้หรืออัปโหลดสกิล [คู่มือสกิล Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [แถบด้านข้างใหม่ของ Claude](https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page)
+
+### ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว
+
+คำสั่งด้านล่างใช้สาขา `main` ของ [Maled1kt/game-localization](https://github.com/Maled1kt/game-localization) ใช้ได้เมื่อเผยแพร่ที่เก็บโค้ดและสาขาแล้ว ลิงก์ ZIP แบบสัมพัทธ์ใช้ได้ในสาขา แท็ก และฟอร์กอื่นด้วย
+
+ในแชต Codex บนเครื่อง ให้เลือก `$skill-installer` ที่มีมาให้แล้วส่งคำขอด้านล่าง หากมีข้อความถาม ให้อนุญาตการเข้าถึงเครือข่ายแล้วเริ่มเซสชันใหม่ [คู่มือสกิล Codex](https://learn.chatgpt.com/docs/build-skills)
+
+~~~text
+$skill-installer Install the skill from https://github.com/Maled1kt/game-localization/tree/main/game-localization
+~~~
+
+Skills CLI จากบุคคลที่สามติดตั้งโฟลเดอร์ต้นทางเดียวกันให้ Codex และ Claude Code บนเครื่องได้ในคำสั่งเดียว ใช้ Node.js 22.20 ขึ้นไปแล้วรันจากโครงการเป้าหมาย เก็บตัวเลือก `-a` เฉพาะเอเจนต์ที่ต้องการ เพิ่ม `-g` เพื่อติดตั้งระดับผู้ใช้ [เอกสาร Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-add)
+
+~~~bash
+npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-localization -a codex -a claude-code
+~~~
+
+ในแชตเทอร์มินัลของ Claude Code บนเครื่อง ใช้ช่องป้อนคำสั่งเชลล์เพื่อติดตั้งเฉพาะ Claude ตรวจ URL ของที่เก็บโค้ดก่อนรัน [การป้อนคำสั่งเชลล์ใน Claude Code](https://code.claude.com/docs/en/interactive-mode#shell-mode-with--prefix)
+
+~~~text
+! npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-localization -a claude-code
+~~~
+
+เปิดเซสชันใหม่แล้วเรียก `$game-localization` ใน Codex หรือ `/game-localization` ใน Claude Code หากติดตั้งด้วยตนเอง ให้คัดลอกโฟลเดอร์ `game-localization/` ทั้งหมดไปยัง `.claude/skills/` ของโครงการหรือ `~/.claude/skills/` ของผู้ใช้ [คู่มือสกิล Claude Code](https://code.claude.com/docs/en/skills)
+
+ใน ChatGPT และ Claude แบบโฮสต์ ให้ใช้เมนูอัปโหลดหรือติดตั้งของบัญชี การกล่าวถึงในแชตจะเรียกสกิลที่ติดตั้งแล้ว หากต้องการลิงก์ติดตั้งที่แชร์ได้ ให้เผยแพร่ผ่านไดเรกทอรีที่แพลตฟอร์มรองรับหรือแชร์สกิลหรือปลั๊กอินในพื้นที่ทำงานที่มีสิทธิ์ [การแชร์ปลั๊กอิน ChatGPT](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt) · [การแชร์สกิล Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
+
+## การใช้สกิล
+
+1. แนบข้อความหรือไฟล์ต้นฉบับและอภิธานศัพท์โครงการฉบับล่าสุดสำหรับภาษาเป้าหมาย หากไม่มี ให้ขอฉบับร่างอย่างชัดเจน
+2. ระบุภาษาต้นฉบับและภาษาเป้าหมาย แพลตฟอร์ม ประเภทเนื้อหา และรูปแบบผลลัพธ์ แนบข้อจำกัดจำนวนอักขระ ภาพหน้าจอ ข้อมูลผู้พูด หรือตัวอย่างตัวแปรตามความจำเป็น
+3. สำหรับสเปรดชีต ให้ระบุคอลัมน์ต้นฉบับและปลายทางและขอไฟล์สำเนาใหม่ สำหรับข้อความในเกม ให้ระบุ ID หรือคีย์คงที่ สำหรับหน้าร้าน ให้ระบุช่องปลายทางและข้อจำกัดความยาวถ้ามี
+4. ดูแถวที่ยังมีปัญหา คำศัพท์ชั่วคราว และรายการตรวจที่เสร็จแล้วในรายงานส่งมอบ อนุมัติคำในอภิธานศัพท์ก่อนใช้ซ้ำ แล้วตรวจข้อความในบิลด์เกมหรือหน้าตัวอย่างร้านค้า
+
+**ตัวอย่างพรอมต์สำหรับสเปรดชีต**
+
+~~~text
+ใช้ Game Localization แปลคอลัมน์ ENGLISH ในสมุดงานที่แนบมาเป็นภาษาเยอรมัน (de-DE) ใส่คำแปลในคอลัมน์ GERMAN ของสำเนา .xlsx ใหม่ ใช้อภิธานศัพท์ที่แนบมาและคอลัมน์ DESCRIPTION เป็นบริบท คงคีย์ คอลัมน์ต้นฉบับ ตัวแทนค่า และแท็ก แยกคำถามด้านคำศัพท์กับผลการตรวจและระบุ ID แถว
+~~~
+
+**ตัวอย่างพรอมต์สำหรับหน้าร้าน**
+
+~~~text
+ใช้ Game Localization แปลคำอธิบายแบบสั้นของ Steam นี้จากภาษาอังกฤษเป็นภาษาโปรตุเกสบราซิล (pt-BR) หากจำเป็นให้เริ่มร่างอภิธานศัพท์ คงชื่อเกมและรักษาข้อจำกัดจำนวนอักขระที่ให้ไว้ ส่งข้อความหน้าร้านและรายงานส่งมอบแยกกัน
+~~~
+
+### การตั้งค่าโมเดลของเรา
+
+| สภาพแวดล้อม | โมเดล | ระดับการให้เหตุผล |
+| --- | --- | --- |
+| ChatGPT Work หรือ Codex | GPT-6.1 Sol | High หรือสูงกว่าเมื่อมีให้เลือก |
+| Claude | Claude Opus 5.5 | High หรือสูงกว่าเมื่อมีให้เลือก |
+
+**High+** หมายถึง High หรือระดับที่สูงกว่าที่แอปรองรับ เลือกโมเดลและระดับในแอป สกิลทำงานได้โดยไม่ขึ้นกับการตั้งค่านี้ [การตั้งค่าโมเดล OpenAI](https://learn.chatgpt.com/docs/models) · [ระดับการให้เหตุผลของ Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
+
+## อัปเดตหรือถอนการติดตั้ง
+
+| วิธีติดตั้ง | อัปเดต | ถอนการติดตั้ง |
+| --- | --- | --- |
+| ปลั๊กอิน ChatGPT หรือ Codex | ถ้าคุณจัดการไฟล์ที่อัปโหลด ให้เลือก **Upload new version** ในหน้ารายละเอียด การติดตั้งจากไดเรกทอรีหรือพื้นที่ทำงานจะได้รับอัปเดตจากแหล่งนั้น | เปิด **Plugins → Installed → Game Localization** แล้วเลือก **Uninstall plugin** หากมี หากเป็นการติดตั้งแบบจัดการ ให้สอบถามผู้ดูแล |
+| สกิลแบบแยกใน ChatGPT | ใช้หน้าจัดการสกิลเพื่อแทนที่ไฟล์ที่อัปโหลดส่วนตัวด้วย ZIP แบบแยกล่าสุด | เปิด **Plugins → Skills** ค้นหาใน **Installed** หรือ **Created by me** แล้วใช้ตัวเลือกลบหากมี ผู้ดูแลรับผิดชอบสกิลของพื้นที่ทำงาน |
+| สกิลกำหนดเองใน Claude | อัปโหลด ZIP แบบแยกใหม่จากหน้าจัดการ หากมีรายการที่สอง ให้ปิดเวอร์ชันก่อนหน้า | เปิดใน **Customize → Skills** หรือ **Plugins** แล้วปิดสกิล หากคุณอัปโหลดเอง ให้เลือก **⋯ → Delete** และยืนยัน |
+| สกิลบนเครื่องที่ติดตั้งด้วย Skills CLI | รัน `npx skills update game-localization` สำหรับสาขาที่ติดตาม หรือติดตั้งจากแท็กใหม่ | รัน `npx skills remove game-localization` ในโครงการเดิม เพิ่ม `-g` หากติดตั้งแบบโกลบอล |
+| โฟลเดอร์บนเครื่องหรือ Codex Skill Installer | แทนที่โฟลเดอร์ `game-localization/` ด้วยรุ่นล่าสุด | ลบโฟลเดอร์ `game-localization/` Codex โหลดได้จาก `.agents/skills/`, `~/.agents/skills/` หรือ `~/.codex/skills/` ส่วน Claude Code ใช้ `.claude/skills/` หรือ `~/.claude/skills/` เริ่มเซสชันใหม่หากจำเป็น |
+
+[การจัดการปลั๊กอิน OpenAI](https://learn.chatgpt.com/docs/plugins) · [การจัดการสกิลกำหนดเองใน Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
+
+## ซอร์สโค้ดและการจัดแพ็กเกจ
+
+- [`game-localization/SKILL.md`](../game-localization/SKILL.md) กำหนดเงื่อนไขที่สกิลจะทำงานและวิธีประมวลผลข้อความเป็นชุด
+- [`game-localization/references/`](../game-localization/references/) เก็บกฎและอภิธานศัพท์เริ่มต้นแยกตามภาษา
+- [`packaging/chatgpt/`](../packaging/chatgpt/) เก็บไฟล์กำกับและไอคอนปลั๊กอิน
+- [`packages/`](../packages/) เก็บไฟล์บีบอัดพร้อมอัปโหลด
+
+หากต้องการสร้าง ZIP ทั้งสองใหม่จากต้นทางเดียวกัน ให้รัน `python scripts/package.py` ที่โฟลเดอร์รากของที่เก็บโค้ดด้วย Python 3.9 ขึ้นไป หมายเลขรุ่นมาจากไฟล์กำกับปลั๊กอิน ChatGPT ก่อนแจกจ่าย ให้อัปโหลดแต่ละ ZIP ไปยังผลิตภัณฑ์ที่เกี่ยวข้องและทดลองกับข้อความชุดเล็กที่มีอภิธานศัพท์และตัวแทนค่าที่ต้องรักษา
+
+## สัญญาอนุญาต
+
+Game Localization เผยแพร่ภายใต้[สัญญาอนุญาต MIT](../LICENSE) Copyright (c) 2026 [Maled1kt](https://github.com/Maled1kt)
+
+## สนับสนุนผู้สร้าง
+
+หาก Game Localization มีประโยชน์ต่อทีมของคุณ คุณสามารถ[สนับสนุน Maled1kt ผ่าน DonationAlerts](https://www.donationalerts.com/r/maled1kt) การบริจาคเป็นไปโดยสมัครใจ
