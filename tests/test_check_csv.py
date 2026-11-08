@@ -7,7 +7,8 @@ import tempfile
 import unittest
 
 
-CHECKER = Path(__file__).resolve().parents[1] / "game-localization" / "scripts" / "check_csv.py"
+SKILL = Path(__file__).resolve().parents[1] / "game-localization"
+CHECKER = SKILL / "scripts" / "check_csv.py"
 
 
 class CheckCsvTests(unittest.TestCase):
@@ -23,10 +24,10 @@ class CheckCsvTests(unittest.TestCase):
             writer.writerow(headers)
             writer.writerows(rows)
 
-    def check(self, *options):
+    def check(self, *options, source_column="EN", target_column="RU"):
         result = subprocess.run(
             [sys.executable, str(CHECKER), str(self.source), str(self.target),
-             "--id-column", "ID", "--source-column", "EN", "--target-column", "RU", *options],
+             "--id-column", "ID", "--source-column", source_column, "--target-column", target_column, *options],
             capture_output=True,
             text=True,
             check=False,
@@ -113,6 +114,41 @@ class CheckCsvTests(unittest.TestCase):
                 self.assertEqual(code, 2)
                 self.assertEqual(report["checked_rows"], 0)
                 self.assertEqual(report["issues"][0]["code"], "invalid_csv")
+
+    def test_first_run_draft_and_review_match_the_walkthrough(self):
+        example = SKILL / "examples" / "first-run"
+        self.source = example / "source.csv"
+        self.target.write_bytes((example / "draft.de-DE.csv").read_bytes())
+        limits = ("--limit-column", "MAX_LENGTH", "--limit-unit", "characters")
+        columns = {"source_column": "ENGLISH", "target_column": "GERMAN"}
+        code, report = self.check(*limits, **columns)
+
+        self.assertEqual(code, 1)
+        self.assertEqual(report["checked_rows"], 12)
+        self.assertEqual(report["issues"], [
+            {"id": "MENU_005", "code": "length_limit", "unit": "characters", "limit": 8, "actual": 10},
+            {"id": "MENU_006", "code": "empty_translation"},
+            {"id": "TUT_014", "code": "protected_tokens", "missing": {"{interact}": 1}, "unexpected": {}},
+        ])
+
+        with self.target.open(encoding="utf-8", newline="") as stream:
+            reader = csv.reader(stream)
+            next(reader)
+            rows = dict(reader)
+        rows["MENU_005"] = "Weiter"
+        rows["TUT_014"] = "Halte {interact} gedrückt, um die Luftschleuse zu öffnen"
+        self.write_csv(self.target, ["ID", "GERMAN"], rows.items())
+
+        code, report = self.check(*limits, **columns)
+        self.assertEqual(code, 1)
+        self.assertEqual(report["issues"], [{"id": "MENU_006", "code": "empty_translation"}])
+
+        rows["MENU_006"] = "Filter zurücksetzen"
+        self.write_csv(self.target, ["ID", "GERMAN"], rows.items())
+
+        code, report = self.check(*limits, **columns)
+        self.assertEqual(code, 0)
+        self.assertEqual(report["issues"], [])
 
 
 if __name__ == "__main__":

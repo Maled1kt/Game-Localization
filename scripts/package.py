@@ -31,9 +31,11 @@ def main():
     if name != SKILL.name or not re.fullmatch(r"\d+\.\d+\.\d+", version):
         raise ValueError("The plugin name or release version is invalid.")
 
+    first_run = SKILL / "examples" / "first-run"
     shared_files = [
         SKILL / "SKILL.md",
         SKILL / "scripts" / "check_csv.py",
+        *(first_run / file for file in ("README.md", "source.csv", "draft.de-DE.csv", "glossary.md")),
         *sorted((SKILL / "references").rglob("*.md")),
     ]
     shared_entries = {

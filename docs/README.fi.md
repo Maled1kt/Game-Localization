@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.6.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -93,6 +93,8 @@ Lokalisoi Game Localizationilla tämä Steamin lyhyt kuvaus englannista brasilia
 ### CSV-käännösten tarkistaminen
 
 Jos CSV-tiedostossa on pysyvät rivitunnisteet, ilmoita tunniste-, lähdeteksti- ja käännössarakkeiden otsikot. Jos käytössä on Python 3.9 tai uudempi, taito vertaa lähde- ja käännöstiedostoja. Se ilmoittaa puuttuvista tai toistuvista tunnisteista, tyhjistä käännöksistä, tuettujen paikkamerkkien tai tunnisteiden muutoksista ja pituusrajojen ylityksistä. [CSV-tarkistuksen ohjeet](../game-localization/references/csv-qa.md)
+
+Kokeile [12 rivin aloitusesimerkkiä](../game-localization/examples/first-run/README.md), joka sisältää käännösluonnoksen, hyväksytyn sanaston ja luovutusraportin mallin.
 
 ### Käyttämämme malliasetukset
 

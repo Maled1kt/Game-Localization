@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.5.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.6.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -93,6 +93,8 @@ Game Localization を使って、この Steam の短い説明文を英語から�
 ### CSV翻訳をチェックする
 
 各行に固定のIDがあるCSVでは、ID、原文、訳文の列見出しを指定してください。Python 3.9以降を利用できる環境では、スキルが原文ファイルと翻訳ファイルを比較し、IDの欠落や重複、訳文の空欄、対応するプレースホルダーやタグの変更、長さ制限の超過を報告します。 [CSVチェックの手順](../game-localization/references/csv-qa.md)
+
+[12行の入門サンプル](../game-localization/examples/first-run/README.md)では、翻訳の下書き、承認済みの用語集、引き継ぎメモの例を使って、スキルを試せます。
 
 ### 使用しているモデル設定
 

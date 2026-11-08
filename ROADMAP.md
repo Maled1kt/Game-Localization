@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P0.2 is complete. Version `0.1.5` gives users a separate handoff with the deliverable's readiness, three review statuses, and next actions for open issues. [Handoff guide](game-localization/references/handoff.md) · [Changelog](CHANGELOG.md)
+**Current status.** The English-to-German (`de-DE`) P0.3 walkthrough is complete and included in both `0.1.6` packages. The local walkthrough checks passed. [First-run example](game-localization/examples/first-run/README.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P0.3. Add a first-run example with a fictional CSV, glossary, prompt, and expected handoff. Try both packages in their intended apps.
+**Next task.** P0.3 manual verification. The project owner will import both ZIPs and try the walkthrough in their intended apps. Record the results before continuing to P1.1.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -10,7 +10,9 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 - [x] **P0.1. Check CSV before handoff.** Match rows by ID and flag missing, unexpected or duplicate IDs, empty translations, changes to common placeholders and tags, and length limit violations. Return a JSON report with issues by row. [Checker](game-localization/scripts/check_csv.py) · [Tests](tests/test_check_csv.py)
 - [x] **P0.2. Separate the translation and handoff.** Turn CSV findings into plain-language items with the row ID, the problem, and the next action. Report file, language, and in-build checks separately. Label output as draft while an issue blocks import. [Handoff guide](game-localization/references/handoff.md)
-- [ ] **P0.3. Add a first-run example.** Provide a fictional 12-row CSV, a small glossary, a prompt, and an expected handoff. Include a normal translation, a missing placeholder, a length limit, and one question about meaning. Done when users can reproduce the example from the README and both packages have been tried in their intended apps.
+- [ ] **P0.3. Add a first-run example.** Finish the manual app check to close this item.
+  - [x] Ship the fictional 12-row CSV, draft, glossary, prompt, and expected handoff in both ZIPs. Link to the [walkthrough](game-localization/examples/first-run/README.md) from every README.
+  - [ ] Manually import the plugin ZIP in an eligible ChatGPT workspace and the standalone ZIP in Claude. Run the walkthrough in both apps and confirm that the handoff reports the two fixes, the open question for `MENU_006`, and the pending in-game review.
 
 ## P1 · Working with a real project
 
@@ -34,3 +36,9 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - All five CSV regression tests passed. Both ZIPs rebuilt byte for byte and contained the new handoff guide and its linked references. All local links in the 30 README editions resolved.
 - The checker from each extracted ZIP reported the same missing placeholder by row ID and passed after the placeholder was restored. The handoff guide maps that issue to a draft status and a specific fix, with in-game review pending until a build is inspected.
 - Import and a trial run in the target apps are tracked under P0.3.
+
+## Version 0.1.6 verification
+
+- All six CSV tests passed, including the first-run draft, the reviewed copy, and the resolved copy.
+- Both ZIPs rebuilt byte for byte. The documented command from each extracted German walkthrough found three issues in the original draft, one issue after the two fixes, and zero issues after `MENU_006` was resolved. Only the current package pair is present in `packages/`.
+- Download and walkthrough links resolved in all 30 README editions. The project owner will verify app import and a live run manually.

@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.6.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -110,6 +110,8 @@ character limit. Return the store copy and a separate handoff.
 ### Check CSV translations
 
 For a CSV with stable row IDs, specify the ID, source, and translation column headers. With Python 3.9 or later, the skill compares the source and translated files and flags missing or duplicate IDs, empty translations, changes to supported placeholders or tags, and length limit violations. [CSV checker instructions](game-localization/references/csv-qa.md)
+
+Try the [12-row first-run example](game-localization/examples/first-run/README.md) with a draft translation, an approved glossary, and a sample handoff.
 
 ### Our model settings
 

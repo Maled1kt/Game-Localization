@@ -22,8 +22,8 @@ Ferdigheten inneholder instrukser og referansefiler. Den krever ingen prosjekt-A
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.6.zip) |
 | Lokal Codex eller Claude Code | [Installer fra kildemappen](#installer-for-lokale-agenter-med-én-kommando) |
 
 Åpne pakkelenken på GitHub og velg **Download raw file**. Last opp ZIP-filen uten å pakke den ut.
@@ -93,6 +93,8 @@ Bruk Game Localization til å lokalisere denne korte Steam-beskrivelsen fra enge
 ### Kontrollere CSV-oversettelser
 
 For en CSV-fil med faste rad-ID-er oppgir du kolonneoverskriftene for ID, kildetekst og oversettelse. Hvis Python 3.9 eller nyere er tilgjengelig, sammenligner ferdigheten kildefilen med den oversatte filen og melder fra om manglende eller dupliserte ID-er, tomme oversettelser, endringer i støttede plassholdere eller tagger og overskredne lengdegrenser. [Veiledning for CSV-kontroll](../game-localization/references/csv-qa.md)
+
+Prøv [starteksempelet med 12 rader](../game-localization/examples/first-run/README.md). Det inneholder et oversettelsesutkast, en godkjent ordliste og et eksempel på leveringsnotater.
 
 ### Våre modellinnstillinger
 

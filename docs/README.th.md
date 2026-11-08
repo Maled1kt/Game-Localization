@@ -22,8 +22,8 @@ Game Localization เป็นสกิลสำหรับเอเจนต�
 
 | สภาพแวดล้อม | แพ็กเกจ |
 | --- | --- |
-| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.6.zip) |
 | Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
 
 เปิดลิงก์แพ็กเกจบน GitHub แล้วเลือก **Download raw file** อัปโหลด ZIP โดยไม่ต้องแตกไฟล์
@@ -93,6 +93,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ### ตรวจคำแปลในไฟล์ CSV
 
 หากแต่ละแถวในไฟล์ CSV มี ID คงที่ ให้ระบุชื่อคอลัมน์ของ ID ข้อความต้นฉบับ และคำแปล หากสภาพแวดล้อมรองรับ Python 3.9 ขึ้นไป สกิลจะเปรียบเทียบไฟล์ต้นฉบับกับไฟล์คำแปล แล้วแจ้งเมื่อพบ ID ที่ขาดหายหรือซ้ำ คำแปลที่เว้นว่าง การเปลี่ยนแปลงตัวแทนค่าหรือแท็กที่รองรับ และข้อความที่ยาวเกินกำหนด [วิธีตรวจไฟล์ CSV](../game-localization/references/csv-qa.md)
+
+ลองใช้ [ตัวอย่างเริ่มต้น 12 แถว](../game-localization/examples/first-run/README.md)ที่มีฉบับร่างคำแปล อภิธานศัพท์ที่อนุมัติแล้ว และตัวอย่างรายงานส่งมอบ
 
 ### การตั้งค่าโมเดลของเรา
 

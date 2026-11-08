@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.6.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 Nyisd meg a csomag hivatkozását a GitHubon, és válaszd a **Download raw file** lehetőséget. A ZIP-et kicsomagolás nélkül töltsd fel.
@@ -93,6 +93,8 @@ A Game Localization segítségével lokalizáld ezt a rövid Steam-leírást ang
 ### CSV-fordítások ellenőrzése
 
 Ha a CSV-fájl sorai állandó azonosítóval rendelkeznek, adja meg az azonosítót, a forrásszöveget és a fordítást tartalmazó oszlop fejlécét. Python 3.9 vagy újabb verzió esetén a készség összehasonlítja a forrásfájlt a lefordított fájllal, és jelzi a hiányzó vagy ismétlődő azonosítókat, az üres fordításokat, a támogatott helyőrzők vagy címkék változásait és a hosszkorlátok túllépését. [Útmutató a CSV-ellenőrzéshez](../game-localization/references/csv-qa.md)
+
+Próbáld ki a [12 soros kezdőpéldát](../game-localization/examples/first-run/README.md), amelyhez fordítástervezet, jóváhagyott szójegyzék és minta átadási jegyzet tartozik.
 
 ### Az általunk használt modellbeállítások
 

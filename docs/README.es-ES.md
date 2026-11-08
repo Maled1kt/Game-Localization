@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.6.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En GitHub, abre el enlace del paquete y pulsa **Download raw file**. Sube el ZIP sin descomprimir.
@@ -93,6 +93,8 @@ Usa Game Localization para traducir esta descripción breve de Steam del inglés
 ### Comprobar traducciones en CSV
 
 Si el CSV tiene identificadores de fila estables, indica los encabezados de las columnas de ID, texto original y traducción. Si está disponible Python 3.9 o una versión posterior, la habilidad compara el archivo original con el traducido y señala los ID que faltan o están duplicados, las traducciones vacías, los cambios en marcadores o etiquetas compatibles y los casos en los que se supera el límite de longitud. [Instrucciones para comprobar archivos CSV](../game-localization/references/csv-qa.md)
+
+Prueba el [ejemplo de inicio con 12 filas](../game-localization/examples/first-run/README.md) que incluye un borrador de traducción, un glosario aprobado y un informe de entrega de muestra.
 
 ### Nuestra configuración de modelos
 

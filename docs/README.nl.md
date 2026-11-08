@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.6.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 Open de pakketlink op GitHub en kies **Download raw file**. Upload het ZIP-bestand zonder het uit te pakken.
@@ -93,6 +93,8 @@ Gebruik Game Localization om deze korte Steam-beschrijving uit het Engels naar B
 ### CSV-vertalingen controleren
 
 Geef voor een CSV-bestand met vaste rij-ID’s de kolomkoppen voor ID, brontekst en vertaling op. Als Python 3.9 of hoger beschikbaar is, vergelijkt de skill het bronbestand met het vertaalde bestand en meldt ontbrekende of dubbele ID’s, lege vertalingen, wijzigingen aan ondersteunde tijdelijke aanduidingen of tags en overschrijdingen van de lengtelimiet. [Instructies voor CSV-controle](../game-localization/references/csv-qa.md)
+
+Probeer het [instapvoorbeeld met 12 rijen](../game-localization/examples/first-run/README.md). Het bevat een conceptvertaling, een goedgekeurde woordenlijst en een voorbeeld van het overdrachtsverslag.
 
 ### Onze modelinstellingen
 

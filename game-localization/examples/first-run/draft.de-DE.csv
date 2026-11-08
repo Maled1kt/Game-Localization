@@ -1,0 +1,13 @@
+ID,GERMAN
+MENU_001,Neues Spiel
+MENU_002,Einstellungen
+MENU_003,Zurück
+MENU_004,Spiel beenden
+MENU_005,Fortfahren
+MENU_006,
+TUT_014,"Halte die Taste gedrückt, um die Luftschleuse zu öffnen"
+TUT_015,"Halte {interact} gedrückt, um die Luftschleuse zu schließen"
+HUD_001,Sauerstoff: {oxygen} %
+HUD_002,<b>Wenig Sauerstoff</b>
+DIA_001,"Bleib in meiner Nähe, {player_name}."
+SYS_001,Spiel gespeichert

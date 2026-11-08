@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.6.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -93,6 +93,8 @@ Lokalisiere mit Game Localization diese Steam-Kurzbeschreibung aus dem Englische
 ### CSV-Übersetzungen prüfen
 
 Gib bei einer CSV-Datei mit stabilen Zeilen-IDs die Spaltenüberschriften für ID, Quelltext und Übersetzung an. Wenn Python 3.9 oder neuer verfügbar ist, vergleicht der Skill die Quelldatei mit der übersetzten Datei und meldet fehlende oder doppelte IDs, leere Übersetzungen, Änderungen an unterstützten Platzhaltern oder Tags und überschrittene Längenlimits. [Anleitung zur CSV-Prüfung](../game-localization/references/csv-qa.md)
+
+Probiere das [Einstiegsbeispiel mit 12 Zeilen](../game-localization/examples/first-run/README.md) aus. Es enthält einen Übersetzungsentwurf, ein freigegebenes Glossar und einen beispielhaften Übergabebericht.
 
 ### Unsere Modelleinstellungen
 

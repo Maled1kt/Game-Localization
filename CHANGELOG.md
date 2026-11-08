@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.6 · 2026-11-08
+
+- Added a first-run walkthrough with 12 fictional English strings, a German draft, an approved glossary, a copyable prompt, and an example handoff.
+- Both downloadable packages include the sample files, and all 30 README editions link to the walkthrough.
+
 ## 0.1.5 · 2026-11-08
 
 - Translation handoffs identify the deliverable and show separate statuses for file checks, language review, and review in the game or preview.

@@ -22,8 +22,8 @@ Game Localization — навык для агентов, который пере�
 
 | Среда | Пакет |
 | --- | --- |
-| ChatGPT или Codex с правом загрузки плагинов | [ZIP плагина ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude или рабочие пространства ChatGPT с правом загрузки отдельных навыков | [ZIP отдельного навыка](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT или Codex с правом загрузки плагинов | [ZIP плагина ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude или рабочие пространства ChatGPT с правом загрузки отдельных навыков | [ZIP отдельного навыка](../packages/game-localization-skill-v0.1.6.zip) |
 | Локальный Codex или Claude Code | [Установка из папки с исходниками](#установка-одной-командой-для-локальных-агентов) |
 
 Откройте ссылку на пакет в GitHub и выберите **Download raw file**. Загружайте ZIP целиком.
@@ -93,6 +93,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ### Проверка переводов в CSV
 
 Если у строк CSV есть постоянные ID, укажите названия колонок с ID, исходным текстом и переводом. Когда доступен Python 3.9 или новее, навык сравнивает исходный файл с переводом и сообщает о пропущенных или повторяющихся ID, пустых переводах, изменениях в поддерживаемых плейсхолдерах и тегах и превышении заданных лимитов длины. [Инструкция по проверке CSV](../game-localization/references/csv-qa.md)
+
+Попробуйте [учебный пример на 12 строках](../game-localization/examples/first-run/README.md) с черновиком перевода, утверждённым глоссарием и образцом отчёта.
 
 ### Наши настройки моделей
 

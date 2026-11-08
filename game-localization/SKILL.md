@@ -10,6 +10,8 @@ Read [the localization rules](references/game-localization-rules-v0.1.md) before
 
 Use the [30-edition starter glossary](references/glossary/README.md) for candidates. Read the relevant target edition and match the term ID to its English context. Project-approved entries govern the translation. Never promote a reference entry or a newly suggested term to approved without the project's confirmation.
 
+When the user wants to try the skill on sample data, offer the bundled [first-run example](examples/first-run/README.md).
+
 ## Start a project
 
 1. Treat the glossary choice as a prerequisite for the first translation batch. Use the current glossary if supplied. If the user has already asked to build one, start a draft. Otherwise, when the glossary is missing, ask the user to supply it or authorize building a draft. End that response after the setup questions and wait for their choice before proposing translations or term candidates. Keep candidates and approvals separate by locale and project.

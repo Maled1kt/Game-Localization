@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.5.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.6.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 Åbn pakkelinket på GitHub, og vælg **Download raw file**. Upload ZIP-filen uden at pakke den ud.
@@ -93,6 +93,8 @@ Brug Game Localization til at lokalisere denne korte Steam-beskrivelse fra engel
 ### Kontrol af CSV-oversættelser
 
 For en CSV-fil med faste række-id’er skal du angive kolonneoverskrifterne for id, kildetekst og oversættelse. Hvis Python 3.9 eller nyere er tilgængelig, sammenligner færdigheden kildefilen med den oversatte fil og markerer manglende eller dublerede id’er, tomme oversættelser, ændringer i understøttede pladsholdere eller tags samt overskredne længdegrænser. [Vejledning til CSV-kontrol](../game-localization/references/csv-qa.md)
+
+Prøv [starteksemplet med 12 rækker](../game-localization/examples/first-run/README.md). Det indeholder et oversættelsesudkast, en godkendt ordliste og et eksempel på afleveringsnoter.
 
 ### Vores modelindstillinger
 

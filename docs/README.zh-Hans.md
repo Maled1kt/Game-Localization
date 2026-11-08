@@ -22,8 +22,8 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.5.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.5.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.6.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
@@ -93,6 +93,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ### 检查 CSV 译文
 
 如果 CSV 中的每行都有固定 ID，请指定 ID、原文和译文所在的列名。环境支持 Python 3.9 或更高版本时，技能会比对原文文件和译文文件，报告缺失或重复的 ID、空白译文、受支持的占位符或标签发生的改动，以及超出长度限制的条目。 [CSV 检查说明](../game-localization/references/csv-qa.md)
+
+试试[包含 12 行文本的入门示例](../game-localization/examples/first-run/README.md)，其中附有译文草稿、已确认的术语表和交付说明样例。
 
 ### 我们的模型设置
 
