@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.4.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.5.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 GitHub’da paket bağlantısını açıp **Download raw file** seçeneğini seçin. ZIP dosyasını açmadan yükleyin.
@@ -76,7 +76,7 @@ Barındırılan ChatGPT ve Claude sürümlerinde hesabın yükleme veya kurulum 
 1. Kaynak metni veya dosyayı ve hedef diller için güncel proje terim sözlüğünü ekleyin. Sözlük yoksa taslağını hazırlamasını açıkça isteyin.
 2. Kaynak ve hedef dilleri, platformu, içerik türünü ve çıktı biçimini belirtin. Gerektiğinde karakter sınırı, ekran görüntüsü, konuşmacı notu veya değişken örneği ekleyin.
 3. Hesap tablolarında kaynak ve hedef sütunları belirtip yeni bir kopya isteyin. Oyun metinleri için sabit kimlik veya anahtar verin. Mağaza metni için hedef alanı ve varsa kesin uzunluk sınırını belirtin.
-4. Teslim notlarında çözümlenmemiş satırları, geçici terimleri ve tamamlanan kontrolleri inceleyin. Terimleri tekrar kullanmadan önce proje sözlüğünde onaylayın. Metni oyun derlemesinde veya mağaza önizlemesinde kontrol edin.
+4. Çıktının kullanıma hazır mı yoksa hâlâ taslak mı olduğunu ayrı teslim notlarından öğrenin. Notlarda dosya kontrolü, dil incelemesi ve oyun içi ya da mağaza önizlemesindeki kontrol ayrı ayrı gösterilir. Her açık sorun için sonraki adım belirtilir. Terimleri tekrar kullanmadan önce proje sözlüğünde onaylayın.
 
 **Hesap tablosu için örnek istem**
 

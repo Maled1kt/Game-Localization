@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En GitHub, abre el enlace del paquete y selecciona **Download raw file**. Sube el ZIP sin descomprimir.
@@ -76,7 +76,7 @@ En las versiones alojadas de ChatGPT y Claude, usa las opciones de carga o insta
 1. Adjunta el texto o archivo de origen y el glosario vigente del proyecto para los idiomas de destino. Si no hay glosario, pide expresamente un borrador.
 2. Indica los idiomas de origen y destino, la plataforma, el tipo de contenido y el formato de entrega. Incluye límites de caracteres, capturas, notas sobre los hablantes o ejemplos de variables si son pertinentes.
 3. Para una hoja de cálculo, indica las columnas de origen y destino y pide una copia nueva. Para textos del juego, proporciona identificadores o claves estables. Para la tienda, indica el campo y el límite estricto si existe.
-4. Revisa las filas pendientes, los términos provisionales y las verificaciones en el informe de entrega. Aprueba los términos en el glosario antes de reutilizarlos y revisa el texto en el juego o la vista previa de la tienda.
+4. Revisa el informe de entrega por separado para saber si el resultado está listo para usar o sigue siendo un borrador. El informe distingue la verificación del archivo, la revisión lingüística y la revisión en el juego o en la vista previa de la tienda, e indica el siguiente paso para cada problema pendiente. Aprueba los términos en el glosario del proyecto antes de volver a usarlos.
 
 **Ejemplo para hojas de cálculo**
 

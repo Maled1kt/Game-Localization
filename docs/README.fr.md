@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Sur GitHub, ouvrez le lien du paquet et choisissez **Download raw file**. Importez le ZIP sans le décompresser.
@@ -76,7 +76,7 @@ Dans ChatGPT et Claude hébergés, utilisez les commandes d’import ou d’inst
 1. Joignez le texte ou fichier source et le glossaire de projet pour les langues cibles. Sans glossaire, demandez explicitement une première version.
 2. Précisez langues source et cibles, plateforme, type de contenu et format de sortie. Ajoutez au besoin limites de caractères, captures, notes sur les locuteurs ou exemples de variables.
 3. Pour un classeur, indiquez les colonnes source et cible et demandez une nouvelle copie. Pour le jeu, fournissez des clés ou identifiants stables. Pour la boutique, indiquez le champ cible et la limite stricte éventuelle.
-4. Dans le compte rendu, vérifiez les lignes en suspens, termes provisoires et contrôles effectués. Approuvez les termes avant de les réutiliser, puis vérifiez le texte dans le jeu ou l’aperçu de la boutique.
+4. Consultez le compte rendu séparé pour savoir si le résultat est prêt à l’emploi ou reste à l’état de brouillon. Il distingue le contrôle du fichier, la révision linguistique et la vérification dans le jeu ou dans l’aperçu de la boutique. Il indique la prochaine action pour chaque problème en suspens. Approuvez les termes dans le glossaire du projet avant de les réutiliser.
 
 **Requête pour un classeur**
 

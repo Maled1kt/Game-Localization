@@ -22,8 +22,8 @@ La skill contiene istruzioni e riferimenti. Funziona senza chiavi API di progett
 
 | Ambiente | Pacchetto |
 | --- | --- |
-| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex locale o Claude Code | [Installa dalla cartella sorgente](#installazione-locale-con-un-comando) |
 
 Su GitHub apri il link del pacchetto e scegli **Download raw file**. Carica lo ZIP senza estrarlo.
@@ -76,7 +76,7 @@ Nelle versioni ospitate di ChatGPT e Claude usa i controlli di caricamento o ins
 1. Allega il testo o file sorgente e il glossario di progetto aggiornato per le lingue di destinazione. Se manca, chiedi esplicitamente una bozza.
 2. Specifica lingue di partenza e arrivo, piattaforma, tipo di contenuto e formato di consegna. Aggiungi se pertinenti limiti di caratteri, schermate, note sui personaggi o esempi di variabili.
 3. Per un foglio di calcolo indica le colonne di partenza e arrivo e chiedi una nuova copia. Per le stringhe del gioco fornisci ID o chiavi stabili. Per il negozio indica il campo e l’eventuale limite rigido.
-4. Nel resoconto controlla righe da chiarire, termini provvisori e verifiche completate. Approva i termini nel glossario prima di riutilizzarli e controlla il testo nella build o nell’anteprima del negozio.
+4. Leggi il resoconto separato per sapere se il risultato è pronto per l’uso o è ancora una bozza. Il resoconto distingue il controllo del file, la revisione linguistica e la verifica nel gioco o nell’anteprima del negozio. Indica il passo successivo per ogni problema aperto. Approva i termini nel glossario del progetto prima di riutilizzarli.
 
 **Esempio per un foglio di calcolo**
 

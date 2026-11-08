@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.5.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 Otevřete odkaz na GitHubu a zvolte **Download raw file**. Nahrajte nerozbalený ZIP.
@@ -76,7 +76,7 @@ V hostovaných verzích ChatGPT a Claude používejte funkce nahrání nebo inst
 1. Přiložte zdrojový text či soubor a aktuální glosář projektu pro cílové jazyky. Pokud glosář chybí, výslovně požádejte o návrh.
 2. Uveďte zdrojový a cílové jazyky, platformu, typ materiálu a výstupní formát. Podle potřeby připojte limity znaků, snímky, poznámky o mluvčích nebo příklady proměnných.
 3. U tabulek uveďte zdrojové a cílové sloupce a požádejte o kopii. U textů hry dodejte stabilní ID nebo klíče. U textů obchodu uveďte cílové pole a případný pevný limit.
-4. V předávací zprávě zkontrolujte otevřené řádky, předběžné termíny a dokončené kontroly. Před dalším použitím schvalte termíny v glosáři a zkontrolujte text v sestavení nebo náhledu obchodu.
+4. V samostatné předávací zprávě zjistíte, zda je výsledek připravený k použití, nebo je zatím pracovní verzí. Zpráva uvádí zvlášť kontrolu souboru, jazykovou kontrolu a kontrolu ve hře nebo náhledu obchodu. U každého otevřeného problému najdete další krok. Před opětovným použitím schvalte termíny v projektovém glosáři.
 
 **Ukázková výzva pro tabulku**
 

@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -76,7 +76,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 1. Atașează textul sau fișierul sursă și glosarul actual al proiectului pentru limbile țintă. Dacă nu există, cere explicit o versiune provizorie.
 2. Precizează limbile sursă și țintă, platforma, tipul de material și formatul rezultatului. Adaugă, dacă este relevant, limite de caractere, capturi, note despre vorbitori sau exemple de variabile.
 3. Pentru foi de calcul, indică coloanele sursă și țintă și cere o copie nouă. Pentru texte de joc, furnizează identificatori sau chei stabile. Pentru magazin, indică câmpul și limita strictă de lungime, dacă există.
-4. Verifică rândurile nerezolvate, termenii provizorii și verificările finalizate în raportul de predare. Aprobă termenii în glosar înainte de reutilizare, apoi verifică textul în joc sau în previzualizarea magazinului.
+4. Consultă raportul de predare separat ca să vezi dacă rezultatul este gata de folosit sau încă în stadiu de ciornă. Raportul prezintă separat verificarea fișierului, revizuirea lingvistică și verificarea în joc sau în previzualizarea magazinului. Pentru fiecare problemă deschisă, indică pasul următor. Aprobă termenii în glosarul proiectului înainte de a-i refolosi.
 
 **Exemplu de solicitare pentru o foaie de calcul**
 

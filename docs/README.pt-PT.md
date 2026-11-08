@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -76,7 +76,7 @@ Nas versões alojadas do ChatGPT e do Claude, use os controlos de carregamento o
 1. Anexe o texto ou ficheiro de origem e o glossário atual do projeto para os idiomas de destino. Se não houver glossário, peça explicitamente um rascunho.
 2. Informe os idiomas de origem e destino, a plataforma, o tipo de conteúdo e o formato de saída. Inclua, quando fizer diferença, limites de caracteres, capturas de ecrã, notas sobre os falantes ou exemplos de variáveis.
 3. Para folhas de cálculo, indique as colunas de origem e destino e solicite uma nova cópia. Para textos do jogo, informe chaves ou IDs estáveis. Para a loja, indique o campo e o limite obrigatório, se houver.
-4. Verifique no relatório as linhas pendentes, os termos provisórios e as verificações concluídas. Aprove os termos no glossário antes de reutilizá-los e revise o texto no jogo ou na pré-visualização da loja.
+4. Consulte o relatório separado para saber se o resultado está pronto a usar ou ainda é um rascunho. O relatório apresenta separadamente a verificação do ficheiro, a revisão linguística e a verificação no jogo ou na pré-visualização da loja. Indica também o passo seguinte para cada questão pendente. Aprove os termos no glossário do projeto antes de os reutilizar.
 
 **Exemplo para folha de cálculo**
 

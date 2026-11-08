@@ -22,8 +22,8 @@ Ferdigheten inneholder instrukser og referansefiler. Den krever ingen prosjekt-A
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.5.zip) |
 | Lokal Codex eller Claude Code | [Installer fra kildemappen](#installer-for-lokale-agenter-med-én-kommando) |
 
 Åpne pakkelenken på GitHub og velg **Download raw file**. Last opp ZIP-filen uten å pakke den ut.
@@ -76,7 +76,7 @@ Bruk kontoens opplastings- eller installasjonsvalg i nettversjonene av ChatGPT o
 1. Legg ved kildeteksten eller filen og gjeldende prosjektordliste for målspråkene. Hvis det ikke finnes en ordliste, ber du uttrykkelig om et utkast.
 2. Oppgi kilde- og målspråk, plattform, materialtype og utdataformat. Ta med tegngrenser, skjermbilder, talerinformasjon eller variabeleksempler når det er relevant.
 3. For regneark oppgir du kilde- og målkolonner og ber om en ny kopi. For spilltekster oppgir du stabile ID-er eller nøkler. For butikktekst oppgir du målfelt og en eventuell streng lengdegrense.
-4. Se etter uavklarte rader, midlertidige termer og fullførte kontroller i leveringsnotatene. Godkjenn termer i ordlisten før gjenbruk, og kontroller teksten i builden eller butikkens forhåndsvisning.
+4. Les de separate leveringsnotatene for å se om resultatet er klart til bruk eller fortsatt er et utkast. Notatene viser filkontroll, språklig gjennomgang og kontroll i spillet eller butikkens forhåndsvisning hver for seg og angir neste steg for hvert uavklarte problem. Godkjenn termer i prosjektordlisten før du gjenbruker dem.
 
 **Eksempel på ledetekst for regneark**
 

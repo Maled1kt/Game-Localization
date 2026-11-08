@@ -131,4 +131,4 @@ Illustrative EN → ru-RU examples use fictional context.
 | Target-language review | The text reads naturally in the scene or UI. After reading the target, compare it with the source and check all applicable approved terminology. For independent review, give a target-language editor the translation and game context without identifying how the translation was produced. |
 | In-build QA | Inspect the lines on screen or in the scene. For UI, check clipping, wrapping, scaling, fonts, and text direction where relevant. For subtitles, check display timing and speaker changes. |
 
-Report each check separately. For issues, give the string ID and needed correction. Record pending work when context, a reviewer, or a build is unavailable. A batch passes once required checks are complete and discrepancies are resolved or exceptions are agreed.
+Use the [handoff guide](handoff.md) to report each check and the next action. A batch passes once required checks are complete and discrepancies are resolved or exceptions are agreed.

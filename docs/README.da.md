@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.5.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 Åbn pakkelinket på GitHub, og vælg **Download raw file**. Upload ZIP-filen uden at pakke den ud.
@@ -76,7 +76,7 @@ I de hostede udgaver af ChatGPT og Claude bruger du kontoens upload- eller insta
 1. Vedhæft kildeteksten eller -filen og den aktuelle projektordliste for målsprogene. Hvis der ikke findes en ordliste, skal du udtrykkeligt bede om et udkast.
 2. Angiv kilde- og målsprog, platform, materialetype og outputformat. Medtag efter behov tegngrænser, skærmbilleder, oplysninger om talere eller eksempler på variabler.
 3. Ved regneark skal du navngive kilde- og målkolonner og bede om en ny kopi. Ved spiltekster skal du angive stabile ID’er eller nøgler. Ved butikstekst skal du angive felt og en eventuel fast længdegrænse.
-4. Gennemgå uafklarede rækker, foreløbige termer og gennemførte kontroller i afleveringsnoterne. Godkend termer i ordlisten før genbrug, og kontrollér teksten i buildet eller butikkens forhåndsvisning.
+4. Læs de separate afleveringsnoter for at se, om resultatet er klar til brug eller stadig er et udkast. Noterne viser filkontrol, sproglig gennemgang og kontrol i spillet eller butikkens forhåndsvisning hver for sig og angiver næste skridt for hvert åbent problem. Godkend termerne i projektordlisten, før du genbruger dem.
 
 **Eksempel på prompt til regneark**
 

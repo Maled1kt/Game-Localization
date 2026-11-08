@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Buka pautan pakej di GitHub dan pilih **Download raw file**. Muat naik ZIP tanpa mengekstraknya.
@@ -76,7 +76,7 @@ Pada ChatGPT dan Claude yang dihoskan, gunakan kawalan muat naik atau pemasangan
 1. Lampirkan teks atau fail sumber dan glosari projek terkini untuk bahasa sasaran. Jika belum ada, minta draf glosari dengan jelas.
 2. Nyatakan bahasa sumber dan sasaran, platform, jenis bahan dan format keluaran. Sertakan had aksara, tangkapan skrin, catatan penutur atau contoh pemboleh ubah jika perlu.
 3. Bagi hamparan, namakan lajur sumber dan sasaran serta minta salinan baharu. Bagi rentetan permainan, berikan ID atau kunci tetap. Bagi teks kedai, nyatakan medan sasaran dan had wajib jika ada.
-4. Semak baris tertangguh, istilah sementara dan semakan yang selesai dalam laporan serahan. Luluskan istilah dalam glosari sebelum menggunakannya semula, kemudian semak teks dalam binaan atau pratonton kedai.
+4. Baca laporan serahan berasingan untuk mengetahui sama ada hasilnya sedia digunakan atau masih draf. Laporan itu menyenaraikan semakan fail, semakan bahasa dan semakan dalam permainan atau pratonton kedai secara berasingan, berserta tindakan seterusnya bagi setiap isu tertunggak. Luluskan istilah dalam glosari projek sebelum menggunakannya semula.
 
 **Contoh gesaan hamparan**
 

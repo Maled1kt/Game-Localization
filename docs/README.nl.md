@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.5.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 Open de pakketlink op GitHub en kies **Download raw file**. Upload het ZIP-bestand zonder het uit te pakken.
@@ -76,7 +76,7 @@ Gebruik in de gehoste versies van ChatGPT en Claude de upload- of installatieopt
 1. Voeg de brontekst of het bestand en de actuele projectwoordenlijst voor de doeltalen toe. Vraag expliciet om een concept als er geen woordenlijst is.
 2. Geef bron- en doeltaal, platform, materiaalsoort en uitvoerformaat op. Voeg zo nodig tekenlimieten, schermafbeeldingen, informatie over sprekers of variabelevoorbeelden toe.
 3. Noem bij een spreadsheet de bron- en doelkolommen en vraag om een nieuwe kopie. Geef voor gameteksten stabiele ID’s of sleutels op. Vermeld voor winkelteksten het doelveld en een eventuele harde lengtelimiet.
-4. Bekijk in het overdrachtsverslag openstaande rijen, voorlopige termen en afgeronde controles. Keur termen vóór hergebruik goed en controleer de vertaling in de build of winkelpreview.
+4. Lees in het afzonderlijke overdrachtsverslag of het resultaat klaar is voor gebruik of nog een concept is. Het verslag vermeldt de bestandscontrole, de taalreview en de controle in de game of winkelpreview afzonderlijk en geeft voor elk openstaand probleem de volgende stap. Keur termen in de projectwoordenlijst goed voordat je ze opnieuw gebruikt.
 
 **Voorbeeldprompt voor een spreadsheet**
 

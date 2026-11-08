@@ -24,3 +24,16 @@ For example, if `{interact}` disappears from the translation of `TUT_014`, the `
   "unexpected": {}
 }
 ```
+
+## Explain CSV findings
+
+Use the latest checker output after any fixes. State which issues still affect the deliverable. Use `checked_rows` for rows the checker compared. Count rows that passed only when you have evidence for that count.
+
+| Finding | What to tell the user |
+| --- | --- |
+| `invalid_csv` | Name the source or translation file and explain what made it unreadable or invalid. Ask for a corrected export or correct the output and rerun the check. |
+| `missing_id`, `unexpected_id`, `blank_id`, `duplicate_id` | Identify the ID or CSV record and say whether to restore it, remove the extra row, or confirm the intended ID. |
+| `empty_translation` | Give the ID and state that its translation is blank. Fill it or ask for the context needed to translate it. |
+| `protected_tokens` | Give the ID and name the missing or added elements. For example, `TUT_014` is missing `{interact}`. Restore the placeholder and rerun the check. |
+| `tag_order`, `printf_order` | Give the ID and show the expected order. Restore that order or ask for the format-specific decision that would allow a different order. |
+| `invalid_limit`, `length_limit` | Ask for a valid limit or show the actual length, maximum, and unit. Shorten the translation if the meaning can be preserved. Otherwise ask the user to resolve the limit. |

@@ -1,15 +1,15 @@
 # Game Localization roadmap
 
-**Current status.** P0.1 is complete. Version `0.1.4` checks CSV before handoff when stable IDs and a Python runtime are available. [CSV technical QA](game-localization/references/csv-qa.md) · [Changelog](CHANGELOG.md)
+**Current status.** P0.2 is complete. Version `0.1.5` gives users a separate handoff with the deliverable's readiness, three review statuses, and next actions for open issues. [Handoff guide](game-localization/references/handoff.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P0.2. Give users a short handoff with separate statuses for file checks, language review, and in-build review.
+**Next task.** P0.3. Add a first-run example with a fictional CSV, glossary, prompt, and expected handoff. Try both packages in their intended apps.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
 ## P0 · Verifiable CSV translation
 
 - [x] **P0.1. Check CSV before handoff.** Match rows by ID and flag missing, unexpected or duplicate IDs, empty translations, changes to common placeholders and tags, and length limit violations. Return a JSON report with issues by row. [Checker](game-localization/scripts/check_csv.py) · [Tests](tests/test_check_csv.py)
-- [ ] **P0.2. Separate the translation and handoff.** Turn CSV findings into plain-language items with the row ID, the problem, and the next action. Report file, language, and in-build checks separately. Label output as draft while an issue blocks import. Done when a user can tell from the handoff which file they received and what to do next.
+- [x] **P0.2. Separate the translation and handoff.** Turn CSV findings into plain-language items with the row ID, the problem, and the next action. Report file, language, and in-build checks separately. Label output as draft while an issue blocks import. [Handoff guide](game-localization/references/handoff.md)
 - [ ] **P0.3. Add a first-run example.** Provide a fictional 12-row CSV, a small glossary, a prompt, and an expected handoff. Include a normal translation, a missing placeholder, a length limit, and one question about meaning. Done when users can reproduce the example from the README and both packages have been tried in their intended apps.
 
 ## P1 · Working with a real project
@@ -28,3 +28,9 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - All five CSV regression tests passed. Run them with `python -B -m unittest discover -s tests -v`.
 - Both ZIPs built reproducibly and passed CSV checks from their extracted contents. All local links in the 30 README editions resolved. Build the ZIPs with `python scripts/package.py`.
 - App import and a trial run in each intended app are tracked under P0.3.
+
+## Version 0.1.5 verification
+
+- All five CSV regression tests passed. Both ZIPs rebuilt byte for byte and contained the new handoff guide and its linked references. All local links in the 30 README editions resolved.
+- The checker from each extracted ZIP reported the same missing placeholder by row ID and passed after the placeholder was restored. The handoff guide maps that issue to a draft status and a specific fix, with in-game review pending until a build is inspected.
+- Import and a trial run in the target apps are tracked under P0.3.

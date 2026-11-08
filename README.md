@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.5.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -86,7 +86,7 @@ In hosted ChatGPT and Claude, use the account's upload or install controls. A ch
 1. Attach the source text or file and the current project glossary for the target locales. If you have no glossary, explicitly ask the skill to start a draft.
 2. Specify the source and target locales, platform, material type, and output format. Include character limits, screenshots, speaker notes, or variable examples where they matter.
 3. For a spreadsheet, name the source and target columns and ask for a new copy. For in-game strings, provide stable IDs or keys. For store text, include the target field and any hard length limit.
-4. Review the handoff for unresolved rows, provisional terminology, and completed checks. Approve terms in your project glossary before reusing them, then review the text in the build or store preview as appropriate.
+4. Read the separate handoff to see whether the output is ready to use or still a draft. It reports file checks, language review, and review in the game or store preview separately, with a next action for each open issue. Approve terms in your project glossary before reusing them.
 
 **Spreadsheet prompt**
 

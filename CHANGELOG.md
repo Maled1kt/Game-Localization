@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5 · 2026-11-08
+
+- Translation handoffs identify the deliverable and show separate statuses for file checks, language review, and review in the game or preview.
+- CSV findings include the affected row, what needs fixing, and the next action. The handoff labels output as a draft when it cannot yet be used as requested.
+
 ## 0.1.4 · 2026-11-08
 
 ### Added

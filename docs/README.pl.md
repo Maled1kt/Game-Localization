@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.5.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -76,7 +76,7 @@ W wersjach hostowanych ChatGPT i Claude użyj opcji przesyłania lub instalacji 
 1. Dołącz tekst lub plik źródłowy oraz aktualny glosariusz projektu dla języków docelowych. Jeśli go brakuje, poproś wprost o wersję roboczą.
 2. Podaj języki źródłowy i docelowe, platformę, typ materiału i format wyniku. W razie potrzeby dodaj limity znaków, zrzuty ekranu, informacje o postaciach lub przykłady zmiennych.
 3. Dla arkusza wskaż kolumny źródłowe i docelowe oraz poproś o nową kopię. Dla tekstów gry podaj stałe identyfikatory lub klucze. Dla sklepu podaj pole docelowe i ewentualny sztywny limit.
-4. W raporcie sprawdź otwarte wiersze, terminy tymczasowe i wykonane kontrole. Zatwierdź terminy przed ponownym użyciem i sprawdź tekst w kompilacji gry lub podglądzie sklepu.
+4. Sprawdź w oddzielnym raporcie, czy wynik jest gotowy do użycia, czy nadal jest wersją roboczą. Raport osobno przedstawia kontrolę pliku, weryfikację językową i sprawdzenie w grze lub podglądzie sklepu. Dla każdego otwartego problemu wskazuje następny krok. Zatwierdź terminy w glosariuszu projektu przed ponownym użyciem.
 
 **Przykładowe polecenie dla arkusza**
 

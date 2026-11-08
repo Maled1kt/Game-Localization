@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.5.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -76,7 +76,7 @@ Käytä ChatGPT:n ja Clauden verkkopalveluissa tilisi lataus- tai asennustoimint
 1. Liitä lähdeteksti tai tiedosto ja kohdekielten ajantasainen projektisanasto. Jos sanastoa ei ole, pyydä nimenomaisesti luonnosta.
 2. Määritä lähde- ja kohdekielet, alusta, aineiston tyyppi ja tulostusmuoto. Lisää tarvittaessa merkkirajat, kuvakaappaukset, puhujatiedot tai muuttujien esimerkit.
 3. Nimeä laskentataulukon lähde- ja kohdesarakkeet ja pyydä uutta kopiota. Anna peliteksteille pysyvät tunnukset tai avaimet. Ilmoita kauppatekstin kohdekenttä ja mahdollinen tiukka pituusraja.
-4. Tarkista luovutusraportista avoimet rivit, alustavat termit ja tehdyt tarkistukset. Hyväksy termit projektisanastossa ennen uudelleenkäyttöä ja tarkista teksti peliversiossa tai kaupan esikatselussa.
+4. Tarkista erillisestä luovutusraportista, onko tulos käyttövalmis vai vielä luonnos. Raportti erittelee tiedoston tarkistuksen, kielellisen tarkistuksen ja tarkistuksen pelissä tai kaupan esikatselussa. Se kertoo myös seuraavan toimenpiteen jokaiseen avoimeen ongelmaan. Hyväksy termit projektisanastossa ennen uudelleenkäyttöä.
 
 **Kehote-esimerkki laskentataulukolle**
 

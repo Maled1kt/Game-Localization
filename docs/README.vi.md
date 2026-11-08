@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.4.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.4.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.5.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.5.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
@@ -76,7 +76,7 @@ Trên ChatGPT và Claude trực tuyến, dùng chức năng tải lên hoặc c�
 1. Đính kèm văn bản hoặc tệp nguồn và bảng thuật ngữ hiện hành cho ngôn ngữ đích. Nếu chưa có bảng thuật ngữ, hãy yêu cầu soạn bản nháp.
 2. Nêu ngôn ngữ nguồn và đích, nền tảng, loại nội dung và định dạng đầu ra. Thêm giới hạn ký tự, ảnh chụp, ghi chú về người nói hoặc ví dụ về biến khi cần.
 3. Với bảng tính, nêu tên cột nguồn và cột đích rồi yêu cầu tạo bản sao. Với chuỗi trong trò chơi, cung cấp khóa hoặc ID ổn định. Với nội dung cửa hàng, nêu trường đích và giới hạn bắt buộc nếu có.
-4. Xem các dòng còn vướng, thuật ngữ tạm thời và các kiểm tra đã hoàn tất trong báo cáo bàn giao. Duyệt thuật ngữ trước khi dùng lại, rồi kiểm tra bản dịch trong bản dựng hoặc bản xem trước của cửa hàng.
+4. Xem báo cáo bàn giao riêng để biết kết quả đã sẵn sàng sử dụng hay vẫn là bản nháp. Báo cáo tách riêng việc kiểm tra tệp, rà soát bản dịch và kiểm tra trong trò chơi hoặc bản xem trước của cửa hàng. Mỗi vấn đề chưa giải quyết đều có bước xử lý tiếp theo. Duyệt thuật ngữ trong bảng thuật ngữ của dự án trước khi dùng lại.
 
 **Ví dụ câu lệnh cho bảng tính**
 
