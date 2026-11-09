@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.11.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 Otevřete odkaz na GitHubu a zvolte **Download raw file**. Nahrajte nerozbalený ZIP.
@@ -95,6 +95,8 @@ U podporovaných souborů `.xlsx` uveďte list, řádek záhlaví, sloupec se st
 ~~~text
 Pomocí Game Localization přelož tento krátký popis na Steam z angličtiny do brazilské portugalštiny (pt-BR). Podle potřeby založ návrh glosáře. Zachovej název hry a dodrž zadaný limit znaků. Vrať text obchodu a samostatnou předávací zprávu.
 ~~~
+
+U stránek na Steamu dovednost vrací krátký popis a část „Informace o hře“ zvlášť, kontroluje zadané limity a tvrzení o hře a umí připravit návrh z podporovaného exportu JSON ze Steamworks. Předávací zpráva uvádí stav importu a náhledu zvlášť. [Postup pro stránky na Steamu](../game-localization/references/steam-store.md)
 
 ### Kontrola překladů v CSV
 

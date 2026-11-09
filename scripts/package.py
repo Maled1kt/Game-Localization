@@ -37,6 +37,7 @@ def main():
         SKILL / "scripts" / "check_csv.py",
         SKILL / "scripts" / "estimate_ui_width.py",
         SKILL / "scripts" / "prepare_csv_update.py",
+        SKILL / "scripts" / "prepare_steam_store.py",
         SKILL / "scripts" / "update_xlsx.py",
         *(first_run / file for file in ("README.md", "source.csv", "draft.de-DE.csv", "glossary.md")),
         *sorted((SKILL / "references").rglob("*.md")),

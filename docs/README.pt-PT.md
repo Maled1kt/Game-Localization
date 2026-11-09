@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -95,6 +95,8 @@ Nos ficheiros `.xlsx` compatíveis, indique a folha, a linha de cabeçalhos, a c
 ~~~text
 Use Game Localization para localizar esta descrição curta da Steam do inglês para o português do Brasil (pt-BR). Comece um rascunho de glossário, se necessário. Mantenha o título do jogo e respeite o limite de caracteres indicado. Entregue o texto da loja e um relatório separado.
 ~~~
+
+Para páginas do Steam, a competência entrega separadamente a descrição curta e a secção Acerca deste jogo, verifica os limites indicados e as afirmações sobre o jogo e pode preparar um rascunho a partir de uma exportação JSON compatível do Steamworks. O relatório acompanha a importação e a pré-visualização em separado. [Fluxo de trabalho para páginas do Steam](../game-localization/references/steam-store.md)
 
 ### Verificar traduções em CSV
 

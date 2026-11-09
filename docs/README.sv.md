@@ -22,8 +22,8 @@ Färdigheten innehåller instruktioner och referensfiler. Den kräver ingen proj
 
 | Miljö | Paket |
 | --- | --- |
-| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.11.zip) |
 | Lokal Codex eller Claude Code | [Installera från källmappen](#installera-för-lokala-agenter-med-ett-kommando) |
 
 Öppna paketlänken på GitHub och välj **Download raw file**. Ladda upp ZIP-filen utan att packa upp den.
@@ -95,6 +95,8 @@ För `.xlsx`-filer som stöds anger du blad, rubrikrad, kolumn med stabila rad-I
 ~~~text
 Använd Game Localization för att lokalisera den här korta Steam-beskrivningen från engelska till brasiliansk portugisiska (pt-BR). Börja vid behov på ett ordlisteutkast. Bevara speltiteln och följ angiven teckengräns. Lämna butikstexten och separata leveransanteckningar.
 ~~~
+
+För Steam-sidor levererar färdigheten den korta beskrivningen och avsnittet Om detta spel var för sig, kontrollerar angivna gränser och påståenden om spelet och kan förbereda ett utkast från en Steamworks-JSON-export som stöds. I överlämningen följs import och förhandsvisning upp separat. [Arbetsflöde för Steam-sidor](../game-localization/references/steam-store.md)
 
 ### Kontrollera CSV-översättningar
 

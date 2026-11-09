@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P2.1 is complete. The `0.1.10` packages compare CSV revisions by ID, preserve eligible translations and editor wording, and document how to resume dialogue work by scene. [CSV update workflow](game-localization/references/csv-updates.md) · [Changelog](CHANGELOG.md)
+**Current status.** P2.2 implementation and local verification are complete in the `0.1.11` packages. A trial import and preview in Steamworks are pending. [Steam store workflow](game-localization/references/steam-store.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P2.2. Add a Steam store page workflow.
+**Next task.** P2.2. Import the verified copy of a real export into a designated Steamworks draft and check its preview. Continue with P3.1 after recording the result.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -24,6 +24,8 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 - [x] **P2.1. Process changes by ID.** Identify new, modified, and removed rows, reuse accepted translations, and preserve editor changes. Add scene-level checkpoints for large dialogue batches. [CSV update workflow](game-localization/references/csv-updates.md) · [Tests](tests/test_prepare_csv_update.py)
 - [ ] **P2.2. Add a Steam store page workflow.** Return translations by field with length and fact checks. Verify the import format through a trial import using a real Steamworks export.
+  - [x] Ship the field workflow and validate a draft locally using a real multilingual export. [Workflow and example](game-localization/references/steam-store.md) · [Tests](tests/test_prepare_steam_store.py)
+  - [ ] Confirm that Steamworks accepts the trial file and that the target locale preview shows the expected descriptions.
 
 ## P3 · GitHub distribution and automatic updates
 
@@ -73,3 +75,9 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - Both ZIPs rebuilt byte for byte. From each extracted ZIP, the German example produced a new draft with two carried translations and two review rows. A local walkthrough reopened a scene checkpoint, finished the next scene without losing earlier work, and passed the CSV checker on all four current IDs.
 - All 60 archive links and 30 CSV update guide links resolved locally.
 - Manual app verification is pending. In ChatGPT and Claude, use the guide's example, save a checkpoint after Docking, and resume Control room in a new chat. Confirm that the editor's wording and the reviewed Docking line carry over and that the deleted ID stays out of the working CSV.
+
+## Version 0.1.11 verification
+
+- All eighteen regression tests passed. Both ZIPs rebuilt byte for byte, and all 60 archive links and 30 Steam guide links resolved locally.
+- The helper from each extracted ZIP passed the fictional example and read the project-provided export of 30 languages with 11 fields per language. The unchanged round trip retained all 330 field values. A separate local trial changed only the two selected German description fields. The actual store export and its trial copy are outside the repository.
+- Manual Steamworks verification is pending. Use the verified unchanged copy for a draft trial, confirm acceptance, and inspect the German preview. Use the guide's fictional example for a separate ChatGPT and Claude check of the field handoff and fact review.

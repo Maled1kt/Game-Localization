@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Buka pautan pakej di GitHub dan pilih **Download raw file**. Muat naik ZIP tanpa mengekstraknya.
@@ -95,6 +95,8 @@ Untuk fail `.xlsx` yang disokong, nyatakan lembaran kerja, baris pengepala, laju
 ~~~text
 Gunakan Game Localization untuk menyetempatkan perihalan ringkas Steam ini daripada bahasa Inggeris ke bahasa Portugis Brazil (pt-BR). Sediakan draf glosari jika perlu. Kekalkan tajuk permainan dan patuhi had aksara yang diberi. Berikan teks kedai dan laporan serahan secara berasingan.
 ~~~
+
+Untuk halaman Steam, kemahiran ini menyediakan perihalan ringkas dan bahagian Perihal Permainan Ini secara berasingan, menyemak had yang diberi dan dakwaan tentang permainan, serta boleh menyediakan draf daripada eksport JSON Steamworks yang disokong. Laporan serahan merekodkan status import dan pratonton secara berasingan. [Aliran kerja halaman Steam](../game-localization/references/steam-store.md)
 
 ### Menyemak terjemahan CSV
 

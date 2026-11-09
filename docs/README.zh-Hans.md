@@ -22,8 +22,8 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.10.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.11.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
@@ -95,6 +95,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 使用 Game Localization 将这段 Steam 简短描述从英语本地化为巴西葡萄牙语（pt-BR）。如有需要，先起草术语表。保留游戏名称并遵守给定的字符限制。分别提交商店文案和交付说明。
 ~~~
+
+处理 Steam 商店页面时，技能会分别交付简短描述和“关于这款游戏”，检查指定限制及有关游戏的陈述，并可从受支持的 Steamworks JSON 导出文件生成草稿。交付报告会分别记录导入和预览状态。[Steam 商店页面工作流程](../game-localization/references/steam-store.md)
 
 ### 检查 CSV 译文
 

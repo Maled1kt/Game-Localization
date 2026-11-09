@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.11.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -95,6 +95,8 @@ Ilmoita tuetuille `.xlsx`-tiedostoille laskentataulukko, otsikkorivi, pysyvien r
 ~~~text
 Lokalisoi Game Localizationilla tämä Steamin lyhyt kuvaus englannista brasilianportugaliksi (pt-BR). Laadi tarvittaessa sanastoluonnos. Säilytä pelin nimi ja noudata annettua merkkirajaa. Palauta kauppateksti ja erillinen luovutusraportti.
 ~~~
+
+Steam-sivuille taito palauttaa lyhyen kuvauksen ja Tietoa pelistä -osion erikseen, tarkistaa annetut rajat ja peliä koskevat väitteet sekä voi tehdä luonnoksen tuetusta Steamworksin JSON-vientitiedostosta. Luovutusraportissa tuonnin ja esikatselun tilat esitetään erikseen. [Steam-sivujen työnkulku](../game-localization/references/steam-store.md)
 
 ### CSV-käännösten tarkistaminen
 

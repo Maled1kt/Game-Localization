@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.11.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -95,6 +95,8 @@ Gib für unterstützte `.xlsx`-Dateien das Tabellenblatt, die Kopfzeile, die Spa
 ~~~text
 Lokalisiere mit Game Localization diese Steam-Kurzbeschreibung aus dem Englischen ins brasilianische Portugiesisch (pt-BR). Beginne bei Bedarf mit einem Glossarentwurf. Erhalte den Spieltitel und halte das angegebene Zeichenlimit ein. Gib den Shoptext und einen separaten Übergabebericht aus.
 ~~~
+
+Für Steam-Seiten liefert der Skill Kurzbeschreibung und „Infos zum Spiel“ getrennt, prüft die vorgegebenen Limits und Aussagen über das Spiel und kann aus einem unterstützten Steamworks-JSON-Export einen Entwurf erstellen. Der Übergabebericht führt Import und Vorschau getrennt auf. [Workflow für Steam-Shopseiten](../game-localization/references/steam-store.md)
 
 ### CSV-Übersetzungen prüfen
 

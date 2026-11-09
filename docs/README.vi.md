@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
@@ -95,6 +95,8 @@ Với tệp `.xlsx` được hỗ trợ, hãy chỉ rõ trang tính, dòng tiêu
 ~~~text
 Dùng Game Localization để bản địa hóa mô tả ngắn Steam này từ tiếng Anh sang tiếng Bồ Đào Nha Brazil (pt-BR). Soạn bảng thuật ngữ nháp nếu cần. Giữ nguyên tên trò chơi và tuân thủ giới hạn ký tự đã cho. Trả nội dung cửa hàng và báo cáo bàn giao riêng.
 ~~~
+
+Với trang Steam, kỹ năng trả riêng phần mô tả ngắn và Giới thiệu về trò chơi, kiểm tra các giới hạn đã nêu và thông tin về trò chơi, đồng thời có thể tạo bản nháp từ tệp JSON xuất từ Steamworks được hỗ trợ. Báo cáo bàn giao theo dõi riêng trạng thái nhập và xem trước. [Quy trình cho trang Steam](../game-localization/references/steam-store.md)
 
 ### Kiểm tra bản dịch trong CSV
 

@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.10.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.11.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 GitHub’da paket bağlantısını açıp **Download raw file** seçeneğini seçin. ZIP dosyasını açmadan yükleyin.
@@ -95,6 +95,8 @@ Desteklenen `.xlsx` dosyaları için çalışma sayfasını, başlık satırın�
 ~~~text
 Bu kısa Steam açıklamasını Game Localization ile İngilizceden Brezilya Portekizcesine (pt-BR) yerelleştir. Gerekirse taslak bir sözlük başlat. Oyun adını koru ve belirtilen karakter sınırına uy. Mağaza metnini ve teslim notlarını ayrı ver.
 ~~~
+
+Steam sayfalarında beceri kısa açıklamayı ve Bu Oyun Hakkında bölümünü ayrı ayrı sunar, belirtilen sınırları ve oyunla ilgili iddiaları kontrol eder ve desteklenen bir Steamworks JSON dışa aktarımından taslak hazırlayabilir. Teslim raporu içe aktarma ile önizlemeyi ayrı izler. [Steam sayfaları için iş akışı](../game-localization/references/steam-store.md)
 
 ### CSV çevirilerini kontrol etme
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.11 · 2026-11-09
+
+- Added a Steam store workflow for the short description and About This Game, with field limits and checks for claims about the game.
+- Added a draft helper for supported multilingual Steamworks exports. It preserves other fields and languages and tracks live import separately from local checks.
+
 ## 0.1.10 · 2026-11-09
 
 - Added CSV revision comparison by ID. Keep eligible accepted and editor wording for unchanged strings, review added and modified rows, and see removed IDs in a separate report.

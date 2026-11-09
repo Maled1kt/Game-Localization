@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.11.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -95,6 +95,8 @@ W przypadku obsługiwanych plików `.xlsx` podaj arkusz, wiersz nagłówków, ko
 ~~~text
 Użyj Game Localization do lokalizacji tego krótkiego opisu Steam z angielskiego na portugalski brazylijski (pt-BR). W razie potrzeby utwórz roboczy glosariusz. Zachowaj tytuł gry i podany limit znaków. Zwróć tekst sklepowy oraz osobny raport.
 ~~~
+
+Dla stron Steam umiejętność zwraca osobno krótki opis i sekcję „O tej grze”, sprawdza podane limity oraz informacje o grze i może przygotować wersję roboczą z obsługiwanego eksportu JSON ze Steamworks. Raport przekazania osobno podaje stan importu i podglądu. [Procedura dla stron Steam](../game-localization/references/steam-store.md)
 
 ### Sprawdzanie tłumaczeń w CSV
 

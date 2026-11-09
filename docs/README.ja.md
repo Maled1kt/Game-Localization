@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.10.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.11.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -95,6 +95,8 @@ Game Localization を使って添付のブックの ENGLISH 列をドイツ語�
 ~~~text
 Game Localization を使って、この Steam の短い説明文を英語からブラジルポルトガル語（pt-BR）にローカライズしてください。必要なら用語集の草案を作ってください。ゲームタイトルはそのままにし、指定の文字数制限を守ってください。ストア文面と引き継ぎメモは分けて返してください。
 ~~~
+
+Steam のページでは、短い説明文と「このゲームについて」を別々に返し、指定された上限とゲームに関する記述を確認します。対応する Steamworks の JSON エクスポートから下書きも作成できます。引き渡しレポートでは、インポートとプレビューの確認状況を分けて示します。[Steam ストアページの手順](../game-localization/references/steam-store.md)
 
 ### CSV翻訳をチェックする
 

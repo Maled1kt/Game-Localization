@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Sur GitHub, ouvrez le lien du paquet et choisissez **Download raw file**. Importez le ZIP sans le décompresser.
@@ -95,6 +95,8 @@ Pour les fichiers `.xlsx` pris en charge, indiquez la feuille, la ligne d’en-t
 ~~~text
 Utilise Game Localization pour traduire cette description courte Steam de l’anglais vers le portugais du Brésil (pt-BR). Prépare un glossaire provisoire si nécessaire. Garde le titre du jeu et respecte la limite de caractères indiquée. Rends le texte et un compte rendu séparé.
 ~~~
+
+Pour les pages Steam, la compétence livre séparément la description courte et la rubrique « À propos de ce jeu », vérifie les limites indiquées et les affirmations sur le jeu, et peut préparer un brouillon à partir d’un export JSON Steamworks pris en charge. Le rapport de livraison suit séparément l’importation et l’aperçu. [Procédure pour les pages Steam](../game-localization/references/steam-store.md)
 
 ### Vérifier les traductions CSV
 

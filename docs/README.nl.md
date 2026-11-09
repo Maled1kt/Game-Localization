@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.11.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 Open de pakketlink op GitHub en kies **Download raw file**. Upload het ZIP-bestand zonder het uit te pakken.
@@ -95,6 +95,8 @@ Geef voor ondersteunde `.xlsx`-bestanden het werkblad, de kopregel, de kolom met
 ~~~text
 Gebruik Game Localization om deze korte Steam-beschrijving uit het Engels naar Braziliaans Portugees (pt-BR) te vertalen. Begin indien nodig een conceptwoordenlijst. Behoud de gametitel en houd je aan de opgegeven tekenlimiet. Geef de winkeltekst en een afzonderlijk overdrachtsverslag terug.
 ~~~
+
+Voor Steam-pagina’s levert de skill de korte beschrijving en ‘Over dit spel’ apart op, controleert de opgegeven limieten en beweringen over de game en kan een concept maken van een ondersteunde JSON-export uit Steamworks. Het overdrachtsrapport vermeldt de import en het voorbeeld apart. [Werkwijze voor Steam-pagina’s](../game-localization/references/steam-store.md)
 
 ### CSV-vertalingen controleren
 

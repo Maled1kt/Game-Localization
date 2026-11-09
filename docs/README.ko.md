@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.10.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.11.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 GitHub에서 패키지 링크를 열고 **Download raw file**을 선택합니다. ZIP의 압축을 풀지 않고 업로드합니다.
@@ -95,6 +95,8 @@ Game Localization으로 첨부 통합 문서의 ENGLISH 열을 독일어(de-DE)�
 ~~~text
 Game Localization으로 이 Steam 짧은 설명을 영어에서 브라질 포르투갈어(pt-BR)로 현지화해 주세요. 필요하면 용어집 초안을 만들어 주세요. 게임 제목을 유지하고 지정된 글자 수 제한을 지켜 주세요. 스토어 문구와 인계 문서는 따로 주세요.
 ~~~
+
+Steam 페이지의 경우 스킬은 짧은 설명과 ‘게임 정보’를 별도로 제공하고, 지정된 제한과 게임에 관한 설명의 사실 여부를 확인합니다. 지원되는 Steamworks JSON 내보내기 파일에서 초안을 만들 수도 있습니다. 인계 보고서에는 가져오기와 미리보기 상태를 따로 표시합니다. [Steam 상점 페이지 작업 절차](../game-localization/references/steam-store.md)
 
 ### CSV 번역 확인
 

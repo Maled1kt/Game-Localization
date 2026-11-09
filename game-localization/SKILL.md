@@ -20,6 +20,7 @@ When the user wants to try the skill on sample data, offer the bundled [first-ru
 
 ## Translate a batch
 
+- For Steam store copy, use the [Steam store workflow](references/steam-store.md). Return the localized fields separately, check length and claims against the brief, and track Steamworks import and preview separately.
 - When a source CSV has changed and translations already exist, follow the [CSV update workflow](references/csv-updates.md). Match stable IDs across revisions, preserve eligible accepted and editor wording, and keep changed rows for review. Save a scene checkpoint for large dialogue batches.
 - For a requested `.xlsx` deliverable, follow the [Excel workflow](references/xlsx-qa.md). Confirm the worksheet, header row, stable ID column, source column, and existing target column. Use a new workbook copy and verify it before handoff.
 - Establish what each string does in the game. Preserve meaning, mechanics, quantities, conditions, speaker intent, and the relevant voice. Prefer established game UI phrasing when the project glossary allows it. Apply project-specific style settings only to the content they govern.

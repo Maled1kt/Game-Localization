@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -95,6 +95,8 @@ Untuk file `.xlsx` yang didukung, tentukan lembar kerja, baris header, kolom ID 
 ~~~text
 Gunakan Game Localization untuk melokalkan deskripsi singkat Steam ini dari bahasa Inggris ke bahasa Portugis Brasil (pt-BR). Buat draf glosarium jika diperlukan. Pertahankan judul gim dan patuhi batas karakter yang ditentukan. Berikan teks toko dan laporan penyerahan secara terpisah.
 ~~~
+
+Untuk halaman Steam, skill mengembalikan deskripsi singkat dan bagian Tentang Game Ini secara terpisah, memeriksa batas yang diberikan dan klaim tentang game, serta dapat menyiapkan draf dari ekspor JSON Steamworks yang didukung. Laporan serah terima mencatat status impor dan pratinjau secara terpisah. [Alur kerja halaman Steam](../game-localization/references/steam-store.md)
 
 ### Memeriksa terjemahan CSV
 

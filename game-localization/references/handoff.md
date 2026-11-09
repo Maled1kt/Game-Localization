@@ -27,6 +27,8 @@ For each unresolved issue, give the string ID, the problem in plain language, an
 
 For a translation update, summarize changed source IDs and preserved translations, and give the next decision for each blocked ID. For large dialogue updates, return the [scene checkpoint](csv-updates.md#save-progress-by-scene) separately from the working translation.
 
+For a Steam store page, give the field and locale, length and limit, and any unresolved claims. Report [Steamworks import and store preview](steam-store.md#verify-a-trial-import-and-preview) as separate checks.
+
 ## Example handoff
 
 > **Ready for import.** `ui.de-DE.csv` contains all 12 requested strings.

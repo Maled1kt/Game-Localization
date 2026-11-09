@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -95,6 +95,8 @@ Pentru fișierele `.xlsx` acceptate, specifică foaia, rândul de antet, coloana
 ~~~text
 Folosește Game Localization pentru a localiza această descriere scurtă Steam din engleză în portugheză braziliană (pt-BR). Creează un glosar provizoriu dacă este necesar. Păstrează titlul jocului și respectă limita de caractere indicată. Livrează textul magazinului și un raport separat.
 ~~~
+
+Pentru paginile Steam, abilitatea livrează separat descrierea scurtă și secțiunea „Despre acest joc”, verifică limitele indicate și afirmațiile despre joc și poate pregăti o ciornă dintr-un export JSON Steamworks acceptat. Raportul de predare urmărește separat importul și previzualizarea. [Flux de lucru pentru paginile Steam](../game-localization/references/steam-store.md)
 
 ### Verificarea traducerilor în CSV
 

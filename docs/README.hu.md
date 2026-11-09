@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.11.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 Nyisd meg a csomag hivatkozását a GitHubon, és válaszd a **Download raw file** lehetőséget. A ZIP-et kicsomagolás nélkül töltsd fel.
@@ -95,6 +95,8 @@ Támogatott `.xlsx`-fájloknál add meg a munkalapot, a fejlécsor számát, az 
 ~~~text
 A Game Localization segítségével lokalizáld ezt a rövid Steam-leírást angolról brazíliai portugálra (pt-BR). Szükség esetén készíts szójegyzéktervezetet. Őrizd meg a játék címét, és tartsd be a karakterkorlátot. Az áruházi szöveget és az átadási jegyzetet külön add vissza.
 ~~~
+
+Steam-oldalakhoz a készség külön adja vissza a rövid leírást és „A játékról” részt, ellenőrzi a megadott korlátokat és a játékról tett állításokat, és támogatott Steamworks JSON-exportból vázlatot is készíthet. Az átadási jelentés külön követi az importálást és az előnézetet. [Munkafolyamat Steam-oldalakhoz](../game-localization/references/steam-store.md)
 
 ### CSV-fordítások ellenőrzése
 

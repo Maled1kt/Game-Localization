@@ -22,8 +22,8 @@ Game Localization เป็นสกิลสำหรับเอเจนต�
 
 | สภาพแวดล้อม | แพ็กเกจ |
 | --- | --- |
-| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.11.zip) |
 | Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
 
 เปิดลิงก์แพ็กเกจบน GitHub แล้วเลือก **Download raw file** อัปโหลด ZIP โดยไม่ต้องแตกไฟล์
@@ -95,6 +95,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 ใช้ Game Localization แปลคำอธิบายแบบสั้นของ Steam นี้จากภาษาอังกฤษเป็นภาษาโปรตุเกสบราซิล (pt-BR) หากจำเป็นให้เริ่มร่างอภิธานศัพท์ คงชื่อเกมและรักษาข้อจำกัดจำนวนอักขระที่ให้ไว้ ส่งข้อความหน้าร้านและรายงานส่งมอบแยกกัน
 ~~~
+
+สำหรับหน้าร้านค้า Steam สกิลจะส่งคำอธิบายแบบสั้นและส่วนเกี่ยวกับเกมนี้แยกกัน ตรวจข้อจำกัดที่ระบุและข้อเท็จจริงเกี่ยวกับเกม และสร้างฉบับร่างจากไฟล์ JSON ที่ส่งออกจาก Steamworks ในรูปแบบที่รองรับได้ รายงานส่งมอบแยกสถานะการนำเข้าและการดูตัวอย่าง [ขั้นตอนสำหรับหน้าร้านค้า Steam](../game-localization/references/steam-store.md)
 
 ### ตรวจคำแปลในไฟล์ CSV
 

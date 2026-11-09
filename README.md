@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.10.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.10.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.11.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.11.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -112,6 +112,8 @@ English into Brazilian Portuguese (pt-BR). Start a draft glossary if
 needed. Keep the game title unchanged and stay within the supplied
 character limit. Return the store copy and a separate handoff.
 ~~~
+
+For Steam pages, the skill returns the short description and About This Game separately, checks the supplied limits and product claims, and can prepare a draft from a supported Steamworks JSON export. The handoff tracks import and preview separately. [Steam store workflow](game-localization/references/steam-store.md)
 
 ### Check CSV translations
 
