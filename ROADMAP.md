@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P1.3 is complete. The `0.1.9` packages include prioritized in-build QA checklists and an optional UI width estimator. [In-build QA](game-localization/references/in-build-qa.md) · [Changelog](CHANGELOG.md)
+**Current status.** P2.1 is complete. The `0.1.10` packages compare CSV revisions by ID, preserve eligible translations and editor wording, and document how to resume dialogue work by scene. [CSV update workflow](game-localization/references/csv-updates.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P2.1. Process changes by ID.
+**Next task.** P2.2. Add a Steam store page workflow.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -22,7 +22,7 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 ## P2 · Translation updates and Steam
 
-- [ ] **P2.1. Process changes by ID.** Identify new, modified, and removed rows, reuse accepted translations, and preserve editor changes. Add scene-level checkpoints for large dialogue batches.
+- [x] **P2.1. Process changes by ID.** Identify new, modified, and removed rows, reuse accepted translations, and preserve editor changes. Add scene-level checkpoints for large dialogue batches. [CSV update workflow](game-localization/references/csv-updates.md) · [Tests](tests/test_prepare_csv_update.py)
 - [ ] **P2.2. Add a Steam store page workflow.** Return translations by field with length and fact checks. Verify the import format through a trial import using a real Steamworks export.
 
 ## P3 · GitHub distribution and automatic updates
@@ -66,3 +66,10 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - The extracted German examples in both packages identify `TUT_014` with a long input binding and `MENU_005` with a narrow viewport. Both build checks remain pending in the fictional walkthrough.
 - The extracted estimator measured the short button label at 52 px and the substituted airlock prompt at 524 px against a 220 px budget in Segoe UI at 18 px. It rejected multiline input and right-to-left input without Raqm. The Raqm shaping path remains untested in the local runtime.
 - Manual app verification is pending. In ChatGPT and Claude, run the first-run prompt and check that the handoff includes the two cases, identifies their screens and IDs, gives steps and pass criteria, and keeps both pending while the build is unavailable.
+
+## Version 0.1.10 verification
+
+- All fourteen regression tests passed. The CSV update tests cover preserved editor wording, changed text and context, scene moves, deleted IDs, blank editor values, placeholder conflicts, and protection against overwriting the working file.
+- Both ZIPs rebuilt byte for byte. From each extracted ZIP, the German example produced a new draft with two carried translations and two review rows. A local walkthrough reopened a scene checkpoint, finished the next scene without losing earlier work, and passed the CSV checker on all four current IDs.
+- All 60 archive links and 30 CSV update guide links resolved locally.
+- Manual app verification is pending. In ChatGPT and Claude, use the guide's example, save a checkpoint after Docking, and resume Control room in a new chat. Confirm that the editor's wording and the reviewed Docking line carry over and that the deleted ID stays out of the working CSV.

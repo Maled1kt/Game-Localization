@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.10.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 Otevřete odkaz na GitHubu a zvolte **Download raw file**. Nahrajte nerozbalený ZIP.
@@ -99,6 +99,8 @@ Pomocí Game Localization přelož tento krátký popis na Steam z angličtiny d
 ### Kontrola překladů v CSV
 
 U CSV se stálými ID řádků uveďte názvy sloupců s ID, zdrojovým textem a překladem. Je-li k dispozici Python 3.9 nebo novější, dovednost porovná zdrojový soubor se souborem překladu a upozorní na chybějící nebo duplicitní ID, prázdné překlady, změny podporovaných zástupných symbolů či značek a překročení limitů délky. [Pokyny ke kontrole CSV](../game-localization/references/csv-qa.md)
+
+Chcete-li aktualizovat překlad, přiložte předchozí a aktuální zdrojový soubor CSV, schválené překlady a případné pozdější úpravy editora. Dovednost spáruje řádky podle ID, převezme použitelné znění nezměněných řádků a označí přidané, změněné a odstraněné řádky. U dlouhých dialogů uložte po každé scéně stav práce, abyste mohli pokračovat se stejným pracovním souborem. [Aktualizace překladu z CSV](../game-localization/references/csv-updates.md)
 
 Vyzkoušejte [úvodní příklad s 12 řádky](../game-localization/examples/first-run/README.md) s pracovním překladem, schváleným glosářem a ukázkovou předávací zprávou.
 

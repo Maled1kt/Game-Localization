@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.10 · 2026-11-09
+
+- Added CSV revision comparison by ID. Keep eligible accepted and editor wording for unchanged strings, review added and modified rows, and see removed IDs in a separate report.
+- Added scene grouping and checkpoints so long dialogue updates can continue in another chat.
+
 ## 0.1.9 · 2026-11-09
 
 - Added prioritized in-game QA checklists with a screen, string ID, reproduction steps, and observable pass criteria for each case.

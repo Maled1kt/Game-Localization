@@ -20,6 +20,7 @@ When the user wants to try the skill on sample data, offer the bundled [first-ru
 
 ## Translate a batch
 
+- When a source CSV has changed and translations already exist, follow the [CSV update workflow](references/csv-updates.md). Match stable IDs across revisions, preserve eligible accepted and editor wording, and keep changed rows for review. Save a scene checkpoint for large dialogue batches.
 - For a requested `.xlsx` deliverable, follow the [Excel workflow](references/xlsx-qa.md). Confirm the worksheet, header row, stable ID column, source column, and existing target column. Use a new workbook copy and verify it before handoff.
 - Establish what each string does in the game. Preserve meaning, mechanics, quantities, conditions, speaker intent, and the relevant voice. Prefer established game UI phrasing when the project glossary allows it. Apply project-specific style settings only to the content they govern.
 - Apply approved terms in every applicable occurrence. Match the intended concept, allow only permitted inflection or variants, and preserve exact spellings where required. For each new project term, record the source, locale, proposed equivalent, context, and draft status. Apply a temporary form consistently and mark the affected output as draft while material terms await approval.

@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.9.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.10.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 GitHub’da paket bağlantısını açıp **Download raw file** seçeneğini seçin. ZIP dosyasını açmadan yükleyin.
@@ -99,6 +99,8 @@ Bu kısa Steam açıklamasını Game Localization ile İngilizceden Brezilya Por
 ### CSV çevirilerini kontrol etme
 
 Sabit satır kimlikleri olan bir CSV dosyası için kimlik, kaynak metin ve çeviri sütunlarının başlıklarını belirtin. Python 3.9 veya üstü kullanılabiliyorsa beceri kaynak dosyayı çevrilmiş dosyayla karşılaştırır. Eksik veya yinelenen kimlikleri, boş çevirileri, desteklenen yer tutucu veya etiketlerdeki değişiklikleri ve aşılan uzunluk sınırlarını bildirir. [CSV kontrolü yönergeleri](../game-localization/references/csv-qa.md)
+
+Bir çeviriyi güncellemek için önceki ve güncel kaynak CSV dosyalarını, onaylı çevirileri ve sonraki editör düzeltmelerini ekleyin. Beceri, satırları kimliğe göre eşleştirir, değişmeyen satırlardaki kullanılabilir çevirileri korur ve eklenen, değiştirilen ya da silinen satırları işaretler. Uzun diyaloglarda aynı çalışma dosyasıyla devam etmek için her sahneden sonra ilerlemeyi kaydedin. [CSV çevirilerini güncelleme](../game-localization/references/csv-updates.md)
 
 Çeviri taslağı, onaylı sözlük ve örnek teslim notları içeren [12 satırlık başlangıç örneğini](../game-localization/examples/first-run/README.md) deneyin.
 

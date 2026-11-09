@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -99,6 +99,8 @@ Use Game Localization para localizar esta descrição curta da Steam do inglês 
 ### Verificar traduções em CSV
 
 Para um CSV com IDs de linha estáveis, indique os cabeçalhos das colunas de ID, texto de origem e tradução. Se estiver disponível o Python 3.9 ou uma versão posterior, a skill compara o ficheiro de origem com o traduzido e assinala IDs em falta ou duplicados, traduções vazias, alterações a marcadores ou tags suportados e traduções que excedam os limites de extensão. [Instruções para verificar ficheiros CSV](../game-localization/references/csv-qa.md)
+
+Para atualizar uma tradução, anexe o CSV de origem anterior e o atual, as traduções aprovadas e as revisões editoriais posteriores. A competência cruza os IDs, mantém as traduções que continuam adequadas às linhas sem alterações e assinala as linhas acrescentadas, alteradas e removidas. Em diálogos longos, guarde o progresso após cada cena para retomar o mesmo ficheiro de trabalho. [Atualizar traduções em CSV](../game-localization/references/csv-updates.md)
 
 Experimente o [exemplo inicial com 12 linhas](../game-localization/examples/first-run/README.md), que inclui um rascunho de tradução, um glossário aprovado e um exemplo de relatório.
 

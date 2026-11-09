@@ -22,8 +22,8 @@ La skill contiene istruzioni e riferimenti. Funziona senza chiavi API di progett
 
 | Ambiente | Pacchetto |
 | --- | --- |
-| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex locale o Claude Code | [Installa dalla cartella sorgente](#installazione-locale-con-un-comando) |
 
 Su GitHub apri il link del pacchetto e scegli **Download raw file**. Carica lo ZIP senza estrarlo.
@@ -99,6 +99,8 @@ Usa Game Localization per localizzare questa descrizione breve di Steam dall’i
 ### Verificare le traduzioni CSV
 
 Per un file CSV con ID di riga stabili, indica le intestazioni delle colonne con ID, testo sorgente e traduzione. Se è disponibile Python 3.9 o successivo, la skill confronta il file sorgente con quello tradotto e segnala ID mancanti o duplicati, traduzioni vuote, modifiche ai segnaposto o ai tag supportati e superamenti dei limiti di lunghezza. [Istruzioni per la verifica dei CSV](../game-localization/references/csv-qa.md)
+
+Per aggiornare una traduzione, allega il CSV sorgente precedente e quello attuale, le traduzioni approvate e le modifiche editoriali successive. La skill abbina le righe per ID, conserva le traduzioni ancora adatte alle righe invariate e segnala quelle aggiunte, modificate e rimosse. Per i dialoghi lunghi, salva lo stato dopo ogni scena per riprendere con lo stesso file di lavoro. [Aggiornare le traduzioni CSV](../game-localization/references/csv-updates.md)
 
 Prova [l’esempio introduttivo con 12 righe](../game-localization/examples/first-run/README.md). Include una bozza di traduzione, un glossario approvato e un resoconto di esempio.
 

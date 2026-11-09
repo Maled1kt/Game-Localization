@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -99,6 +99,8 @@ Gunakan Game Localization untuk melokalkan deskripsi singkat Steam ini dari baha
 ### Memeriksa terjemahan CSV
 
 Jika CSV memiliki ID baris yang tetap, sebutkan judul kolom ID, teks sumber, dan terjemahan. Jika Python 3.9 atau versi yang lebih baru tersedia, skill membandingkan file sumber dengan file terjemahan dan menandai ID yang hilang atau ganda, terjemahan kosong, perubahan pada placeholder atau tag yang didukung, dan teks yang melebihi batas panjang. [Petunjuk pemeriksaan CSV](../game-localization/references/csv-qa.md)
+
+Untuk memperbarui terjemahan, lampirkan CSV sumber sebelumnya dan yang terbaru, terjemahan yang disetujui, serta revisi editor setelahnya. Skill mencocokkan baris berdasarkan ID, mempertahankan terjemahan yang masih sesuai untuk baris tanpa perubahan, dan menandai baris yang ditambah, diubah, atau dihapus. Untuk dialog panjang, simpan progres setiap selesai satu adegan agar bisa melanjutkan dari file kerja yang sama. [Pembaruan terjemahan CSV](../game-localization/references/csv-updates.md)
 
 Coba [contoh penggunaan pertama dengan 12 baris](../game-localization/examples/first-run/README.md) yang mencakup draf terjemahan, glosarium yang sudah disetujui, dan contoh laporan penyerahan.
 

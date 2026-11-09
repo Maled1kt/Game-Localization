@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.9.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.10.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 GitHub에서 패키지 링크를 열고 **Download raw file**을 선택합니다. ZIP의 압축을 풀지 않고 업로드합니다.
@@ -99,6 +99,8 @@ Game Localization으로 이 Steam 짧은 설명을 영어에서 브라질 포르
 ### CSV 번역 확인
 
 각 행에 고정 ID가 있는 CSV를 번역할 때는 ID, 원문, 번역문 열의 제목을 지정하세요. Python 3.9 이상을 사용할 수 있으면 스킬이 원문 파일과 번역 파일을 비교해 누락되거나 중복된 ID, 비어 있는 번역, 지원되는 자리표시자나 태그의 변경, 길이 제한 초과를 알려 줍니다. [CSV 확인 안내](../game-localization/references/csv-qa.md)
+
+번역을 업데이트하려면 이전과 현재 원본 CSV, 승인된 번역, 이후 편집 내용을 첨부하세요. 스킬은 ID로 행을 맞추고, 변경이 없는 행에서 재사용할 수 있는 번역을 유지하며, 추가·수정·삭제된 행을 표시합니다. 긴 대화에서는 장면마다 진행 상황을 저장하면 같은 작업 파일에서 이어갈 수 있습니다. [CSV 번역 업데이트 가이드](../game-localization/references/csv-updates.md)
 
 [12행으로 구성된 첫 실행 예제](../game-localization/examples/first-run/README.md)에서 번역 초안, 승인된 용어집, 인계 문서 예시로 스킬을 사용해 보세요.
 

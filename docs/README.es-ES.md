@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En GitHub, abre el enlace del paquete y pulsa **Download raw file**. Sube el ZIP sin descomprimir.
@@ -99,6 +99,8 @@ Usa Game Localization para traducir esta descripción breve de Steam del inglés
 ### Comprobar traducciones en CSV
 
 Si el CSV tiene identificadores de fila estables, indica los encabezados de las columnas de ID, texto original y traducción. Si está disponible Python 3.9 o una versión posterior, la habilidad compara el archivo original con el traducido y señala los ID que faltan o están duplicados, las traducciones vacías, los cambios en marcadores o etiquetas compatibles y los casos en los que se supera el límite de longitud. [Instrucciones para comprobar archivos CSV](../game-localization/references/csv-qa.md)
+
+Para actualizar una traducción, adjunta el CSV de origen anterior y el actual, las traducciones aprobadas y las correcciones de edición posteriores. La habilidad empareja las filas por identificador, conserva las traducciones válidas de las filas sin cambios y señala las filas añadidas, modificadas y eliminadas. En diálogos largos, guarda el progreso después de cada escena para retomar el mismo archivo de trabajo. [Actualización de traducciones en CSV](../game-localization/references/csv-updates.md)
 
 Prueba el [ejemplo de inicio con 12 filas](../game-localization/examples/first-run/README.md) que incluye un borrador de traducción, un glosario aprobado y un informe de entrega de muestra.
 

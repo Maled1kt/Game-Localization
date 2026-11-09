@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -99,6 +99,8 @@ Folosește Game Localization pentru a localiza această descriere scurtă Steam 
 ### Verificarea traducerilor în CSV
 
 Pentru un fișier CSV cu ID-uri stabile pentru rânduri, specificați anteturile coloanelor pentru ID, textul sursă și traducere. Dacă este disponibil Python 3.9 sau o versiune ulterioară, competența compară fișierul sursă cu cel tradus și semnalează ID-urile lipsă sau duplicate, traducerile goale, modificările aduse substituenților sau etichetelor acceptate și depășirile limitelor de lungime. [Instrucțiuni pentru verificarea fișierelor CSV](../game-localization/references/csv-qa.md)
+
+Pentru a actualiza o traducere, atașează fișierul CSV sursă anterior și cel curent, traducerile aprobate și reviziile ulterioare. Abilitatea potrivește rândurile după ID, păstrează traducerile potrivite pentru rândurile neschimbate și marchează rândurile adăugate, modificate sau eliminate. La dialoguri lungi, salvează progresul după fiecare scenă pentru a continua cu același fișier de lucru. [Actualizarea traducerilor CSV](../game-localization/references/csv-updates.md)
 
 Încearcă [exemplul introductiv cu 12 rânduri](../game-localization/examples/first-run/README.md). Include o traducere provizorie, un glosar aprobat și un model de raport de predare.
 

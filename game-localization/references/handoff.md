@@ -25,6 +25,8 @@ Separate files or locales with different outcomes.
 
 For each unresolved issue, give the string ID, the problem in plain language, and one next action. Use the file, field, or record number when there is no ID. Keep the summary short and put long issue lists in a separate report when file tools are available.
 
+For a translation update, summarize changed source IDs and preserved translations, and give the next decision for each blocked ID. For large dialogue updates, return the [scene checkpoint](csv-updates.md#save-progress-by-scene) separately from the working translation.
+
 ## Example handoff
 
 > **Ready for import.** `ui.de-DE.csv` contains all 12 requested strings.

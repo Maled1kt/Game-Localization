@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.10.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -99,6 +99,8 @@ Użyj Game Localization do lokalizacji tego krótkiego opisu Steam z angielskieg
 ### Sprawdzanie tłumaczeń w CSV
 
 W przypadku pliku CSV ze stałymi identyfikatorami wierszy podaj nagłówki kolumn z identyfikatorem, tekstem źródłowym i tłumaczeniem. Jeśli dostępny jest Python 3.9 lub nowszy, umiejętność porówna plik źródłowy z plikiem tłumaczenia i wskaże brakujące lub powtarzające się identyfikatory, puste tłumaczenia, zmiany obsługiwanych symboli zastępczych lub znaczników oraz przekroczenia limitów długości. [Instrukcja sprawdzania plików CSV](../game-localization/references/csv-qa.md)
+
+Aby zaktualizować tłumaczenie, załącz poprzedni i aktualny źródłowy plik CSV, zatwierdzone tłumaczenia oraz późniejsze poprawki redakcyjne. Umiejętność dopasowuje wiersze po ID, zachowuje odpowiednie tłumaczenia niezmienionych wierszy oraz wskazuje wiersze dodane, zmienione i usunięte. Przy długich dialogach zapisz postęp po każdej scenie, aby móc kontynuować pracę na tym samym pliku. [Aktualizacja tłumaczeń CSV](../game-localization/references/csv-updates.md)
 
 Wypróbuj [przykład na początek z 12 wierszami](../game-localization/examples/first-run/README.md). Zawiera robocze tłumaczenie, zatwierdzony glosariusz i przykładowy raport.
 

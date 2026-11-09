@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.10.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -99,6 +99,8 @@ Lokalisoi Game Localizationilla tämä Steamin lyhyt kuvaus englannista brasilia
 ### CSV-käännösten tarkistaminen
 
 Jos CSV-tiedostossa on pysyvät rivitunnisteet, ilmoita tunniste-, lähdeteksti- ja käännössarakkeiden otsikot. Jos käytössä on Python 3.9 tai uudempi, taito vertaa lähde- ja käännöstiedostoja. Se ilmoittaa puuttuvista tai toistuvista tunnisteista, tyhjistä käännöksistä, tuettujen paikkamerkkien tai tunnisteiden muutoksista ja pituusrajojen ylityksistä. [CSV-tarkistuksen ohjeet](../game-localization/references/csv-qa.md)
+
+Kun päivität käännöstä, liitä aiempi ja nykyinen lähde-CSV, hyväksytyt käännökset sekä myöhemmät toimitukselliset muutokset. Taito yhdistää rivit tunnusten perusteella, säilyttää muuttumattomien rivien käyttökelpoiset käännökset ja merkitsee lisätyt, muuttuneet ja poistetut rivit. Tallenna pitkissä dialogeissa eteneminen jokaisen kohtauksen jälkeen, jotta voit jatkaa samalla työtiedostolla. [CSV-käännösten päivittäminen](../game-localization/references/csv-updates.md)
 
 Kokeile [12 rivin aloitusesimerkkiä](../game-localization/examples/first-run/README.md), joka sisältää käännösluonnoksen, hyväksytyn sanaston ja luovutusraportin mallin.
 

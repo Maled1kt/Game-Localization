@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.10.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 Åbn pakkelinket på GitHub, og vælg **Download raw file**. Upload ZIP-filen uden at pakke den ud.
@@ -99,6 +99,8 @@ Brug Game Localization til at lokalisere denne korte Steam-beskrivelse fra engel
 ### Kontrol af CSV-oversættelser
 
 For en CSV-fil med faste række-id’er skal du angive kolonneoverskrifterne for id, kildetekst og oversættelse. Hvis Python 3.9 eller nyere er tilgængelig, sammenligner færdigheden kildefilen med den oversatte fil og markerer manglende eller dublerede id’er, tomme oversættelser, ændringer i understøttede pladsholdere eller tags samt overskredne længdegrænser. [Vejledning til CSV-kontrol](../game-localization/references/csv-qa.md)
+
+Når en oversættelse skal opdateres, vedhæfter du den tidligere og den aktuelle kilde-CSV, godkendte oversættelser og eventuelle senere redaktørrettelser. Færdigheden matcher rækker efter ID, bevarer brugbare oversættelser af uændrede rækker og markerer tilføjede, ændrede og fjernede rækker. Gem status efter hver scene i lange dialoger, så du kan fortsætte med den samme arbejdsfil. [Opdatering af CSV-oversættelser](../game-localization/references/csv-updates.md)
 
 Prøv [starteksemplet med 12 rækker](../game-localization/examples/first-run/README.md). Det indeholder et oversættelsesudkast, en godkendt ordliste og et eksempel på afleveringsnoter.
 

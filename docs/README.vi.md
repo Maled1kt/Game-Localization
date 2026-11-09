@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
@@ -99,6 +99,8 @@ Dùng Game Localization để bản địa hóa mô tả ngắn Steam này từ 
 ### Kiểm tra bản dịch trong CSV
 
 Nếu tệp CSV có ID cố định cho từng dòng, hãy nêu tên các cột chứa ID, văn bản nguồn và bản dịch. Khi có Python 3.9 trở lên, kỹ năng sẽ so sánh tệp nguồn với tệp đã dịch và báo các ID bị thiếu hoặc trùng, bản dịch để trống, thay đổi ở biến giữ chỗ hoặc thẻ được hỗ trợ và trường hợp vượt giới hạn độ dài. [Hướng dẫn kiểm tra CSV](../game-localization/references/csv-qa.md)
+
+Để cập nhật bản dịch, hãy đính kèm CSV nguồn cũ và hiện tại, bản dịch đã duyệt và các chỉnh sửa sau đó của biên tập viên. Kỹ năng đối chiếu theo ID, giữ lại bản dịch còn phù hợp của những dòng không đổi và đánh dấu dòng được thêm, sửa hoặc xóa. Với hội thoại dài, hãy lưu tiến độ sau mỗi cảnh để tiếp tục trên cùng tệp làm việc. [Cập nhật bản dịch CSV](../game-localization/references/csv-updates.md)
 
 Hãy thử [ví dụ khởi đầu gồm 12 dòng](../game-localization/examples/first-run/README.md), có bản dịch nháp, bảng thuật ngữ đã duyệt và báo cáo bàn giao mẫu.
 

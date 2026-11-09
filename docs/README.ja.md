@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.9.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.10.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -99,6 +99,8 @@ Game Localization を使って、この Steam の短い説明文を英語から�
 ### CSV翻訳をチェックする
 
 各行に固定のIDがあるCSVでは、ID、原文、訳文の列見出しを指定してください。Python 3.9以降を利用できる環境では、スキルが原文ファイルと翻訳ファイルを比較し、IDの欠落や重複、訳文の空欄、対応するプレースホルダーやタグの変更、長さ制限の超過を報告します。 [CSVチェックの手順](../game-localization/references/csv-qa.md)
+
+翻訳を更新するには、旧版と新版の原文 CSV、承認済みの訳文、その後の編集修正を添付してください。スキルは ID で行を照合し、原文が変わっていない行には再利用できる訳文を残し、追加・変更・削除された行を示します。長い会話ではシーンごとに進捗を保存すると、同じ作業ファイルから再開できます。[CSV 翻訳の更新手順](../game-localization/references/csv-updates.md)
 
 [12行の入門サンプル](../game-localization/examples/first-run/README.md)では、翻訳の下書き、承認済みの用語集、引き継ぎメモの例を使って、スキルを試せます。
 

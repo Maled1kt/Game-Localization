@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -99,6 +99,8 @@ Use Game Localization para localizar esta descrição curta da Steam do inglês 
 ### Verificar traduções em CSV
 
 Se o CSV tiver IDs de linha fixos, informe os cabeçalhos das colunas de ID, texto de origem e tradução. Se houver Python 3.9 ou posterior, a skill compara o arquivo de origem com o traduzido e sinaliza IDs ausentes ou duplicados, traduções vazias, alterações em marcadores ou tags compatíveis e traduções acima do limite de comprimento. [Instruções para verificar arquivos CSV](../game-localization/references/csv-qa.md)
+
+Para atualizar uma tradução, anexe o CSV de origem anterior e o atual, as traduções aprovadas e as edições posteriores. A habilidade cruza os IDs, mantém as traduções que ainda servem para as linhas sem alterações e sinaliza as linhas adicionadas, alteradas e removidas. Em diálogos longos, salve o progresso após cada cena para retomar o mesmo arquivo de trabalho. [Atualização de traduções em CSV](../game-localization/references/csv-updates.md)
 
 Experimente o [exemplo inicial com 12 linhas](../game-localization/examples/first-run/README.md), que inclui um rascunho de tradução, um glossário aprovado e um relatório de exemplo.
 

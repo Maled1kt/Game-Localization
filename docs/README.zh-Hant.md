@@ -22,8 +22,8 @@ Game Localization 是一項代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用環境 | 安裝套件 |
 | --- | --- |
-| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.9.zip) |
+| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.10.zip) |
 | 本機 Codex 或 Claude Code | [從原始碼資料夾安裝](#用一個指令安裝到本機代理) |
 
 在 GitHub 開啟套件連結並選擇 **Download raw file**。上傳時保留 ZIP 格式。
@@ -99,6 +99,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ### 檢查 CSV 譯文
 
 如果 CSV 中每一列都有固定 ID，請指定 ID、原文和譯文的欄位名稱。環境支援 Python 3.9 或更新版本時，技能會比對原文檔案和譯文檔案，回報遺漏或重複的 ID、空白譯文、支援的預留位置或標籤變更，以及超過長度限制的項目。 [CSV 檢查說明](../game-localization/references/csv-qa.md)
+
+更新譯文時，請附上前一版和目前版本的來源 CSV、已核准的譯文及後續編輯修訂。技能會依 ID 比對各列，保留未變更列中仍可使用的譯文，並標記新增、修改和刪除的列。處理長對話時，請在每個場景結束後儲存進度，以便用同一份工作檔案繼續。[更新 CSV 譯文](../game-localization/references/csv-updates.md)
 
 試試[包含 12 列文字的入門範例](../game-localization/examples/first-run/README.md)，其中附有譯文草稿、已核准的詞彙表和交付說明範例。
 

@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.9.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.10.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.10.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Buka pautan pakej di GitHub dan pilih **Download raw file**. Muat naik ZIP tanpa mengekstraknya.
@@ -99,6 +99,8 @@ Gunakan Game Localization untuk menyetempatkan perihalan ringkas Steam ini darip
 ### Menyemak terjemahan CSV
 
 Jika fail CSV mempunyai ID baris yang tetap, nyatakan tajuk lajur ID, teks sumber dan terjemahan. Jika Python 3.9 atau versi lebih baharu tersedia, kemahiran membandingkan fail sumber dengan fail terjemahan dan menandakan ID yang hilang atau berulang, terjemahan kosong, perubahan pada pemegang tempat atau tag yang disokong dan terjemahan yang melebihi had panjang. [Panduan semakan CSV](../game-localization/references/csv-qa.md)
+
+Untuk mengemas kini terjemahan, lampirkan CSV sumber terdahulu dan semasa, terjemahan yang diluluskan serta suntingan kemudian. Kemahiran ini memadankan baris mengikut ID, mengekalkan terjemahan yang masih sesuai bagi baris yang sama, dan menandakan baris yang ditambah, diubah atau dibuang. Bagi dialog panjang, simpan kemajuan selepas setiap adegan supaya anda boleh menyambung dengan fail kerja yang sama. [Kemas kini terjemahan CSV](../game-localization/references/csv-updates.md)
 
 Cuba [contoh permulaan dengan 12 baris](../game-localization/examples/first-run/README.md) yang menyertakan draf terjemahan, glosari yang diluluskan dan contoh laporan serahan.
 
