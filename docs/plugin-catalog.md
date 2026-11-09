@@ -37,6 +37,8 @@ After the refresh command succeeds in your terminal, you can have Windows Task S
 
 Install and verify the catalog plugin first. In the local client where you switched, disable or remove the old Game Localization copy to avoid duplicate skill entries. If the old skill was copied into a local skills folder, use the [manual removal instructions](../README.md#update-or-remove). Keep project glossaries and other project files separately so you can reuse them with the catalog plugin.
 
+## Remove the catalog installation
+
 To remove the catalog installation, uninstall the plugin first. Then use `/plugin marketplace remove maled1kt` in Claude Code or `codex plugin marketplace remove maled1kt` in Codex if you also want to remove the catalog.
 
 ## Maintainer release checks
