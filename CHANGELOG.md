@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.13 · 2026-11-09
+
+- Simplified the shared catalog and moved its plugin bundle to `packaging/plugin/`. Existing catalog installs use the same plugin ID to pick up the update.
+
 ## 0.1.12 · 2026-11-09
 
 - Added a shared GitHub catalog for installing Game Localization in Claude Code and local Codex.

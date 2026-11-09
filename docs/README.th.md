@@ -22,8 +22,8 @@ Game Localization เป็นสกิลสำหรับเอเจนต�
 
 | สภาพแวดล้อม | แพ็กเกจ |
 | --- | --- |
-| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
 
 ใน Codex ที่ทำงานบนเครื่องและ Claude Code คุณสามารถติดตั้ง Game Localization จากแค็ตตาล็อก GitHub ที่ใช้ร่วมกันได้ คู่มืออธิบายการติดตั้งครั้งแรก การย้ายจาก ZIP และการอัปเดตในแต่ละไคลเอนต์ [แค็ตตาล็อก GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) กำหนดเงื่อนไขที่สกิลจะทำงานและวิธีประมวลผลข้อความเป็นชุด
 - [`game-localization/references/`](../game-localization/references/) เก็บกฎและอภิธานศัพท์เริ่มต้นแยกตามภาษา
-- [`packaging/chatgpt/`](../packaging/chatgpt/) เก็บไฟล์กำกับและไอคอนปลั๊กอิน
+- [`packaging/plugin/`](../packaging/plugin/) เก็บไฟล์กำกับและไอคอนปลั๊กอิน
 - [`packages/`](../packages/) เก็บไฟล์บีบอัดพร้อมอัปโหลด
 
 หากต้องการสร้าง ZIP ทั้งสองใหม่จากต้นทางเดียวกัน ให้รัน `python scripts/package.py` ที่โฟลเดอร์รากของที่เก็บโค้ดด้วย Python 3.9 ขึ้นไป หมายเลขรุ่นมาจากไฟล์กำกับปลั๊กอิน ChatGPT ก่อนแจกจ่าย ให้อัปโหลดแต่ละ ZIP ไปยังผลิตภัณฑ์ที่เกี่ยวข้องและทดลองกับข้อความชุดเล็กที่มีอภิธานศัพท์และตัวแทนค่าที่ต้องรักษา

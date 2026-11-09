@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 În Codex local și Claude Code poți instala Game Localization din catalogul comun GitHub. Ghidul explică prima instalare, trecerea de la ZIP și actualizarea în fiecare client. [Catalogul GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Pentru a actualiza o traducere, atașează fișierul CSV sursă anterior și cel
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) definește când rulează competența și cum procesează un lot.
 - [`game-localization/references/`](../game-localization/references/) conține regulile și edițiile glosarului pe limbi.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) conține manifestul și pictograma pluginului.
+- [`packaging/plugin/`](../packaging/plugin/) conține manifestul și pictograma pluginului.
 - [`packages/`](../packages/) conține arhivele gata de încărcat.
 
 Pentru a reconstrui ambele ZIP-uri din aceeași sursă, rulează `python scripts/package.py` din rădăcina depozitului cu Python 3.9 sau mai nou. Versiunea provine din manifestul pluginului ChatGPT. Înainte de distribuire, încarcă fiecare ZIP în produsul potrivit și testează un lot mic cu glosar și substituent protejat.

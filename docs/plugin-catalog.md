@@ -41,6 +41,8 @@ To remove the catalog installation, uninstall the plugin first. Then use `/plugi
 
 ## Maintainer release checks
 
-1. Edit the skill under `game-localization/` and bump the version in `packaging/chatgpt/.codex-plugin/plugin.json`. Run `python scripts/package.py` to update the catalog's Claude manifest, bundled skill files, and both upload ZIPs. Run `python scripts/package.py --check` and commit the generated catalog bundle with the source changes.
+The shared catalog uses the Claude Code marketplace format, which local Codex also reads. Codex reads plugin-specific display metadata from the Codex manifest in the bundle. [Claude Code marketplace reference](https://code.claude.com/docs/en/plugins/marketplace-reference) · [OpenAI local marketplaces](https://developers.openai.com/plugins/build/plugins#how-local-marketplaces-work)
+
+1. Edit the skill under `game-localization/` and bump the version in `packaging/plugin/.codex-plugin/plugin.json`. Run `python scripts/package.py` to update the catalog's Claude manifest, bundled skill files, and both upload ZIPs. Run `python scripts/package.py --check` and commit the generated catalog bundle with the source changes.
 2. Once a baseline is on `main`, install it from GitHub in both clients and record the version. Publish a later version and verify that Claude Code with marketplace auto-update enabled loads it. In Codex, verify the refresh command and, if using scheduled refresh, verify that the schedule installs the newer version without manual intervention.
 3. Open a new session in each client and verify the new skill is available. Record the tested versions and update method in the [Roadmap](../ROADMAP.md).

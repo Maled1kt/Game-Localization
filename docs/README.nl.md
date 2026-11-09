@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.13.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 In lokale Codex en Claude Code kun je Game Localization installeren vanuit de gedeelde GitHub-catalogus. De handleiding legt uit hoe je voor het eerst installeert, overstapt van ZIP en bijwerkt in elke client. [GitHub-catalogus](plugin-catalog.md)
@@ -133,7 +133,7 @@ Probeer het [instapvoorbeeld met 12 rijen](../game-localization/examples/first-r
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) bepaalt wanneer de skill start en hoe een tekstpakket wordt verwerkt.
 - [`game-localization/references/`](../game-localization/references/) bevat de regels en woordenlijsten per taal.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) bevat het manifest en pictogram van de plug-in.
+- [`packaging/plugin/`](../packaging/plugin/) bevat het manifest en pictogram van de plug-in.
 - [`packages/`](../packages/) bevat de uploadbare archieven.
 
 Bouw beide ZIP’s opnieuw uit dezelfde bron met `python scripts/package.py` in de hoofdmap van de repository en Python 3.9 of hoger. De versie komt uit het ChatGPT-manifest. Upload vóór verspreiding elke ZIP naar het juiste product en test met een klein tekstpakket, woordenlijst en beschermde tijdelijke aanduiding.

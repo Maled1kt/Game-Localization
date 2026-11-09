@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.13.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 I lokal Codex og Claude Code kan du installere Game Localization fra det fælles GitHub-katalog. Vejledningen beskriver første installation, skift fra ZIP og opdatering i hver klient. [GitHub-katalog](plugin-catalog.md)
@@ -133,7 +133,7 @@ Prøv [starteksemplet med 12 rækker](../game-localization/examples/first-run/RE
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) fastlægger, hvornår færdigheden aktiveres, og hvordan den behandler en portion tekster.
 - [`game-localization/references/`](../game-localization/references/) indeholder reglerne og startordlisterne for hvert sprog.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) indeholder pluginets manifest og ikon.
+- [`packaging/plugin/`](../packaging/plugin/) indeholder pluginets manifest og ikon.
 - [`packages/`](../packages/) indeholder arkiver til upload.
 
 Gendan begge ZIP-filer fra samme kilde med `python scripts/package.py` i repositoriets rod med Python 3.9 eller nyere. Versionen stammer fra ChatGPT-pluginets manifest. Upload hvert arkiv i det relevante produkt før distribution, og test et lille sæt tekster med ordliste og beskyttet pladsholder.

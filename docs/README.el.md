@@ -22,8 +22,8 @@
 
 | Περιβάλλον | Πακέτο |
 | --- | --- |
-| ChatGPT ή Codex με δικαίωμα μεταφόρτωσης προσθέτων | [ZIP προσθέτου ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude ή χώρος ChatGPT με δικαίωμα μεταφόρτωσης αυτόνομων δεξιοτήτων | [ZIP αυτόνομης δεξιότητας](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT ή Codex με δικαίωμα μεταφόρτωσης προσθέτων | [ZIP προσθέτου ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude ή χώρος ChatGPT με δικαίωμα μεταφόρτωσης αυτόνομων δεξιοτήτων | [ZIP αυτόνομης δεξιότητας](../packages/game-localization-skill-v0.1.13.zip) |
 | Τοπικό Codex ή Claude Code | [Εγκατάσταση από τον πηγαίο φάκελο](#εγκατάσταση-για-τοπικούς-πράκτορες-με-μία-εντολή) |
 
 Στο τοπικό Codex και στο Claude Code μπορείτε να εγκαταστήσετε το Game Localization από τον κοινό κατάλογο GitHub. Ο οδηγός καλύπτει την αρχική εγκατάσταση, τη μετάβαση από ZIP και την ενημέρωση σε κάθε εφαρμογή. [Κατάλογος GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) ορίζει πότε εκτελείται η δεξιότητα και πώς επεξεργάζεται μια παρτίδα κειμένων.
 - [`game-localization/references/`](../game-localization/references/) περιέχει τους κανόνες και τις εκδόσεις του γλωσσαρίου ανά γλώσσα.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) περιέχει το αρχείο δήλωσης και το εικονίδιο του προσθέτου.
+- [`packaging/plugin/`](../packaging/plugin/) περιέχει το αρχείο δήλωσης και το εικονίδιο του προσθέτου.
 - [`packages/`](../packages/) περιέχει τα συμπιεσμένα αρχεία προς μεταφόρτωση.
 
 Για να δημιουργήσετε ξανά και τα δύο ZIP από την ίδια πηγή, εκτελέστε `python scripts/package.py` στη ρίζα του αποθετηρίου με Python 3.9 ή νεότερο. Η έκδοση προέρχεται από το αρχείο δήλωσης του προσθέτου ChatGPT. Πριν από τη διανομή, μεταφορτώστε κάθε ZIP στο αντίστοιχο προϊόν και δοκιμάστε μια μικρή παρτίδα με γλωσσάρι και προστατευμένο σύμβολο κράτησης θέσης.

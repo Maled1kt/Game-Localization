@@ -22,8 +22,8 @@ Ferdigheten inneholder instrukser og referansefiler. Den krever ingen prosjekt-A
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.13.zip) |
 | Lokal Codex eller Claude Code | [Installer fra kildemappen](#installer-for-lokale-agenter-med-én-kommando) |
 
 I lokal Codex og Claude Code kan du installere Game Localization fra den felles GitHub-katalogen. Veiledningen forklarer førstegangsoppsett, bytte fra ZIP og oppdatering i hver klient. [GitHub-katalog](plugin-catalog.md)
@@ -133,7 +133,7 @@ Prøv [starteksempelet med 12 rader](../game-localization/examples/first-run/REA
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) angir når ferdigheten brukes og hvordan den behandler en tekstgruppe.
 - [`game-localization/references/`](../game-localization/references/) inneholder reglene og startordlistene for hvert språk.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) inneholder manifestet og ikonet for programtillegget.
+- [`packaging/plugin/`](../packaging/plugin/) inneholder manifestet og ikonet for programtillegget.
 - [`packages/`](../packages/) inneholder arkivene som kan lastes opp.
 
 Bygg begge ZIP-filene på nytt fra samme kilde med `python scripts/package.py` i repositoriets rotmappe og Python 3.9 eller nyere. Versjonen hentes fra ChatGPT-manifestet. Last opp hver ZIP i riktig produkt før distribusjon, og prøv en liten tekstgruppe med ordliste og beskyttet plassholder.

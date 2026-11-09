@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** The P3.1 catalog bundle and `0.1.12` ZIPs are prepared. Local Codex installed the catalog plugin and refreshed it to a newer version in an isolated Git test. Publishing the baseline and verifying both clients against GitHub are pending. [Catalog guide](docs/plugin-catalog.md) · [Changelog](CHANGELOG.md)
+**Current status.** The `0.1.12` catalog is on `main`, and the project owner confirmed that Claude Code accepted it. The `0.1.13` update simplifies the catalog and moves the bundle to `packaging/plugin/`. Local Codex upgraded an existing installation in an isolated Git test. [Catalog guide](docs/plugin-catalog.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P3.1. Publish the `0.1.12` catalog on `main`, install it from GitHub in both clients, and verify automatic refresh after the next version reaches `main`.
+**Next task.** P3.1. Confirm the baseline installation in both clients, publish `0.1.13` on `main`, and verify that both clients load the update automatically.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -32,7 +32,8 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - [ ] **P3.1. Publish Game Localization through a shared GitHub plugin catalog.** Serve the plugin files for Claude Code and local Codex from `main` and bump the plugin version with each release. Document first-time installation, switching from ZIP, and how each client checks for updates. Keep the current ZIP pair available for manual installation. Done when a plugin installed from the catalog in each client automatically loads a newer release published to `main`. [Claude Code marketplace guide](https://code.claude.com/docs/en/plugins/host-marketplace) · [Codex marketplace guide](https://developers.openai.com/plugins/build/plugins#how-local-marketplaces-work)
   - [x] Build the shared catalog bundle and both ZIPs from one skill source. Document first-time installation, switching from ZIP, and refresh in each client.
   - [x] Verify Codex installation and refresh in an isolated local Git repository.
-  - [ ] Publish the baseline to GitHub and verify first-time installation in Claude Code and local Codex.
+  - [x] Publish the baseline catalog to GitHub. The project owner confirmed that Claude Code accepted it.
+  - [ ] Confirm the baseline plugin installation from GitHub in both clients.
   - [ ] Verify a later GitHub release with Claude Code auto-update enabled and an unattended Codex refresh.
 
 ## Version 0.1.4 verification
@@ -92,4 +93,10 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - All eighteen regression tests passed. Both ZIPs rebuilt byte for byte, the bundled first-run checker found the expected three draft issues, and all 60 download links and 30 catalog guide links resolved locally.
 - The package check validated the two manifests and skill files against the release source. An isolated test confirmed it rejects a stale generated skill and that rebuilding restores it.
 - Codex CLI installed `game-localization@maled1kt` version `0.1.12` from the shared catalog. In an isolated Git fixture, `marketplace upgrade` advanced the installed plugin to test version `0.1.13` and loaded the changed skill file.
-- GitHub publication and the two-client update trial are pending. Claude Code's marketplace auto-update is enabled by the user. On Windows, the guide documents an optional scheduled Codex refresh. The scheduled trigger itself has not been tested.
+- The `0.1.12` baseline reached `main`, and the project owner confirmed that Claude Code accepted the catalog. The two-client update trial is tracked under P3.1.
+
+## Version 0.1.13 verification
+
+- All eighteen regression tests passed. Both ZIPs rebuilt byte for byte and the bundled first-run checker found the expected three draft issues. All 60 download links and 30 catalog guide links resolved locally.
+- Codex CLI upgraded the committed `0.1.12` plugin to `0.1.13` in an isolated Git repository after the bundle moved. The existing plugin ID stayed enabled and the installation and authentication defaults remained `AVAILABLE` and `ON_INSTALL`.
+- GitHub publication and the unattended refresh trial in Claude Code and Codex are pending.

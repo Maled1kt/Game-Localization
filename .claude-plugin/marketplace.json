@@ -4,19 +4,12 @@
   "owner": {
     "name": "Maled1kt"
   },
-  "interface": {
-    "displayName": "Maled1kt"
-  },
   "plugins": [
     {
       "name": "game-localization",
-      "source": "./packaging/chatgpt",
+      "source": "./packaging/plugin",
       "description": "Translate and review video game text with localization rules and a starter glossary.",
-      "category": "Developer Tools",
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      }
+      "category": "Developer Tools"
     }
   ]
 }

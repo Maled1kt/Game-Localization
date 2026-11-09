@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.12.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.13.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 로컬 Codex와 Claude Code에서는 공용 GitHub 카탈로그에서 Game Localization을 설치할 수 있습니다. 가이드에서 처음 설치하는 방법, ZIP에서 전환하는 방법, 각 클라이언트의 업데이트 방법을 확인하세요. [GitHub 카탈로그](plugin-catalog.md)
@@ -133,7 +133,7 @@ Steam 페이지의 경우 스킬은 짧은 설명과 ‘게임 정보’를 별�
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md)에 스킬의 실행 조건과 일괄 처리 방법이 정의되어 있습니다.
 - [`game-localization/references/`](../game-localization/references/)에 규칙과 언어별 기본 용어집이 있습니다.
-- [`packaging/chatgpt/`](../packaging/chatgpt/)에 플러그인 매니페스트와 아이콘이 있습니다.
+- [`packaging/plugin/`](../packaging/plugin/)에 플러그인 매니페스트와 아이콘이 있습니다.
 - [`packages/`](../packages/)에 업로드할 압축 파일이 있습니다.
 
 같은 소스에서 두 ZIP을 다시 만들려면 Python 3.9 이상으로 저장소 루트에서 `python scripts/package.py`를 실행합니다. 버전은 ChatGPT 플러그인 매니페스트에서 가져옵니다. 배포 전 각 ZIP을 해당 제품에 업로드하고 용어집과 보호된 자리표시자를 포함한 소량의 텍스트로 테스트합니다.

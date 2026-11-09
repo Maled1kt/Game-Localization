@@ -9,7 +9,7 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "game-localization"
-CHATGPT = ROOT / "packaging" / "chatgpt"
+PLUGIN_BUNDLE = ROOT / "packaging" / "plugin"
 PACKAGES = ROOT / "packages"
 
 
@@ -42,7 +42,7 @@ def write_archive(output, entries, *, check):
 def sync_catalog(entries, manifest, *, check):
     catalog = json.loads((ROOT / ".claude-plugin" / "marketplace.json").read_text(encoding="utf-8"))
     plugins = catalog["plugins"]
-    source = "./" + CHATGPT.relative_to(ROOT).as_posix()
+    source = "./" + PLUGIN_BUNDLE.relative_to(ROOT).as_posix()
     if len(plugins) != 1 or plugins[0]["name"] != manifest["name"] or plugins[0]["source"] != source:
         raise ValueError("The catalog must point to the packaged Game Localization plugin.")
 
@@ -51,7 +51,7 @@ def sync_catalog(entries, manifest, *, check):
     claude = {key: manifest[key] for key in ("name", "version", "description", "author", "license")}
     files[".claude-plugin/plugin.json"] = (json.dumps(claude, indent=2) + "\n").encode("utf-8")
     for name, content in files.items():
-        path = CHATGPT / name
+        path = PLUGIN_BUNDLE / name
         if path.is_file() and path.read_bytes() == content:
             continue
         if check:
@@ -59,9 +59,9 @@ def sync_catalog(entries, manifest, *, check):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
 
-    skill_root = CHATGPT / "skills"
+    skill_root = PLUGIN_BUNDLE / "skills"
     for path in sorted(skill_root.rglob("*")):
-        if path.is_file() and path.relative_to(CHATGPT).as_posix() not in files:
+        if path.is_file() and path.relative_to(PLUGIN_BUNDLE).as_posix() not in files:
             if check or not path.resolve().is_relative_to(skill_root.resolve()):
                 raise ValueError(f"Unexpected catalog file: {path.relative_to(ROOT)}")
             path.unlink()
@@ -71,7 +71,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Check the existing bundle and ZIPs without writing")
     args = parser.parse_args()
-    manifest_file = CHATGPT / ".codex-plugin" / "plugin.json"
+    manifest_file = PLUGIN_BUNDLE / ".codex-plugin" / "plugin.json"
     manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
     name, version = manifest["name"], manifest["version"]
     if name != SKILL.name or not re.fullmatch(r"\d+\.\d+\.\d+", version):
@@ -106,7 +106,7 @@ def main():
         asset = manifest["interface"][key]
         if not asset.startswith("./assets/") or ".." in Path(asset).parts:
             raise ValueError(f"Invalid path for plugin {key}.")
-        chatgpt_entries[asset.removeprefix("./")] = CHATGPT / asset
+        chatgpt_entries[asset.removeprefix("./")] = PLUGIN_BUNDLE / asset
 
     sync_catalog(chatgpt_entries, manifest, check=args.check)
     if not args.check:

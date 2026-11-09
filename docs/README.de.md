@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.13.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 In lokalem Codex und Claude Code kannst du Game Localization aus dem gemeinsamen GitHub-Katalog installieren. Die Anleitung erklärt die Ersteinrichtung, den Wechsel von ZIP und die Updates in beiden Clients. [GitHub-Katalog](plugin-catalog.md)
@@ -133,7 +133,7 @@ Probiere das [Einstiegsbeispiel mit 12 Zeilen](../game-localization/examples/fir
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) bestimmt, wann der Skill startet und wie er Textpakete verarbeitet.
 - [`game-localization/references/`](../game-localization/references/) enthält Regeln und Sprachversionen des Startglossars.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) enthält das Manifest und Symbol des Plugins.
+- [`packaging/plugin/`](../packaging/plugin/) enthält das Manifest und Symbol des Plugins.
 - [`packages/`](../packages/) enthält die Archive für den Upload.
 
 Erstelle beide ZIP-Dateien aus derselben Quelle mit `python scripts/package.py` im Repository-Stammverzeichnis und Python 3.9 oder neuer. Die Version stammt aus dem ChatGPT-Plugin-Manifest. Lade vor der Verteilung beide Archive im jeweiligen Produkt hoch und teste einen kleinen Textsatz mit Glossar und geschütztem Platzhalter.

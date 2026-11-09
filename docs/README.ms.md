@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Dalam Codex setempat dan Claude Code, anda boleh memasang Game Localization daripada katalog GitHub bersama. Panduan menerangkan pemasangan pertama, pertukaran daripada ZIP dan kemas kini dalam setiap klien. [Katalog GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Cuba [contoh permulaan dengan 12 baris](../game-localization/examples/first-run/
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) menentukan bila kemahiran dijalankan dan cara kumpulan teks diproses.
 - [`game-localization/references/`](../game-localization/references/) mengandungi peraturan dan edisi glosari mengikut bahasa.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) mengandungi manifes dan ikon pemalam.
+- [`packaging/plugin/`](../packaging/plugin/) mengandungi manifes dan ikon pemalam.
 - [`packages/`](../packages/) mengandungi arkib sedia untuk dimuat naik.
 
 Untuk membina semula kedua-dua ZIP daripada sumber yang sama, jalankan `python scripts/package.py` dari akar repositori dengan Python 3.9 atau lebih baharu. Versi ditentukan oleh manifes pemalam ChatGPT. Sebelum edaran, muat naik setiap ZIP ke produk berkenaan dan uji kumpulan teks kecil dengan glosari dan pemegang tempat terlindung.

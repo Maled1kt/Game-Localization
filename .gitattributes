@@ -3,4 +3,4 @@
 
 /LICENSE text eol=lf
 /game-localization/** text=auto eol=lf
-/packaging/chatgpt/** text=auto eol=lf
+/packaging/plugin/** text=auto eol=lf

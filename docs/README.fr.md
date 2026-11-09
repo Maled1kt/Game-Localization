@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Dans Codex en local et Claude Code, vous pouvez installer Game Localization depuis le catalogue GitHub commun. Le guide couvre la première installation, le passage depuis le ZIP et les mises à jour dans chaque client. [Catalogue GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Essayez [l’exemple de prise en main en 12 lignes](../game-localization/example
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) définit quand la compétence intervient et comment elle traite un lot.
 - [`game-localization/references/`](../game-localization/references/) contient les règles et les versions du glossaire de départ.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) contient le manifeste et l’icône du plugin.
+- [`packaging/plugin/`](../packaging/plugin/) contient le manifeste et l’icône du plugin.
 - [`packages/`](../packages/) contient les archives prêtes à importer.
 
 Pour reconstruire les deux ZIP, exécutez `python scripts/package.py` à la racine du dépôt avec Python 3.9 ou ultérieur. Le numéro de version vient du manifeste du plugin ChatGPT. Avant diffusion, importez chaque ZIP dans le produit prévu et testez un petit lot avec un glossaire et une variable protégée.

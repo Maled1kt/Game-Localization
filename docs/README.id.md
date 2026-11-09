@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Di Codex lokal dan Claude Code, kamu dapat memasang Game Localization dari katalog GitHub bersama. Panduan ini menjelaskan pemasangan pertama, peralihan dari ZIP, dan pembaruan di masing-masing klien. [Katalog GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Coba [contoh penggunaan pertama dengan 12 baris](../game-localization/examples/f
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) menentukan kapan skill digunakan dan cara memproses sekumpulan teks.
 - [`game-localization/references/`](../game-localization/references/) berisi aturan dan edisi glosarium awal per bahasa.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) berisi manifes dan ikon plugin.
+- [`packaging/plugin/`](../packaging/plugin/) berisi manifes dan ikon plugin.
 - [`packages/`](../packages/) berisi arsip yang siap diunggah.
 
 Untuk membangun ulang kedua ZIP dari sumber yang sama, jalankan `python scripts/package.py` dari akar repositori dengan Python 3.9 atau lebih baru. Versi berasal dari manifes plugin ChatGPT. Sebelum mendistribusikan, unggah tiap ZIP ke produk tujuannya dan uji dengan sedikit teks yang memuat glosarium dan placeholder terlindungi.

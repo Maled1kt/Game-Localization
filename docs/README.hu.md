@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.13.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 A helyi Codexben és a Claude Code-ban a közös GitHub-katalógusból telepítheted a Game Localizationt. Az útmutató bemutatja az első telepítést, a ZIP-ről való váltást és a frissítést mindkét kliensben. [GitHub-katalógus](plugin-catalog.md)
@@ -133,7 +133,7 @@ A **High+** a kliensben elérhető High vagy magasabb szintet jelöli. A modellt
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) meghatározza, mikor fut a készség, és hogyan dolgozza fel a szövegeket.
 - [`game-localization/references/`](../game-localization/references/) tartalmazza a szabályokat és a nyelvi szójegyzékeket.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) tartalmazza a bővítmény jegyzékfájlját és ikonját.
+- [`packaging/plugin/`](../packaging/plugin/) tartalmazza a bővítmény jegyzékfájlját és ikonját.
 - [`packages/`](../packages/) tartalmazza a feltöltésre kész archívumokat.
 
 Mindkét ZIP újraépítéséhez futtasd a `python scripts/package.py` parancsot a tároló gyökerében Python 3.9 vagy újabb verzióval. A verzió a ChatGPT-bővítmény jegyzékfájljából származik. Terjesztés előtt töltsd fel mindkét ZIP-et a megfelelő termékbe, és tesztelj egy kisebb szövegcsomagot szójegyzékkel és védett helyőrzővel.

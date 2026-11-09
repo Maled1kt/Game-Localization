@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.13.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Paikallisessa Codexissa ja Claude Codessa voit asentaa Game Localizationin yhteisestä GitHub-luettelosta. Ohje kattaa ensiasennuksen, siirtymisen ZIP-versiosta ja päivitykset kummassakin sovelluksessa. [GitHub-luettelo](plugin-catalog.md)
@@ -133,7 +133,7 @@ Kokeile [12 rivin aloitusesimerkkiä](../game-localization/examples/first-run/RE
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) määrittää, milloin taito käynnistyy ja miten se käsittelee tekstierän.
 - [`game-localization/references/`](../game-localization/references/) sisältää säännöt ja kielikohtaiset aloitussanastot.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) sisältää laajennuksen manifestin ja kuvakkeen.
+- [`packaging/plugin/`](../packaging/plugin/) sisältää laajennuksen manifestin ja kuvakkeen.
 - [`packages/`](../packages/) sisältää latausvalmiit paketit.
 
 Luo molemmat ZIPit samasta lähteestä suorittamalla `python scripts/package.py` tietovaraston juurikansiossa Python 3.9:llä tai uudemmalla. Versio saadaan ChatGPT-laajennuksen manifestista. Lataa kumpikin ZIP kohdetuotteeseen ennen jakelua ja testaa pientä tekstierää, jossa on sanasto ja suojattu paikkamerkki.

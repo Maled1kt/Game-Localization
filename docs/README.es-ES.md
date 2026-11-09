@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En Codex local y Claude Code puedes instalar Game Localization desde el catálogo compartido de GitHub. La guía explica la instalación inicial, el cambio desde el ZIP y cómo actualizar en cada cliente. [Catálogo de GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Prueba el [ejemplo de inicio con 12 filas](../game-localization/examples/first-r
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) define cuándo se activa la habilidad y cómo procesa un lote.
 - [`game-localization/references/`](../game-localization/references/) contiene las reglas y las versiones del glosario por idioma.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) contiene el manifiesto y el icono del plugin.
+- [`packaging/plugin/`](../packaging/plugin/) contiene el manifiesto y el icono del plugin.
 - [`packages/`](../packages/) contiene los archivos listos para subir.
 
 Para reconstruir los dos ZIP desde el mismo código fuente, ejecuta `python scripts/package.py` en la raíz del repositorio con Python 3.9 o posterior. La versión proviene del manifiesto del plugin. Antes de distribuir, sube cada ZIP a su producto y prueba un lote pequeño con un glosario y un marcador protegido.

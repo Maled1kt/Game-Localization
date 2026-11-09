@@ -22,8 +22,8 @@ Game Localization — навык для агентов, который пере�
 
 | Среда | Пакет |
 | --- | --- |
-| ChatGPT или Codex с правом загрузки плагинов | [ZIP плагина ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude или рабочие пространства ChatGPT с правом загрузки отдельных навыков | [ZIP отдельного навыка](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT или Codex с правом загрузки плагинов | [ZIP плагина ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude или рабочие пространства ChatGPT с правом загрузки отдельных навыков | [ZIP отдельного навыка](../packages/game-localization-skill-v0.1.13.zip) |
 | Локальный Codex или Claude Code | [Установка из папки с исходниками](#установка-одной-командой-для-локальных-агентов) |
 
 В локальном Codex и Claude Code Game Localization можно установить из общего каталога GitHub. В инструкции описаны первая установка, переход с ZIP и обновление в каждом клиенте. [Каталог GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) определяет, когда запускается навык и как он обрабатывает пакет строк.
 - [`game-localization/references/`](../game-localization/references/) содержит правила и версии стартового глоссария по локалям.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) содержит манифест и иконку плагина.
+- [`packaging/plugin/`](../packaging/plugin/) содержит манифест и иконку плагина.
 - [`packages/`](../packages/) содержит архивы для загрузки.
 
 Чтобы собрать оба ZIP из одних исходников, выполните `python scripts/package.py` в корне репозитория с Python 3.9 или новее. Версия берётся из манифеста плагина ChatGPT. Перед распространением загрузите каждый ZIP в соответствующий продукт и проверьте небольшой пакет строк с глоссарием и защищённым плейсхолдером.

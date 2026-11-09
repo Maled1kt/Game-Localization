@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.13.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Trong Codex cục bộ và Claude Code, bạn có thể cài đặt Game Localization từ danh mục GitHub chung. Hướng dẫn giải thích cách cài lần đầu, chuyển từ bản ZIP và cập nhật trong từng ứng dụng. [Danh mục GitHub](plugin-catalog.md)
@@ -133,7 +133,7 @@ Hãy thử [ví dụ khởi đầu gồm 12 dòng](../game-localization/examples
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) quy định khi nào kỹ năng chạy và cách xử lý một lô văn bản.
 - [`game-localization/references/`](../game-localization/references/) chứa quy tắc và các bảng thuật ngữ theo ngôn ngữ.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) chứa tệp kê khai và biểu tượng plugin.
+- [`packaging/plugin/`](../packaging/plugin/) chứa tệp kê khai và biểu tượng plugin.
 - [`packages/`](../packages/) chứa các tệp nén sẵn để tải lên.
 
 Để tạo lại hai ZIP từ cùng nguồn, chạy `python scripts/package.py` ở thư mục gốc kho mã với Python 3.9 trở lên. Phiên bản lấy từ tệp kê khai plugin ChatGPT. Trước khi phân phối, tải từng ZIP lên đúng sản phẩm và thử một lô nhỏ có bảng thuật ngữ và biến giữ chỗ được bảo vệ.

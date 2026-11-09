@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.13.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 V místním Codexu a Claude Code můžete Game Localization nainstalovat ze společného katalogu na GitHubu. Návod popisuje první instalaci, přechod ze ZIPu a aktualizace v každém klientovi. [Katalog na GitHubu](plugin-catalog.md)
@@ -133,7 +133,7 @@ Vyzkoušejte [úvodní příklad s 12 řádky](../game-localization/examples/fir
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) určuje, kdy se dovednost používá a jak zpracuje dávku.
 - [`game-localization/references/`](../game-localization/references/) obsahuje pravidla a jazykové verze glosáře.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) obsahuje manifest a ikonu pluginu.
+- [`packaging/plugin/`](../packaging/plugin/) obsahuje manifest a ikonu pluginu.
 - [`packages/`](../packages/) obsahuje archivy připravené k nahrání.
 
 Oba ZIPy vytvoříte ze stejného zdroje příkazem `python scripts/package.py` v kořeni repozitáře s Python 3.9 nebo novějším. Verze vychází z manifestu pluginu ChatGPT. Před distribucí nahrajte každý ZIP do odpovídajícího produktu a ověřte malou dávku s glosářem a chráněným zástupným symbolem.

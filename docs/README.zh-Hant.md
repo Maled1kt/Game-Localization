@@ -22,8 +22,8 @@ Game Localization 是一項代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用環境 | 安裝套件 |
 | --- | --- |
-| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.12.zip) |
+| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.13.zip) |
 | 本機 Codex 或 Claude Code | [從原始碼資料夾安裝](#用一個指令安裝到本機代理) |
 
 在本機 Codex 和 Claude Code 中，可以從共用的 GitHub 目錄安裝 Game Localization。指南說明首次安裝、從 ZIP 版切換，以及在各用戶端更新的方法。[GitHub 目錄](plugin-catalog.md)
@@ -133,7 +133,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) 定義技能的啟用條件和批次處理方式。
 - [`game-localization/references/`](../game-localization/references/) 包含規則及各語言版本的入門詞彙表。
-- [`packaging/chatgpt/`](../packaging/chatgpt/) 包含外掛資訊清單與圖示。
+- [`packaging/plugin/`](../packaging/plugin/) 包含外掛資訊清單與圖示。
 - [`packages/`](../packages/) 存放可直接上傳的壓縮檔。
 
 要用同一份原始碼重建兩個 ZIP，請使用 Python 3.9 或更新版本，在儲存庫根目錄執行 `python scripts/package.py`。版本來自 ChatGPT 外掛資訊清單。散布新版前，請將兩個 ZIP 分別上傳至對應產品，並用附有詞彙表和受保護預留位置的小批文字測試。

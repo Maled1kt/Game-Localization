@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.12.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.13.zip) |
 | Local Codex or Claude Code with plugin support | [Install from the GitHub catalog](docs/plugin-catalog.md) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
@@ -151,7 +151,7 @@ We use **High+** as shorthand for High or a higher setting exposed by the client
 
 - [`game-localization/SKILL.md`](game-localization/SKILL.md) defines when the skill runs and how it handles a batch.
 - [`game-localization/references/`](game-localization/references/) contains the rules and the locale editions of the starter glossary.
-- [`packaging/chatgpt/`](packaging/chatgpt/) contains the Codex manifest, icon, and generated catalog bundle for both clients.
+- [`packaging/plugin/`](packaging/plugin/) contains the Codex manifest, icon, and generated catalog bundle for both clients.
 - [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) is the shared catalog.
 - [`packages/`](packages/) contains the upload-ready archives.
 

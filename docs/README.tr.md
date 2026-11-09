@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.12.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.12.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.13.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.13.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 Yerel Codex ve Claude Code’da Game Localization’ı ortak GitHub kataloğundan yükleyebilirsiniz. Kılavuz ilk kurulumu, ZIP’ten geçişi ve her istemcide güncellemeyi açıklar. [GitHub kataloğu](plugin-catalog.md)
@@ -133,7 +133,7 @@ Bir çeviriyi güncellemek için önceki ve güncel kaynak CSV dosyalarını, on
 
 - [`game-localization/SKILL.md`](../game-localization/SKILL.md) becerinin ne zaman çalışacağını ve bir metin grubunu nasıl işleyeceğini tanımlar.
 - [`game-localization/references/`](../game-localization/references/) kuralları ve başlangıç sözlüğünün dil sürümlerini içerir.
-- [`packaging/chatgpt/`](../packaging/chatgpt/) eklenti bildirim dosyasını ve simgesini içerir.
+- [`packaging/plugin/`](../packaging/plugin/) eklenti bildirim dosyasını ve simgesini içerir.
 - [`packages/`](../packages/) yüklemeye hazır arşivleri içerir.
 
 İki ZIP’i aynı kaynaktan yeniden oluşturmak için deponun kökünde Python 3.9 veya üstüyle `python scripts/package.py` çalıştırın. Sürüm, ChatGPT eklentisinin bildirim dosyasından alınır. Dağıtımdan önce her ZIP’i ilgili ürüne yükleyin ve sözlükle korunan bir yer tutucu içeren küçük bir metin grubuyla deneyin.
