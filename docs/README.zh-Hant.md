@@ -22,8 +22,8 @@ Game Localization 是一項代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用環境 | 安裝套件 |
 | --- | --- |
-| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | 本機 Codex 或 Claude Code | [從原始碼資料夾安裝](#用一個指令安裝到本機代理) |
 
 在 GitHub 開啟套件連結並選擇 **Download raw file**。上傳時保留 ZIP 格式。
@@ -85,6 +85,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 使用 Game Localization 將附件活頁簿的 ENGLISH 欄翻譯成德語（de-DE），並寫入新 .xlsx 副本的 GERMAN 欄。參考隨附的詞彙表及 DESCRIPTION 欄。保留鍵值、來源欄、預留位置與標籤。另列術語問題和檢查結果，並註明列 ID。
 ~~~
+
+對於支援的 `.xlsx` 檔案，請指定工作表、標題列、含有固定 ID 的欄、來源欄和現有的目標欄。使用 Python 3.9 或更新版本時，技能會依 ID 將譯文寫入新副本，並檢查活頁簿其餘部分是否保留。若無法驗證活頁簿，技能可以提供含有 ID 的 CSV。[Excel 使用說明](../game-localization/references/xlsx-qa.md)
 
 **商店頁面提示詞範例**
 

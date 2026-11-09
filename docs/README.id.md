@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -85,6 +85,8 @@ Gunakan [templat glosarium proyek](../game-localization/references/project-gloss
 ~~~text
 Gunakan Game Localization untuk menerjemahkan kolom ENGLISH di buku kerja terlampir ke bahasa Jerman (de-DE). Masukkan terjemahan ke GERMAN dalam salinan .xlsx baru. Gunakan glosarium terlampir dan kolom DESCRIPTION sebagai konteks. Pertahankan kunci, kolom sumber, placeholder, dan tag. Cantumkan pertanyaan istilah dan hasil pemeriksaan secara terpisah beserta ID baris.
 ~~~
+
+Untuk file `.xlsx` yang didukung, tentukan lembar kerja, baris header, kolom ID tetap, kolom sumber, dan kolom target yang sudah ada. Dengan Python 3.9 atau yang lebih baru, skill menulis terjemahan berdasarkan ID ke salinan baru dan memeriksa apakah bagian lain buku kerja tetap terjaga. Jika buku kerja tidak dapat diperiksa, skill dapat menawarkan CSV dengan ID. [Petunjuk untuk Excel](../game-localization/references/xlsx-qa.md)
 
 **Contoh permintaan untuk halaman toko**
 

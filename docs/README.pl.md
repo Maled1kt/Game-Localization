@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.8.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -85,6 +85,8 @@ Użyj [szablonu glosariusza projektu](../game-localization/references/project-gl
 ~~~text
 Użyj Game Localization, aby przetłumaczyć kolumnę ENGLISH załączonego skoroszytu na niemiecki (de-DE). Zapisz przekład w GERMAN w nowej kopii .xlsx. Wykorzystaj dołączony glosariusz i kolumnę DESCRIPTION. Zachowaj klucze, kolumny źródłowe, symbole zastępcze i znaczniki. Pytania terminologiczne i wyniki kontroli podaj oddzielnie z identyfikatorami wierszy.
 ~~~
+
+W przypadku obsługiwanych plików `.xlsx` podaj arkusz, wiersz nagłówków, kolumnę ze stałymi identyfikatorami, kolumnę źródłową i istniejącą kolumnę docelową. Przy użyciu Pythona 3.9 lub nowszego umiejętność zapisuje tłumaczenia według ID w nowej kopii i sprawdza, czy reszta skoroszytu została zachowana. Jeśli nie można zweryfikować skoroszytu, może zaproponować plik CSV z identyfikatorami. [Instrukcje dla Excela](../game-localization/references/xlsx-qa.md)
 
 **Przykładowe polecenie dla strony sklepu**
 

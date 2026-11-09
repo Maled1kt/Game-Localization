@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -85,6 +85,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 Game Localization を使って添付のブックの ENGLISH 列をドイツ語（de-DE）に訳してください。新しい .xlsx コピーの GERMAN 列に訳文を入れ、添付の用語集と DESCRIPTION 列を参照してください。キー、原文列、プレースホルダー、タグを保持し、用語の質問とチェック結果は行 ID を添えて別にまとめてください。
 ~~~
+
+対応する `.xlsx` ファイルでは、シート名、見出し行、固定の行 ID が入った列、原文列、既存の翻訳先列を指定してください。Python 3.9 以降が使える場合、スキルは ID で行を照合して新しいコピーに訳文を書き込み、ブックの他の部分が保持されているかを確認します。ブックを確認できない場合は、ID 付きの CSV を提示できます。[Excel の手順](../game-localization/references/xlsx-qa.md)
 
 **ストアページ用プロンプト例**
 

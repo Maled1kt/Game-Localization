@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P1.1 is complete. The `0.1.7` packages include a portable project glossary with separate approved and proposed terms. [Glossary workflow](game-localization/references/project-glossary.md) · [Changelog](CHANGELOG.md)
+**Current status.** P1.2 is complete. The `0.1.8` packages include an updater that writes translations by ID to a verified Excel workbook copy. [Excel workflow](game-localization/references/xlsx-qa.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P1.2. Verify Excel workbooks.
+**Next task.** P1.3. Give testers specific in-build checks.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -17,7 +17,7 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 ## P1 · Working with a real project
 
 - [x] **P1.1. Make the project glossary portable.** Provide a template with locale, context, and term status. Save approved decisions in a file for the next chat and list proposed terms separately. [Project glossary template](game-localization/references/project-glossary-template.md)
-- [ ] **P1.2. Verify Excel workbooks.** For supported `.xlsx` files, write translations to the requested column in a new copy and verify that the rest of the workbook is preserved. Then evaluate support for simple JSON resources.
+- [x] **P1.2. Verify Excel workbooks.** For supported `.xlsx` files, write translations by ID to the requested column in a new copy and verify preservation of the rest of the workbook. Record the scope of a possible JSON workflow. [Excel workflow](game-localization/references/xlsx-qa.md) · [Tests](tests/test_update_xlsx.py)
 - [ ] **P1.3. Give testers specific in-build checks.** Identify the screen, string ID, and conditions for each check. Start with long substitutions and clipped text. Add width estimates when font and layout parameters are available.
 
 ## P2 · Translation updates and Steam
@@ -52,3 +52,10 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - All six CSV tests passed. Both ZIPs rebuilt byte for byte and contained the glossary workflow and template. The download and template links resolved in all 30 README editions.
 - The local glossary walkthrough saved and reopened a complete glossary from each extracted template. The approved German entry and unrelated approved entry were retained, and the Brazilian Portuguese proposal stayed pending.
 - Manual app verification is pending. In ChatGPT and Claude, approve one locale's term, save the returned glossary, and attach it in a new chat to confirm that the approved wording is reused and the other proposal stays pending.
+
+## Version 0.1.8 verification
+
+- All ten regression tests passed. The Excel tests cover shared and inline text, missing target cells, ID matching, styles, formula protection, merged ranges, duplicate and unknown IDs, and existing output paths.
+- Both ZIPs rebuilt byte for byte. The updater from each extracted ZIP wrote the expected cells. A separate workbook reader confirmed literal text, cell styles, column width, source cells, the neighboring formula, and the second sheet. All 60 archive links and 30 Excel guide links resolved locally.
+- Manual app verification is pending. In ChatGPT and Claude, attach a two-sheet workbook and ask for a new copy with one translated column. Open that copy in Excel, confirm that it opens without repair, and verify that the intended values, styles, formula, and second sheet are present.
+- A first JSON workflow is feasible for UTF-8 files whose top-level object maps stable keys to strings. Use a duplicate-aware parse, compare key coverage and protected tokens, and verify a new output file. Treat nested objects, arrays, mixed value types, and engine-specific formats as separate work. JSON editing is deferred and does not change the task order. [JSON object rules](https://www.rfc-editor.org/rfc/rfc8259#section-4)

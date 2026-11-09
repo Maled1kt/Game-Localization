@@ -22,8 +22,8 @@ Game Localization เป็นสกิลสำหรับเอเจนต�
 
 | สภาพแวดล้อม | แพ็กเกจ |
 | --- | --- |
-| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
 
 เปิดลิงก์แพ็กเกจบน GitHub แล้วเลือก **Download raw file** อัปโหลด ZIP โดยไม่ต้องแตกไฟล์
@@ -85,6 +85,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 ใช้ Game Localization แปลคอลัมน์ ENGLISH ในสมุดงานที่แนบมาเป็นภาษาเยอรมัน (de-DE) ใส่คำแปลในคอลัมน์ GERMAN ของสำเนา .xlsx ใหม่ ใช้อภิธานศัพท์ที่แนบมาและคอลัมน์ DESCRIPTION เป็นบริบท คงคีย์ คอลัมน์ต้นฉบับ ตัวแทนค่า และแท็ก แยกคำถามด้านคำศัพท์กับผลการตรวจและระบุ ID แถว
 ~~~
+
+สำหรับไฟล์ `.xlsx` ที่รองรับ ให้ระบุเวิร์กชีต แถวหัวตาราง คอลัมน์ ID ประจำแถว คอลัมน์ต้นฉบับ และคอลัมน์ปลายทางที่มีอยู่ เมื่อใช้ Python 3.9 ขึ้นไป สกิลจะเขียนคำแปลตาม ID ลงในสำเนาใหม่และตรวจว่าส่วนอื่นของสมุดงานยังคงเดิม หากตรวจสอบสมุดงานไม่ได้ สกิลสามารถเสนอไฟล์ CSV ที่มี ID ได้ [วิธีใช้กับ Excel](../game-localization/references/xlsx-qa.md)
 
 **ตัวอย่างพรอมต์สำหรับหน้าร้าน**
 

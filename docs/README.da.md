@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.8.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 Åbn pakkelinket på GitHub, og vælg **Download raw file**. Upload ZIP-filen uden at pakke den ud.
@@ -85,6 +85,8 @@ Brug [skabelonen til projektordlisten](../game-localization/references/project-g
 ~~~text
 Brug Game Localization til at oversætte kolonnen ENGLISH i den vedhæftede projektmappe til tysk (de-DE). Skriv oversættelserne i GERMAN i en ny .xlsx-kopi. Brug den vedhæftede ordliste og kolonnen DESCRIPTION som kontekst. Bevar nøgler, kildekolonner, pladsholdere og tags. Angiv terminologispørgsmål og kontroller separat med række-ID’er.
 ~~~
+
+For understøttede `.xlsx`-filer skal du angive arket, overskriftsrækken, kolonnen med faste ID’er, kildekolonnen og den eksisterende målkolonne. Med Python 3.9 eller nyere skriver færdigheden oversættelser efter ID i en ny kopi og kontrollerer, at resten af projektmappen er bevaret. Hvis projektmappen ikke kan kontrolleres, kan du få en CSV med ID’er. [Vejledning til Excel](../game-localization/references/xlsx-qa.md)
 
 **Eksempel på prompt til butiksside**
 

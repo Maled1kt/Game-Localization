@@ -20,6 +20,7 @@ When the user wants to try the skill on sample data, offer the bundled [first-ru
 
 ## Translate a batch
 
+- For a requested `.xlsx` deliverable, follow the [Excel workflow](references/xlsx-qa.md). Confirm the worksheet, header row, stable ID column, source column, and existing target column. Use a new workbook copy and verify it before handoff.
 - Establish what each string does in the game. Preserve meaning, mechanics, quantities, conditions, speaker intent, and the relevant voice. Prefer established game UI phrasing when the project glossary allows it. Apply project-specific style settings only to the content they govern.
 - Apply approved terms in every applicable occurrence. Match the intended concept, allow only permitted inflection or variants, and preserve exact spellings where required. For each new project term, record the source, locale, proposed equivalent, context, and draft status. Apply a temporary form consistently and mark the affected output as draft while material terms await approval.
 - Keep source IDs, keys, protected placeholders, tags, escapes, and significant structure intact. Preserve argument identity, multiplicity, and scope. Reorder only when the format permits it. Use a supported plural mechanism or ask the developer for the missing variant. Never silently resolve an approved-term conflict, a meaning-changing ambiguity, or a hard limit by discarding information.

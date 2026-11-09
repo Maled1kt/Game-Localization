@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -85,6 +85,8 @@ Folosește [șablonul de glosar al proiectului](../game-localization/references/
 ~~~text
 Folosește Game Localization pentru a traduce coloana ENGLISH a registrului atașat în germană (de-DE). Scrie traducerile în GERMAN într-o copie .xlsx nouă. Folosește glosarul atașat și coloana DESCRIPTION pentru context. Păstrează cheile, coloanele sursă, substituenții și etichetele. Listează separat întrebările terminologice și verificările, cu ID-urile rândurilor.
 ~~~
+
+Pentru fișierele `.xlsx` acceptate, specifică foaia, rândul de antet, coloana cu ID-uri stabile, coloana sursă și coloana destinație existentă. Cu Python 3.9 sau o versiune mai nouă, abilitatea scrie traducerile după ID într-o copie nouă și verifică dacă restul registrului a fost păstrat. Dacă registrul nu poate fi verificat, abilitatea poate oferi un CSV cu ID-uri. [Instrucțiuni pentru Excel](../game-localization/references/xlsx-qa.md)
 
 **Exemplu de solicitare pentru o pagină de magazin**
 

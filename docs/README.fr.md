@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Sur GitHub, ouvrez le lien du paquet et choisissez **Download raw file**. Importez le ZIP sans le décompresser.
@@ -85,6 +85,8 @@ Utilisez le [modèle de glossaire de projet](../game-localization/references/pro
 ~~~text
 Utilise Game Localization pour traduire en allemand (de-DE) la colonne ENGLISH du classeur joint. Écris les traductions dans GERMAN, dans une nouvelle copie .xlsx. Utilise le glossaire joint et la colonne DESCRIPTION comme contexte. Préserve les clés, colonnes source, variables et balises. Liste séparément les questions terminologiques et les contrôles avec les identifiants de ligne.
 ~~~
+
+Pour les fichiers `.xlsx` pris en charge, indiquez la feuille, la ligne d’en-tête, la colonne des identifiants stables, la colonne source et la colonne cible existante. Avec Python 3.9 ou une version ultérieure, la compétence écrit les traductions par identifiant dans une nouvelle copie et vérifie que le reste du classeur est préservé. Si le classeur ne peut pas être vérifié, elle peut proposer un CSV avec les identifiants. [Instructions pour Excel](../game-localization/references/xlsx-qa.md)
 
 **Requête pour une page de boutique**
 

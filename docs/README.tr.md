@@ -22,8 +22,8 @@ Beceri, yönergeler ve başvuru dosyaları içerir. Proje API anahtarı, bağlay
 
 | Ortam | Paket |
 | --- | --- |
-| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.7.zip) |
+| Eklenti yükleme yetkisi olan ChatGPT veya Codex | [ChatGPT eklentisi ZIP dosyası](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude veya bağımsız beceri yükleyebilen ChatGPT çalışma alanları | [Bağımsız beceri ZIP dosyası](../packages/game-localization-skill-v0.1.8.zip) |
 | Yerel Codex veya Claude Code | [Kaynak klasörden kurulum](#yerel-ajanlar-için-tek-komutla-kurulum) |
 
 GitHub’da paket bağlantısını açıp **Download raw file** seçeneğini seçin. ZIP dosyasını açmadan yükleyin.
@@ -85,6 +85,8 @@ Onaylanan terimleri önerilerden ayrı tutmak için [proje sözlüğü şablonun
 ~~~text
 Ekli çalışma kitabının ENGLISH sütununu Game Localization ile Almancaya (de-DE) çevir. Çevirileri yeni bir .xlsx kopyasında GERMAN sütununa yaz. Ekli terim sözlüğünü ve DESCRIPTION sütununu bağlam için kullan. Anahtarları, kaynak sütunları, yer tutucuları ve etiketleri koru. Terminoloji sorularını ve kontrol sonuçlarını satır kimlikleriyle ayrı listele.
 ~~~
+
+Desteklenen `.xlsx` dosyaları için çalışma sayfasını, başlık satırını, sabit kimliklerin bulunduğu sütunu, kaynak sütunu ve mevcut hedef sütunu belirtin. Python 3.9 veya üzeriyle beceri, çevirileri kimliğe göre yeni bir kopyaya yazar ve çalışma kitabının geri kalanının korunduğunu kontrol eder. Çalışma kitabı doğrulanamazsa kimlikleri içeren bir CSV önerebilir. [Excel yönergeleri](../game-localization/references/xlsx-qa.md)
 
 **Mağaza sayfası için örnek istem**
 

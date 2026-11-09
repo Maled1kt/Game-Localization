@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.8.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -85,6 +85,8 @@ Nutze die [Vorlage für das Projektglossar](../game-localization/references/proj
 ~~~text
 Übersetze mit Game Localization die Spalte ENGLISH der angehängten Arbeitsmappe ins Deutsche (de-DE). Schreibe die Übersetzungen in GERMAN in einer neuen .xlsx-Kopie. Verwende das Glossar und die Spalte DESCRIPTION als Kontext. Erhalte Schlüssel, Quellspalten, Platzhalter und Tags. Liste Terminologiefragen und Prüfungen separat mit Zeilen-IDs auf.
 ~~~
+
+Gib für unterstützte `.xlsx`-Dateien das Tabellenblatt, die Kopfzeile, die Spalte mit stabilen Zeilen-IDs, die Quellspalte und die vorhandene Zielspalte an. Mit Python 3.9 oder neuer schreibt der Skill die Übersetzungen anhand der IDs in eine neue Kopie und prüft, ob der Rest der Arbeitsmappe erhalten bleibt. Lässt sich die Arbeitsmappe nicht prüfen, kann der Skill eine CSV-Datei mit IDs anbieten. [Anleitung für Excel](../game-localization/references/xlsx-qa.md)
 
 **Beispiel für Shopseiten**
 

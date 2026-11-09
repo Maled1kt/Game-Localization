@@ -22,8 +22,8 @@ De skill bevat instructies en referentiebestanden. Een project-API-sleutel, conn
 
 | Omgeving | Pakket |
 | --- | --- |
-| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT of Codex met rechten om plug-ins te uploaden | [ZIP voor de ChatGPT-plug-in](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude of ChatGPT-werkruimten die losse skills mogen uploaden | [ZIP voor de losse skill](../packages/game-localization-skill-v0.1.8.zip) |
 | Lokale Codex of Claude Code | [Installeren vanuit de bronmap](#lokale-agents-installeren-met-één-opdracht) |
 
 Open de pakketlink op GitHub en kies **Download raw file**. Upload het ZIP-bestand zonder het uit te pakken.
@@ -85,6 +85,8 @@ Gebruik het [sjabloon voor de projectwoordenlijst](../game-localization/referenc
 ~~~text
 Gebruik Game Localization om de kolom ENGLISH in de bijgevoegde werkmap naar het Duits (de-DE) te vertalen. Schrijf de vertalingen naar GERMAN in een nieuwe .xlsx-kopie. Gebruik de bijgevoegde woordenlijst en DESCRIPTION als context. Behoud sleutels, bronkolommen, tijdelijke aanduidingen en tags. Vermeld terminologievragen en controles afzonderlijk, met rij-ID’s.
 ~~~
+
+Geef voor ondersteunde `.xlsx`-bestanden het werkblad, de kopregel, de kolom met vaste rij-ID’s, de bronkolom en de bestaande doelkolom op. Met Python 3.9 of hoger schrijft de skill vertalingen op basis van ID naar een nieuwe kopie en controleert die of de rest van de werkmap behouden is. Als de werkmap niet kan worden gecontroleerd, kan de skill een CSV-bestand met ID’s aanbieden. [Excel-instructies](../game-localization/references/xlsx-qa.md)
 
 **Voorbeeldprompt voor een winkelpagina**
 

@@ -22,8 +22,8 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
@@ -85,6 +85,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 使用 Game Localization 将附件工作簿的 ENGLISH 列译成德语（de-DE），把译文写入新 .xlsx 副本的 GERMAN 列。参考附带的术语表和 DESCRIPTION 列。保留键、源列、占位符及标签。另列术语问题和检查结果，并标注行 ID。
 ~~~
+
+对于受支持的 `.xlsx` 文件，请指定工作表、表头行、包含固定 ID 的列、源列和现有的目标列。在 Python 3.9 或更高版本中，技能会按 ID 将译文写入新副本，并检查工作簿其余部分是否保留。如果无法验证工作簿，技能可以提供包含 ID 的 CSV。[Excel 使用说明](../game-localization/references/xlsx-qa.md)
 
 **商店页面提示词示例**
 

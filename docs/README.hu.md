@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 Nyisd meg a csomag hivatkozását a GitHubon, és válaszd a **Download raw file** lehetőséget. A ZIP-et kicsomagolás nélkül töltsd fel.
@@ -85,6 +85,8 @@ A [projektszójegyzék-sablonban](../game-localization/references/project-glossa
 ~~~text
 A Game Localization segítségével fordítsd le a mellékelt munkafüzet ENGLISH oszlopát németre (de-DE). A fordítást új .xlsx-másolatban a GERMAN oszlopba írd. Használd a mellékelt szójegyzéket és a DESCRIPTION oszlopot háttérként. Őrizd meg a kulcsokat, a forrásoszlopokat, a helyőrzőket és a címkéket. A terminológiai kérdéseket és az ellenőrzéseket külön sorold fel a sorazonosítókkal együtt.
 ~~~
+
+Támogatott `.xlsx`-fájloknál add meg a munkalapot, a fejlécsor számát, az állandó azonosítók oszlopát, a forrásoszlopot és a már létező céloszlopot. Python 3.9 vagy újabb verzió esetén a készség az azonosítók alapján új másolatba írja a fordításokat, és ellenőrzi, hogy a munkafüzet többi része megmaradt-e. Ha a munkafüzet nem ellenőrizhető, azonosítókat tartalmazó CSV-fájlt ajánlhat. [Excel-útmutató](../game-localization/references/xlsx-qa.md)
 
 **Példa áruházi oldalhoz**
 

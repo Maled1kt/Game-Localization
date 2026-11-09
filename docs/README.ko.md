@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 GitHub에서 패키지 링크를 열고 **Download raw file**을 선택합니다. ZIP의 압축을 풀지 않고 업로드합니다.
@@ -85,6 +85,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 ~~~text
 Game Localization으로 첨부 통합 문서의 ENGLISH 열을 독일어(de-DE)로 번역해 주세요. 새 .xlsx 사본의 GERMAN 열에 번역문을 넣어 주세요. 첨부 용어집과 DESCRIPTION 열을 참고하고 키, 원본 열, 자리표시자와 태그를 유지해 주세요. 용어 질문과 점검 결과는 행 ID와 함께 별도로 정리해 주세요.
 ~~~
+
+지원되는 `.xlsx` 파일의 경우 워크시트, 머리글 행, 고정 ID 열, 원본 열, 기존 번역 대상 열을 지정하세요. Python 3.9 이상을 사용할 수 있으면 스킬이 ID를 기준으로 새 사본에 번역을 쓰고 통합 문서의 나머지 부분이 보존됐는지 확인합니다. 통합 문서를 검증할 수 없는 경우 ID가 포함된 CSV를 제안할 수 있습니다. [Excel 사용 방법](../game-localization/references/xlsx-qa.md)
 
 **스토어 페이지 프롬프트 예시**
 

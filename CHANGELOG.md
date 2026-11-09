@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8 · 2026-11-09
+
+- Added an Excel workflow that writes reviewed translations by ID to one existing target column in a new workbook copy.
+- The bundled updater reads back the translated cells and checks preservation of the rest of the workbook before handoff. Unsupported inputs can be handed off as a CSV keyed by ID.
+
 ## 0.1.7 · 2026-11-09
 
 - Added a portable project glossary template that keeps approved terms and proposals in separate sections with locale and game context.

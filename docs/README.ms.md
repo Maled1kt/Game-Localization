@@ -22,8 +22,8 @@ Kemahiran mengandungi arahan dan fail rujukan. Ia boleh digunakan tanpa kunci AP
 
 | Persekitaran | Pakej |
 | --- | --- |
-| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT atau Codex dengan kebenaran memuat naik pemalam | [ZIP pemalam ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude atau ruang kerja ChatGPT yang layak memuat naik kemahiran kendiri | [ZIP kemahiran kendiri](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex setempat atau Claude Code | [Pasang daripada folder sumber](#pemasangan-setempat-dengan-satu-perintah) |
 
 Buka pautan pakej di GitHub dan pilih **Download raw file**. Muat naik ZIP tanpa mengekstraknya.
@@ -85,6 +85,8 @@ Gunakan [templat glosari projek](../game-localization/references/project-glossar
 ~~~text
 Gunakan Game Localization untuk menterjemah lajur ENGLISH dalam buku kerja yang dilampirkan ke bahasa Jerman (de-DE). Tulis terjemahan ke GERMAN dalam salinan .xlsx baharu. Gunakan glosari lampiran dan lajur DESCRIPTION sebagai konteks. Kekalkan kunci, lajur sumber, pemegang tempat dan tag. Senaraikan soalan istilah dan hasil semakan secara berasingan bersama ID baris.
 ~~~
+
+Untuk fail `.xlsx` yang disokong, nyatakan lembaran kerja, baris pengepala, lajur ID tetap, lajur sumber dan lajur sasaran sedia ada. Dengan Python 3.9 atau lebih baharu, kemahiran ini menulis terjemahan mengikut ID dalam salinan baharu dan menyemak sama ada bahagian lain buku kerja dikekalkan. Jika buku kerja tidak dapat disahkan, kemahiran ini boleh menawarkan CSV dengan ID. [Panduan Excel](../game-localization/references/xlsx-qa.md)
 
 **Contoh gesaan halaman kedai**
 

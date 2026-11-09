@@ -22,8 +22,8 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
 
 En GitHub, abre el enlace del paquete y selecciona **Download raw file**. Sube el ZIP sin descomprimir.
@@ -85,6 +85,8 @@ Usa la [plantilla de glosario del proyecto](../game-localization/references/proj
 ~~~text
 Usa Game Localization para traducir al alemán (de-DE) la columna ENGLISH del libro adjunto. Escribe las traducciones en GERMAN en una copia .xlsx nueva. Usa el glosario adjunto y la columna DESCRIPTION como contexto. Conserva claves, columnas de origen, marcadores y etiquetas. Enumera por separado las dudas terminológicas y las verificaciones con los identificadores de fila.
 ~~~
+
+Para los archivos `.xlsx` compatibles, indica la hoja, la fila de encabezados, la columna con identificadores estables, la columna de origen y la columna de destino existente. Con Python 3.9 o posterior, la habilidad escribe las traducciones por identificador en una copia nueva y verifica que se conserve el resto del libro. Si no puede verificar el libro, puede ofrecer un CSV con identificadores. [Instrucciones para Excel](../game-localization/references/xlsx-qa.md)
 
 **Ejemplo para una página de tienda**
 

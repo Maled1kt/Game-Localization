@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.8.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -85,6 +85,8 @@ Pidä hyväksytyt termit ja ehdotukset erillään [projektisanaston mallin](../g
 ~~~text
 Käännä Game Localizationilla liitetyn työkirjan ENGLISH-sarake saksaksi (de-DE). Kirjoita käännökset uuden .xlsx-kopion GERMAN-sarakkeeseen. Käytä liitettyä sanastoa ja DESCRIPTION-saraketta taustatietoina. Säilytä avaimet, lähdesarakkeet, paikkamerkit ja tunnisteet. Listaa termikysymykset ja tarkistukset erikseen rivitunnuksineen.
 ~~~
+
+Ilmoita tuetuille `.xlsx`-tiedostoille laskentataulukko, otsikkorivi, pysyvien rivitunnusten sarake, lähdesarake ja olemassa oleva kohdesarake. Python 3.9:llä tai uudemmalla taito kirjoittaa käännökset tunnusten perusteella uuteen kopioon ja tarkistaa, että muu työkirja säilyy. Jos työkirjaa ei voi tarkistaa, taito voi tarjota CSV-tiedoston, jossa on rivitunnukset. [Excel-ohjeet](../game-localization/references/xlsx-qa.md)
 
 **Kehote-esimerkki kauppasivulle**
 

@@ -22,8 +22,8 @@ Dovednost obsahuje pokyny a referenční soubory. Funguje bez projektového klí
 
 | Prostředí | Balíček |
 | --- | --- |
-| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT nebo Codex s oprávněním nahrávat pluginy | [ZIP pluginu ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude nebo pracovní prostory ChatGPT s možností nahrát samostatnou dovednost | [ZIP samostatné dovednosti](../packages/game-localization-skill-v0.1.8.zip) |
 | Místní Codex nebo Claude Code | [Instalace ze složky se zdroji](#instalace-pro-místní-agenty-jedním-příkazem) |
 
 Otevřete odkaz na GitHubu a zvolte **Download raw file**. Nahrajte nerozbalený ZIP.
@@ -85,6 +85,8 @@ Použijte [šablonu projektového glosáře](../game-localization/references/pro
 ~~~text
 Pomocí Game Localization přelož sloupec ENGLISH v přiloženém sešitu do němčiny (de-DE). Zapiš překlady do GERMAN v nové kopii .xlsx. Vycházej z přiloženého glosáře a sloupce DESCRIPTION. Zachovej klíče, zdrojové sloupce, zástupné symboly a značky. Uveď dotazy k terminologii a výsledky kontrol zvlášť s ID řádků.
 ~~~
+
+U podporovaných souborů `.xlsx` uveďte list, řádek záhlaví, sloupec se stálými ID, zdrojový sloupec a existující cílový sloupec. S Pythonem 3.9 nebo novějším dovednost zapisuje překlady podle ID do nové kopie a ověřuje zachování zbytku sešitu. Pokud sešit nelze ověřit, může nabídnout CSV s ID. [Pokyny pro Excel](../game-localization/references/xlsx-qa.md)
 
 **Ukázková výzva pro stránku obchodu**
 

@@ -22,8 +22,8 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
@@ -85,6 +85,8 @@ Dùng [mẫu bảng thuật ngữ của dự án](../game-localization/reference
 ~~~text
 Dùng Game Localization để dịch cột ENGLISH trong sổ làm việc đính kèm sang tiếng Đức (de-DE). Ghi bản dịch vào cột GERMAN của bản sao .xlsx mới. Tham khảo bảng thuật ngữ đính kèm và cột DESCRIPTION. Giữ nguyên khóa, cột nguồn, biến giữ chỗ và thẻ. Liệt kê riêng câu hỏi thuật ngữ và kết quả kiểm tra kèm ID dòng.
 ~~~
+
+Với tệp `.xlsx` được hỗ trợ, hãy chỉ rõ trang tính, dòng tiêu đề, cột ID cố định, cột nguồn và cột đích hiện có. Khi có Python 3.9 trở lên, kỹ năng ghi bản dịch theo ID vào một bản sao mới và kiểm tra xem phần còn lại của sổ làm việc có được giữ nguyên không. Nếu không thể xác minh sổ làm việc, kỹ năng có thể đề xuất tệp CSV có ID. [Hướng dẫn cho Excel](../game-localization/references/xlsx-qa.md)
 
 **Ví dụ câu lệnh cho trang cửa hàng**
 

@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.8.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -85,6 +85,8 @@ Use o [modelo de glossário do projeto](../game-localization/references/project-
 ~~~text
 Use Game Localization para traduzir a coluna ENGLISH da pasta de trabalho anexada para o alemão (de-DE). Escreva as traduções em GERMAN em uma nova cópia .xlsx. Use o glossário anexo e a coluna DESCRIPTION como contexto. Preserve as chaves, as colunas de origem, os marcadores e as tags. Liste separadamente as dúvidas de terminologia e as verificações com os IDs das linhas.
 ~~~
+
+Para arquivos `.xlsx` compatíveis, informe a planilha, a linha de cabeçalhos, a coluna com IDs estáveis, a coluna de origem e a coluna de destino existente. Com Python 3.9 ou posterior, a habilidade escreve as traduções por ID em uma nova cópia e verifica se o restante da pasta de trabalho foi preservado. Se a verificação não for possível, a habilidade pode oferecer um CSV com IDs. [Instruções para Excel](../game-localization/references/xlsx-qa.md)
 
 **Exemplo para página da loja**
 

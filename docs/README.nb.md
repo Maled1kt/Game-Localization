@@ -22,8 +22,8 @@ Ferdigheten inneholder instrukser og referansefiler. Den krever ingen prosjekt-A
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.8.zip) |
 | Lokal Codex eller Claude Code | [Installer fra kildemappen](#installer-for-lokale-agenter-med-én-kommando) |
 
 Åpne pakkelenken på GitHub og velg **Download raw file**. Last opp ZIP-filen uten å pakke den ut.
@@ -85,6 +85,8 @@ Bruk [malen for prosjektordlisten](../game-localization/references/project-gloss
 ~~~text
 Bruk Game Localization til å oversette ENGLISH-kolonnen i den vedlagte arbeidsboken til tysk (de-DE). Skriv oversettelsene i GERMAN i en ny .xlsx-kopi. Bruk den vedlagte ordlisten og DESCRIPTION som kontekst. Bevar nøkler, kildekolonner, plassholdere og tagger. Oppgi terminologispørsmål og kontroller separat med rad-ID-er.
 ~~~
+
+For støttede `.xlsx`-filer oppgir du arket, overskriftsraden, kolonnen med faste rad-ID-er, kildekolonnen og den eksisterende målkolonnen. Med Python 3.9 eller nyere skriver ferdigheten oversettelsene etter ID i en ny kopi og kontrollerer at resten av arbeidsboken er bevart. Hvis arbeidsboken ikke kan kontrolleres, kan ferdigheten tilby en CSV-fil med ID-er. [Excel-veiledning](../game-localization/references/xlsx-qa.md)
 
 **Eksempel på ledetekst for butikkside**
 

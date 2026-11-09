@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.7.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.7.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.8.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.8.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -93,12 +93,14 @@ Use the [project glossary template](game-localization/references/project-glossar
 **Spreadsheet prompt**
 
 ~~~text
-Use Game Localization to translate the ENGLISH column in the attached
-workbook into German (de-DE). Write the translations to GERMAN in a
-new .xlsx copy. Use the attached glossary and the DESCRIPTION column
-for context. Preserve keys, source columns, placeholders, and tags.
+Use Game Localization to translate ENGLISH into German (de-DE) on the
+Strings worksheet. Match rows by ID and write to the existing GERMAN
+column in a new .xlsx copy. Use the glossary and DESCRIPTION column
+for context. Preserve source columns, placeholders, and tags.
 List terminology questions and checks separately, with row IDs.
 ~~~
+
+For supported `.xlsx` files, specify the worksheet, header row, stable ID column, source column, and existing target column. With Python 3.9 or later, the skill writes by ID to a new copy and checks that the rest of the workbook was preserved. If the workbook cannot be verified, the skill can offer a CSV keyed by ID. [Excel instructions](game-localization/references/xlsx-qa.md)
 
 **Store page prompt**
 
