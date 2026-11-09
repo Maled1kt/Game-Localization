@@ -1,10 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** The `0.1.12` catalog is on `main`, and the project owner confirmed that Claude Code accepted it. The `0.1.13` update simplifies the catalog and moves the bundle to `packaging/plugin/`. Local Codex upgraded an existing installation in an isolated Git test. [Catalog guide](docs/plugin-catalog.md) · [Changelog](CHANGELOG.md)
+**Current status.** The roadmap is complete. The project owner confirmed that Claude Code and Codex updated Game Localization to `0.1.13` from the GitHub catalog. [Catalog guide](docs/plugin-catalog.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P3.1. Confirm the baseline installation in both clients, publish `0.1.13` on `main`, and verify that both clients load the update automatically.
-
-To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
+For future work, read this file and [AGENTS.md](AGENTS.md) and inspect `git status`. Record new tasks and their verification here as work progresses.
 
 ## P0 · Verifiable CSV translation
 
@@ -29,12 +27,12 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 ## P3 · GitHub distribution and automatic updates
 
-- [ ] **P3.1. Publish Game Localization through a shared GitHub plugin catalog.** Serve the plugin files for Claude Code and local Codex from `main` and bump the plugin version with each release. Document first-time installation, switching from ZIP, and how each client checks for updates. Keep the current ZIP pair available for manual installation. Done when a plugin installed from the catalog in each client automatically loads a newer release published to `main`. [Claude Code marketplace guide](https://code.claude.com/docs/en/plugins/host-marketplace) · [Codex marketplace guide](https://developers.openai.com/plugins/build/plugins#how-local-marketplaces-work)
+- [x] **P3.1. Publish Game Localization through a shared GitHub plugin catalog.** Serve the plugin files for Claude Code and local Codex from `main` and bump the plugin version with each release. Document first-time installation, switching from ZIP, and how each client checks for updates. Keep the current ZIP pair available for manual installation. Done when a plugin installed from the catalog in each client automatically loads a newer release published to `main`. [Claude Code marketplace guide](https://code.claude.com/docs/en/plugins/host-marketplace) · [Codex marketplace guide](https://developers.openai.com/plugins/build/plugins#how-local-marketplaces-work)
   - [x] Build the shared catalog bundle and both ZIPs from one skill source. Document first-time installation, switching from ZIP, and refresh in each client.
   - [x] Verify Codex installation and refresh in an isolated local Git repository.
   - [x] Publish the baseline catalog to GitHub. The project owner confirmed that Claude Code accepted it.
-  - [ ] Confirm the baseline plugin installation from GitHub in both clients.
-  - [ ] Verify a later GitHub release with Claude Code auto-update enabled and an unattended Codex refresh.
+  - [x] Confirm the baseline plugin installation from GitHub in both clients.
+  - [x] Verify a later GitHub release with Claude Code auto-update enabled and an unattended Codex refresh.
 
 ## Version 0.1.4 verification
 
@@ -99,4 +97,4 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 - All eighteen regression tests passed. Both ZIPs rebuilt byte for byte and the bundled first-run checker found the expected three draft issues. All 60 download links and 30 catalog guide links resolved locally.
 - Codex CLI upgraded the committed `0.1.12` plugin to `0.1.13` in an isolated Git repository after the bundle moved. The existing plugin ID stayed enabled and the installation and authentication defaults remained `AVAILABLE` and `ON_INSTALL`.
-- GitHub publication and the unattended refresh trial in Claude Code and Codex are pending.
+- The project owner confirmed on 2026-11-09 that Claude Code and Codex loaded the `0.1.13` update from GitHub after publication to `main`.
