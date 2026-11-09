@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P2.2 implementation and local verification are complete in the `0.1.11` packages. A trial import and preview in Steamworks are pending. [Steam store workflow](game-localization/references/steam-store.md) · [Changelog](CHANGELOG.md)
+**Current status.** The P3.1 catalog bundle and `0.1.12` ZIPs are prepared. Local Codex installed the catalog plugin and refreshed it to a newer version in an isolated Git test. Publishing the baseline and verifying both clients against GitHub are pending. [Catalog guide](docs/plugin-catalog.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P2.2. Import the verified copy of a real export into a designated Steamworks draft and check its preview. Continue with P3.1 after recording the result.
+**Next task.** P3.1. Publish the `0.1.12` catalog on `main`, install it from GitHub in both clients, and verify automatic refresh after the next version reaches `main`.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -23,13 +23,17 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 ## P2 · Translation updates and Steam
 
 - [x] **P2.1. Process changes by ID.** Identify new, modified, and removed rows, reuse accepted translations, and preserve editor changes. Add scene-level checkpoints for large dialogue batches. [CSV update workflow](game-localization/references/csv-updates.md) · [Tests](tests/test_prepare_csv_update.py)
-- [ ] **P2.2. Add a Steam store page workflow.** Return translations by field with length and fact checks. Verify the import format through a trial import using a real Steamworks export.
+- [x] **P2.2. Add a Steam store page workflow.** Return translations by field with length and fact checks. Verify the import format through a trial import using a real Steamworks export.
   - [x] Ship the field workflow and validate a draft locally using a real multilingual export. [Workflow and example](game-localization/references/steam-store.md) · [Tests](tests/test_prepare_steam_store.py)
-  - [ ] Confirm that Steamworks accepts the trial file and that the target locale preview shows the expected descriptions.
+  - [x] Confirm that Steamworks accepts the trial file and that the target locale preview shows the expected descriptions.
 
 ## P3 · GitHub distribution and automatic updates
 
 - [ ] **P3.1. Publish Game Localization through a shared GitHub plugin catalog.** Serve the plugin files for Claude Code and local Codex from `main` and bump the plugin version with each release. Document first-time installation, switching from ZIP, and how each client checks for updates. Keep the current ZIP pair available for manual installation. Done when a plugin installed from the catalog in each client automatically loads a newer release published to `main`. [Claude Code marketplace guide](https://code.claude.com/docs/en/plugins/host-marketplace) · [Codex marketplace guide](https://developers.openai.com/plugins/build/plugins#how-local-marketplaces-work)
+  - [x] Build the shared catalog bundle and both ZIPs from one skill source. Document first-time installation, switching from ZIP, and refresh in each client.
+  - [x] Verify Codex installation and refresh in an isolated local Git repository.
+  - [ ] Publish the baseline to GitHub and verify first-time installation in Claude Code and local Codex.
+  - [ ] Verify a later GitHub release with Claude Code auto-update enabled and an unattended Codex refresh.
 
 ## Version 0.1.4 verification
 
@@ -80,4 +84,12 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 - All eighteen regression tests passed. Both ZIPs rebuilt byte for byte, and all 60 archive links and 30 Steam guide links resolved locally.
 - The helper from each extracted ZIP passed the fictional example and read the project-provided export of 30 languages with 11 fields per language. The unchanged round trip retained all 330 field values. A separate local trial changed only the two selected German description fields. The actual store export and its trial copy are outside the repository.
-- Manual Steamworks verification is pending. Use the verified unchanged copy for a draft trial, confirm acceptance, and inspect the German preview. Use the guide's fictional example for a separate ChatGPT and Claude check of the field handoff and fact review.
+- The project owner confirmed that the trial import and German preview worked in Steamworks on 2026-11-09.
+- Manual ChatGPT and Claude verification remains pending. Use the guide's fictional example to check the field handoff and fact review.
+
+## Version 0.1.12 verification
+
+- All eighteen regression tests passed. Both ZIPs rebuilt byte for byte, the bundled first-run checker found the expected three draft issues, and all 60 download links and 30 catalog guide links resolved locally.
+- The package check validated the two manifests and skill files against the release source. An isolated test confirmed it rejects a stale generated skill and that rebuilding restores it.
+- Codex CLI installed `game-localization@maled1kt` version `0.1.12` from the shared catalog. In an isolated Git fixture, `marketplace upgrade` advanced the installed plugin to test version `0.1.13` and loaded the changed skill file.
+- GitHub publication and the two-client update trial are pending. Claude Code's marketplace auto-update is enabled by the user. On Windows, the guide documents an optional scheduled Codex refresh. The scheduled trigger itself has not been tested.

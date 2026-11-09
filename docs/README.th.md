@@ -22,9 +22,11 @@ Game Localization เป็นสกิลสำหรับเอเจนต�
 
 | สภาพแวดล้อม | แพ็กเกจ |
 | --- | --- |
-| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
-| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.11.zip) |
+| ChatGPT หรือ Codex ที่มีสิทธิ์อัปโหลดปลั๊กอิน | [ZIP ปลั๊กอิน ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
+| Claude หรือพื้นที่ทำงาน ChatGPT ที่อัปโหลดสกิลแบบแยกได้ | [ZIP สกิลแบบแยก](../packages/game-localization-skill-v0.1.12.zip) |
 | Codex หรือ Claude Code บนเครื่อง | [ติดตั้งจากโฟลเดอร์ต้นทาง](#ติดตั้งในเอเจนต์บนเครื่องด้วยคำสั่งเดียว) |
+
+ใน Codex ที่ทำงานบนเครื่องและ Claude Code คุณสามารถติดตั้ง Game Localization จากแค็ตตาล็อก GitHub ที่ใช้ร่วมกันได้ คู่มืออธิบายการติดตั้งครั้งแรก การย้ายจาก ZIP และการอัปเดตในแต่ละไคลเอนต์ [แค็ตตาล็อก GitHub](plugin-catalog.md)
 
 เปิดลิงก์แพ็กเกจบน GitHub แล้วเลือก **Download raw file** อัปโหลด ZIP โดยไม่ต้องแตกไฟล์
 

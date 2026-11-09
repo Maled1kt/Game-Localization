@@ -1,0 +1,13 @@
+ID,ENGLISH,CONTEXT,MAX_LENGTH
+MENU_001,New Game,Main menu button,
+MENU_002,Settings,Main menu button,
+MENU_003,Back,Returns to the previous screen,
+MENU_004,Quit Game,Exits to the desktop,
+MENU_005,Continue,Advances to the next tutorial step,8
+MENU_006,Clear,,
+TUT_014,Hold {interact} to open the airlock,Button prompt in the docking area,
+TUT_015,Hold {interact} to close the airlock,Button prompt in the docking area,
+HUD_001,Oxygen: {oxygen}%,Spacesuit HUD displays the remaining oxygen percentage,
+HUD_002,<b>Low oxygen</b>,Warning in the spacesuit HUD,
+DIA_001,"Stay close, {player_name}.",A teammate speaks during the docking tutorial,
+SYS_001,Game saved,Toast after saving the game,

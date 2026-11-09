@@ -22,9 +22,11 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.11.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.11.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.12.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.12.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
+
+在本地 Codex 和 Claude Code 中，可以从共用的 GitHub 目录安装 Game Localization。指南介绍首次安装、从 ZIP 版切换以及在各客户端中更新的方法。[GitHub 目录](plugin-catalog.md)
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
 

@@ -22,9 +22,11 @@ Kỹ năng gồm hướng dẫn và tệp tham chiếu. Kỹ năng hoạt độn
 
 | Môi trường | Gói |
 | --- | --- |
-| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
-| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.11.zip) |
+| ChatGPT hoặc Codex có quyền tải plugin lên | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
+| Claude hoặc không gian ChatGPT được phép tải kỹ năng độc lập lên | [ZIP kỹ năng độc lập](../packages/game-localization-skill-v0.1.12.zip) |
 | Codex cục bộ hoặc Claude Code | [Cài từ thư mục nguồn](#cài-cho-tác-nhân-cục-bộ-bằng-một-lệnh) |
+
+Trong Codex cục bộ và Claude Code, bạn có thể cài đặt Game Localization từ danh mục GitHub chung. Hướng dẫn giải thích cách cài lần đầu, chuyển từ bản ZIP và cập nhật trong từng ứng dụng. [Danh mục GitHub](plugin-catalog.md)
 
 Mở liên kết gói trên GitHub và chọn **Download raw file**. Tải lên nguyên tệp ZIP.
 

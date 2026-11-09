@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.12 · 2026-11-09
+
+- Added a shared GitHub catalog for installing Game Localization in Claude Code and local Codex.
+- Added installation, migration, and update instructions. The catalog bundle and both upload ZIPs are built from the same skill source.
+
 ## 0.1.11 · 2026-11-09
 
 - Added a Steam store workflow for the short description and About This Game, with field limits and checks for claims about the game.

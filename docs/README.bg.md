@@ -22,9 +22,11 @@ Game Localization е умение за агенти за превод, реда�
 
 | Среда | Пакет |
 | --- | --- |
-| ChatGPT или Codex с право за качване на плъгини | [ZIP на плъгина за ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
-| Claude или работно пространство на ChatGPT с право за качване на самостоятелни умения | [ZIP на самостоятелното умение](../packages/game-localization-skill-v0.1.11.zip) |
+| ChatGPT или Codex с право за качване на плъгини | [ZIP на плъгина за ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
+| Claude или работно пространство на ChatGPT с право за качване на самостоятелни умения | [ZIP на самостоятелното умение](../packages/game-localization-skill-v0.1.12.zip) |
 | Локален Codex или Claude Code | [Инсталиране от изходната папка](#инсталиране-за-локални-агенти-с-една-команда) |
+
+В локалните Codex и Claude Code можете да инсталирате Game Localization от общия каталог в GitHub. Ръководството описва първоначалната настройка, преминаването от ZIP и обновяването във всеки клиент. [Каталог в GitHub](plugin-catalog.md)
 
 Отворете връзката към пакета в GitHub и изберете **Download raw file**. Качете ZIP файла без разархивиране.
 

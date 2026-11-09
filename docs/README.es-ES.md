@@ -22,9 +22,11 @@ La habilidad contiene instrucciones y archivos de referencia. No requiere clave 
 
 | Entorno | Paquete |
 | --- | --- |
-| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.11.zip) |
-| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.11.zip) |
+| ChatGPT o Codex con permiso para subir plugins | [ZIP del plugin de ChatGPT](../packages/game-localization-chatgpt-v0.1.12.zip) |
+| Claude o espacios de ChatGPT habilitados para subir habilidades independientes | [ZIP de la habilidad independiente](../packages/game-localization-skill-v0.1.12.zip) |
 | Codex local o Claude Code | [Instalar desde la carpeta de origen](#instalación-local-con-un-solo-comando) |
+
+En Codex local y Claude Code puedes instalar Game Localization desde el catálogo compartido de GitHub. La guía explica la instalación inicial, el cambio desde el ZIP y cómo actualizar en cada cliente. [Catálogo de GitHub](plugin-catalog.md)
 
 En GitHub, abre el enlace del paquete y pulsa **Download raw file**. Sube el ZIP sin descomprimir.
 
