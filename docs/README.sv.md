@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization-banner med två speldialoger som utbyter tecken från olika språk](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Alla språk](../README.md#languages)
 
@@ -22,8 +22,8 @@ Färdigheten innehåller instruktioner och referensfiler. Den kräver ingen proj
 
 | Miljö | Paket |
 | --- | --- |
-| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT eller Codex med behörighet att ladda upp tillägg | [ZIP för ChatGPT-tillägget](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude eller ChatGPT-arbetsytor som får ladda upp fristående färdigheter | [ZIP för fristående färdighet](../packages/game-localization-skill-v0.1.7.zip) |
 | Lokal Codex eller Claude Code | [Installera från källmappen](#installera-för-lokala-agenter-med-ett-kommando) |
 
 Öppna paketlänken på GitHub och välj **Download raw file**. Ladda upp ZIP-filen utan att packa upp den.
@@ -77,6 +77,8 @@ Använd kontots uppladdnings- eller installationsalternativ i de värdbaserade v
 2. Ange käll- och målspråk, plattform, materialtyp och utdataformat. Lägg vid behov till teckengränser, skärmbilder, information om talare eller exempelvärden för variabler.
 3. För kalkylblad anger du käll- och målkolumnerna och ber om en ny kopia. För speltexter ger du stabila ID:n eller nycklar. För butikstexter anger du målfältet och en eventuell strikt längdgräns.
 4. Läs de separata leveransanteckningarna för att se om resultatet är klart att använda eller fortfarande är ett utkast. Anteckningarna redovisar filkontroll, språkgranskning och kontroll i spelet eller butikens förhandsvisning var för sig. De visar också nästa steg för varje olöst problem. Godkänn termerna i projektordlistan innan du återanvänder dem.
+
+Använd [mallen för projektordlistan](../game-localization/references/project-glossary-template.md) för att hålla godkända termer åtskilda från förslag. Spara den uppdaterade filen och bifoga den i nästa chatt.
 
 **Exempel på uppmaning för kalkylblad**
 

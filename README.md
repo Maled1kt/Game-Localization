@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization banner with two game dialogue panels exchanging multilingual glyphs](assets/game-localization-banner.png)
+![Game Localization by Maled1kt](assets/game-localization-banner.png)
 
 Game Localization is an Agent Skill for translating, editing, and reviewing video game text in ChatGPT, Codex, and Claude. It covers menus, tutorials, dialogue, subtitles, store copy, and project documentation for Steam, PlayStation, Xbox, and mobile games.
 
@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.7.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -87,6 +87,8 @@ In hosted ChatGPT and Claude, use the account's upload or install controls. A ch
 2. Specify the source and target locales, platform, material type, and output format. Include character limits, screenshots, speaker notes, or variable examples where they matter.
 3. For a spreadsheet, name the source and target columns and ask for a new copy. For in-game strings, provide stable IDs or keys. For store text, include the target field and any hard length limit.
 4. Read the separate handoff to see whether the output is ready to use or still a draft. It reports file checks, language review, and review in the game or store preview separately, with a next action for each open issue. Approve terms in your project glossary before reusing them.
+
+Use the [project glossary template](game-localization/references/project-glossary-template.md) to keep approved terms and proposals separate. Save the updated file and attach it to your next chat.
 
 **Spreadsheet prompt**
 

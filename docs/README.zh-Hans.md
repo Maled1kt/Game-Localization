@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization 横幅，两块游戏对话面板交换多种语言的字符](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [所有语言](../README.md#languages)
 
@@ -22,8 +22,8 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用环境 | 安装包 |
 | --- | --- |
-| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.6.zip) |
+| 有插件上传权限的 ChatGPT 或 Codex | [ChatGPT 插件 ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude 或允许上传独立技能的 ChatGPT 工作区 | [独立技能 ZIP](../packages/game-localization-skill-v0.1.7.zip) |
 | 本地 Codex 或 Claude Code | [从源码文件夹安装](#为本地代理一键安装) |
 
 在 GitHub 打开安装包链接并选择 **Download raw file**。上传时保留 ZIP 格式。
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. 说明源语言、目标语言、平台、内容类型和交付格式。按需提供字符限制、截图、角色说明或变量示例。
 3. 对于电子表格，请指定源列和目标列，并要求另存副本。对于游戏内文本，请提供稳定的 ID 或键。对于商店文案，请注明目标字段和硬性长度限制。
 4. 查看单独提供的交付说明，确认结果是可以使用还是仍为草稿。说明分别列出文件检查、译文审校，以及游戏内或商店预览中的检查，并为每个未解决的问题给出下一步。术语应先在项目术语表中确认，再重复使用。
+
+使用[项目术语表模板](../game-localization/references/project-glossary-template.md)分别记录已确认的术语和候选术语。保存更新后的文件，并在下次聊天时将其附上。
 
 **电子表格提示词示例**
 

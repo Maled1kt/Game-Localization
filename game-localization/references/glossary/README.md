@@ -5,7 +5,7 @@ The glossary covers the 30 entries in the [language preset](../game-localization
 ## Use the glossary
 
 1. Open the target locale and match the term to its ID and [English context](en.md). Check the in-game entity, action, or field before choosing a sense. For example, `GL056` is a general achievement and `GL069` is the Steam feature.
-2. Copy relevant candidates to the project glossary. Record the ID, locale, equivalent, scope, allowed forms, and approval status. Apply approved forms consistently. Keep proposals separate until the project owner approves them.
+2. Copy relevant candidates to the proposed section of the [project glossary template](../project-glossary-template.md) or to the project's existing glossary. Record the ID, locale, equivalent, scope, allowed forms, and approval status. Apply approved forms consistently. Keep proposals separate until the project owner approves them.
 3. For platform UI and store labels, verify the wording for the platform, version, and locale before shipping. The preset defines the scope of this glossary. See the current platform documentation for supported locales and naming requirements. [Steamworks localization](https://partner.steamgames.com/doc/store/localization)
 
 ## Editions

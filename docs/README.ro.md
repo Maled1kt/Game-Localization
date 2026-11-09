@@ -1,6 +1,6 @@
 # Game Localization
 
-![Banner Game Localization cu două ferestre de dialog din joc care fac schimb de caractere din limbi diferite](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Toate limbile](../README.md#languages)
 
@@ -22,8 +22,8 @@ Competența conține instrucțiuni și fișiere de referință. Funcționează f
 
 | Mediu | Pachet |
 | --- | --- |
-| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT sau Codex cu permisiunea de a încărca pluginuri | [ZIP al pluginului ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude sau spații ChatGPT care permit încărcarea competențelor independente | [ZIP al competenței independente](../packages/game-localization-skill-v0.1.7.zip) |
 | Codex local sau Claude Code | [Instalare din folderul sursă](#instalare-pentru-agenți-locali-cu-o-singură-comandă) |
 
 Deschide linkul pachetului pe GitHub și alege **Download raw file**. Încarcă ZIP-ul fără să-l dezarhivezi.
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. Precizează limbile sursă și țintă, platforma, tipul de material și formatul rezultatului. Adaugă, dacă este relevant, limite de caractere, capturi, note despre vorbitori sau exemple de variabile.
 3. Pentru foi de calcul, indică coloanele sursă și țintă și cere o copie nouă. Pentru texte de joc, furnizează identificatori sau chei stabile. Pentru magazin, indică câmpul și limita strictă de lungime, dacă există.
 4. Consultă raportul de predare separat ca să vezi dacă rezultatul este gata de folosit sau încă în stadiu de ciornă. Raportul prezintă separat verificarea fișierului, revizuirea lingvistică și verificarea în joc sau în previzualizarea magazinului. Pentru fiecare problemă deschisă, indică pasul următor. Aprobă termenii în glosarul proiectului înainte de a-i refolosi.
+
+Folosește [șablonul de glosar al proiectului](../game-localization/references/project-glossary-template.md) pentru a păstra separat termenii aprobați și propunerile. Salvează fișierul actualizat și atașează-l la următoarea conversație.
 
 **Exemplu de solicitare pentru o foaie de calcul**
 

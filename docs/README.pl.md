@@ -1,6 +1,6 @@
 # Game Localization
 
-![Baner Game Localization z dwoma oknami dialogu gry wymieniającymi znaki z różnych języków](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Wszystkie języki](../README.md#languages)
 
@@ -22,8 +22,8 @@ Umiejętność zawiera instrukcje i pliki referencyjne. Działa bez klucza API p
 
 | Środowisko | Pakiet |
 | --- | --- |
-| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT lub Codex z uprawnieniem do przesyłania wtyczek | [ZIP wtyczki ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude lub obszary robocze ChatGPT z uprawnieniem do przesyłania samodzielnych umiejętności | [ZIP samodzielnej umiejętności](../packages/game-localization-skill-v0.1.7.zip) |
 | Lokalny Codex lub Claude Code | [Instalacja z katalogu źródłowego](#instalacja-dla-lokalnych-agentów-jednym-poleceniem) |
 
 Otwórz odnośnik do pakietu w GitHub i wybierz **Download raw file**. Prześlij ZIP bez rozpakowywania.
@@ -77,6 +77,8 @@ W wersjach hostowanych ChatGPT i Claude użyj opcji przesyłania lub instalacji 
 2. Podaj języki źródłowy i docelowe, platformę, typ materiału i format wyniku. W razie potrzeby dodaj limity znaków, zrzuty ekranu, informacje o postaciach lub przykłady zmiennych.
 3. Dla arkusza wskaż kolumny źródłowe i docelowe oraz poproś o nową kopię. Dla tekstów gry podaj stałe identyfikatory lub klucze. Dla sklepu podaj pole docelowe i ewentualny sztywny limit.
 4. Sprawdź w oddzielnym raporcie, czy wynik jest gotowy do użycia, czy nadal jest wersją roboczą. Raport osobno przedstawia kontrolę pliku, weryfikację językową i sprawdzenie w grze lub podglądzie sklepu. Dla każdego otwartego problemu wskazuje następny krok. Zatwierdź terminy w glosariuszu projektu przed ponownym użyciem.
+
+Użyj [szablonu glosariusza projektu](../game-localization/references/project-glossary-template.md), aby oddzielić zatwierdzone terminy od propozycji. Zapisz zaktualizowany plik i dołącz go do następnej rozmowy.
 
 **Przykładowe polecenie dla arkusza**
 

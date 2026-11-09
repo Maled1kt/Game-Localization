@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization fejléc két játékbeli párbeszédablakkal, amelyek különböző nyelvek karaktereit váltják egymás között](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Minden nyelv](../README.md#languages)
 
@@ -22,8 +22,8 @@ A készség útmutatót és referenciafájlokat tartalmaz. Projekt-API-kulcs, cs
 
 | Környezet | Csomag |
 | --- | --- |
-| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT vagy Codex bővítményfeltöltési joggal | [ChatGPT-bővítmény ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude vagy önálló készségek feltöltésére jogosult ChatGPT-munkatér | [Önálló készség ZIP](../packages/game-localization-skill-v0.1.7.zip) |
 | Helyi Codex vagy Claude Code | [Telepítés a forrásmappából](#telepítés-helyi-ügynökökhöz-egyetlen-paranccsal) |
 
 Nyisd meg a csomag hivatkozását a GitHubon, és válaszd a **Download raw file** lehetőséget. A ZIP-et kicsomagolás nélkül töltsd fel.
@@ -77,6 +77,8 @@ A hosztolt ChatGPT-ben és Claude-ban a fiók feltöltési vagy telepítési leh
 2. Add meg a forrás- és célnyelveket, a platformot, az anyag típusát és a kimeneti formátumot. Szükség szerint adj meg karakterkorlátot, képernyőképet, beszélőre vonatkozó megjegyzést vagy változópéldát.
 3. Táblázatnál nevezd meg a forrás- és céloszlopokat, és kérj új másolatot. Játékszövegnél adj meg állandó azonosítókat vagy kulcsokat. Áruházi szövegnél nevezd meg a célmezőt és az esetleges kötelező hosszkorlátot.
 4. A külön átadási jegyzetből megtudhatod, hogy az eredmény használatra kész vagy még tervezet. A jegyzet külön mutatja a fájlellenőrzést, a nyelvi ellenőrzést és a játékban vagy az áruház előnézetében végzett ellenőrzést. Minden nyitott problémához megadja a következő lépést. Újrafelhasználás előtt hagyd jóvá a kifejezéseket a projekt szójegyzékében.
+
+A [projektszójegyzék-sablonban](../game-localization/references/project-glossary-template.md) külön tarthatod a jóváhagyott kifejezéseket és a javaslatokat. Mentsd el a frissített fájlt, és csatold a következő beszélgetéshez.
 
 **Példa táblázathoz**
 

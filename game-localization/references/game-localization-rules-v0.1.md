@@ -59,7 +59,7 @@ If the user specifies only Spanish, Portuguese, or Chinese and the brief does no
 
 ## 3. Glossary
 
-- Use the current project glossary for each target locale. In a new session, use the supplied version or request it. Keep proposed and approved entries separate.
+- Use the current project glossary for each target locale. In a new session, use the supplied version or request it. Follow the [project glossary workflow](project-glossary.md) to record and carry decisions between sessions.
 - Record the source term, target locale, proposed or approved equivalent, meaning or example, scope, and status. Add permitted inflections, exact spelling, do-not-translate rules, or approved short forms when needed. Create separate entries for different senses of the same word.
 - Apply the approved equivalent in every applicable occurrence. Use the required grammatical form when the entry allows inflection. Preserve exact spelling for fixed forms and names that must stay in the source language. Restructure the sentence around the term when useful.
 - Propose new terms with context and use temporary forms consistently. Mark them as drafts until the project owner approves them. Label the affected output as draft while material terms await approval. After a glossary change, review affected translations that are available.

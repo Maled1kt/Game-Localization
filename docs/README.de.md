@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game-Localization-Banner mit zwei Spieldialogen, die Schriftzeichen verschiedener Sprachen austauschen](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Alle Sprachen](../README.md#languages)
 
@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.7.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -77,6 +77,8 @@ Verwende im gehosteten ChatGPT und Claude die Upload- oder Installationsoptionen
 2. Gib Quell- und Zielsprachen, Plattform, Textsorte und Ausgabeformat an. Ergänze bei Bedarf Zeichenlimits, Screenshots, Sprecherhinweise oder Variablenbeispiele.
 3. Nenne bei Tabellen Quell- und Zielspalten und bitte um eine neue Kopie. Gib für Spieltexte stabile IDs oder Schlüssel an. Nenne für Shoptexte das Zielfeld und etwaige feste Längenlimits.
 4. Lies im separaten Übergabebericht, ob das Ergebnis einsatzbereit ist oder noch als Entwurf vorliegt. Der Bericht führt Dateiprüfung, sprachliche Prüfung und Prüfung im Spiel oder in der Shopvorschau getrennt auf und nennt für jedes offene Problem den nächsten Schritt. Gib Begriffe vor der Wiederverwendung im Projektglossar frei.
+
+Nutze die [Vorlage für das Projektglossar](../game-localization/references/project-glossary-template.md), um freigegebene Begriffe und Vorschläge getrennt zu halten. Speichere die aktualisierte Datei und hänge sie an deinen nächsten Chat an.
 
 **Beispiel für Tabellen**
 

@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization-banner med to spilldialoger som utveksler tegn fra ulike språk](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Alle språk](../README.md#languages)
 
@@ -22,8 +22,8 @@ Ferdigheten inneholder instrukser og referansefiler. Den krever ingen prosjekt-A
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT eller Codex med tillatelse til å laste opp programtillegg | [ZIP for ChatGPT-programtillegget](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude eller ChatGPT-arbeidsområder som kan laste opp frittstående ferdigheter | [ZIP for frittstående ferdighet](../packages/game-localization-skill-v0.1.7.zip) |
 | Lokal Codex eller Claude Code | [Installer fra kildemappen](#installer-for-lokale-agenter-med-én-kommando) |
 
 Åpne pakkelenken på GitHub og velg **Download raw file**. Last opp ZIP-filen uten å pakke den ut.
@@ -77,6 +77,8 @@ Bruk kontoens opplastings- eller installasjonsvalg i nettversjonene av ChatGPT o
 2. Oppgi kilde- og målspråk, plattform, materialtype og utdataformat. Ta med tegngrenser, skjermbilder, talerinformasjon eller variabeleksempler når det er relevant.
 3. For regneark oppgir du kilde- og målkolonner og ber om en ny kopi. For spilltekster oppgir du stabile ID-er eller nøkler. For butikktekst oppgir du målfelt og en eventuell streng lengdegrense.
 4. Les de separate leveringsnotatene for å se om resultatet er klart til bruk eller fortsatt er et utkast. Notatene viser filkontroll, språklig gjennomgang og kontroll i spillet eller butikkens forhåndsvisning hver for seg og angir neste steg for hvert uavklarte problem. Godkjenn termer i prosjektordlisten før du gjenbruker dem.
+
+Bruk [malen for prosjektordlisten](../game-localization/references/project-glossary-template.md) til å holde godkjente termer atskilt fra forslag. Lagre den oppdaterte filen og legg den ved i neste chat.
 
 **Eksempel på ledetekst for regneark**
 

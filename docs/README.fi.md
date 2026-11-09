@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization -bannerissa kaksi pelin keskusteluruutua vaihtaa eri kielten merkkejä](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Kaikki kielet](../README.md#languages)
 
@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.7.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -77,6 +77,8 @@ Käytä ChatGPT:n ja Clauden verkkopalveluissa tilisi lataus- tai asennustoimint
 2. Määritä lähde- ja kohdekielet, alusta, aineiston tyyppi ja tulostusmuoto. Lisää tarvittaessa merkkirajat, kuvakaappaukset, puhujatiedot tai muuttujien esimerkit.
 3. Nimeä laskentataulukon lähde- ja kohdesarakkeet ja pyydä uutta kopiota. Anna peliteksteille pysyvät tunnukset tai avaimet. Ilmoita kauppatekstin kohdekenttä ja mahdollinen tiukka pituusraja.
 4. Tarkista erillisestä luovutusraportista, onko tulos käyttövalmis vai vielä luonnos. Raportti erittelee tiedoston tarkistuksen, kielellisen tarkistuksen ja tarkistuksen pelissä tai kaupan esikatselussa. Se kertoo myös seuraavan toimenpiteen jokaiseen avoimeen ongelmaan. Hyväksy termit projektisanastossa ennen uudelleenkäyttöä.
+
+Pidä hyväksytyt termit ja ehdotukset erillään [projektisanaston mallin](../game-localization/references/project-glossary-template.md) avulla. Tallenna päivitetty tiedosto ja liitä se seuraavaan keskusteluun.
 
 **Kehote-esimerkki laskentataulukolle**
 

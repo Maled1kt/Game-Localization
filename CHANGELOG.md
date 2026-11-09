@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7 · 2026-11-09
+
+- Added a portable project glossary template that keeps approved terms and proposals in separate sections with locale and game context.
+- Documented how to save the complete glossary, record a decision for one locale, and reuse the file in another chat.
+
 ## 0.1.6 · 2026-11-08
 
 - Added a first-run walkthrough with 12 fictional English strings, a German draft, an approved glossary, a copyable prompt, and an example handoff.

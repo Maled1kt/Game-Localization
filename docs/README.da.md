@@ -1,6 +1,6 @@
 # Game Localization
 
-![Game Localization-banner med to spildialogfelter, der udveksler tegn fra forskellige sprog](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Alle sprog](../README.md#languages)
 
@@ -22,8 +22,8 @@ Færdigheden indeholder instruktioner og referencefiler. Den kræver ingen proje
 
 | Miljø | Pakke |
 | --- | --- |
-| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT eller Codex med tilladelse til at uploade plugins | [ZIP til ChatGPT-plugin](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude eller ChatGPT-arbejdsområder, der må uploade selvstændige færdigheder | [ZIP til selvstændig færdighed](../packages/game-localization-skill-v0.1.7.zip) |
 | Lokal Codex eller Claude Code | [Installér fra kildemappen](#installation-af-lokale-agenter-med-én-kommando) |
 
 Åbn pakkelinket på GitHub, og vælg **Download raw file**. Upload ZIP-filen uden at pakke den ud.
@@ -77,6 +77,8 @@ I de hostede udgaver af ChatGPT og Claude bruger du kontoens upload- eller insta
 2. Angiv kilde- og målsprog, platform, materialetype og outputformat. Medtag efter behov tegngrænser, skærmbilleder, oplysninger om talere eller eksempler på variabler.
 3. Ved regneark skal du navngive kilde- og målkolonner og bede om en ny kopi. Ved spiltekster skal du angive stabile ID’er eller nøgler. Ved butikstekst skal du angive felt og en eventuel fast længdegrænse.
 4. Læs de separate afleveringsnoter for at se, om resultatet er klar til brug eller stadig er et udkast. Noterne viser filkontrol, sproglig gennemgang og kontrol i spillet eller butikkens forhåndsvisning hver for sig og angiver næste skridt for hvert åbent problem. Godkend termerne i projektordlisten, før du genbruger dem.
+
+Brug [skabelonen til projektordlisten](../game-localization/references/project-glossary-template.md) til at holde godkendte termer adskilt fra forslag. Gem den opdaterede fil, og vedhæft den i din næste chat.
 
 **Eksempel på prompt til regneark**
 

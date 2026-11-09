@@ -1,6 +1,6 @@
 # Game Localization
 
-![Banner Game Localization dengan dua panel dialog gim yang bertukar karakter dari berbagai bahasa](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [Semua bahasa](../README.md#languages)
 
@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.6.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.7.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -77,6 +77,8 @@ Pada ChatGPT dan Claude yang dihosting, gunakan fitur unggah atau pasang pada ak
 2. Tentukan bahasa sumber dan sasaran, platform, jenis materi, dan format hasil. Sertakan batas karakter, tangkapan layar, keterangan penutur, atau contoh variabel jika perlu.
 3. Untuk lembar kerja, sebutkan kolom sumber dan sasaran serta minta salinan baru. Untuk string gim, berikan ID atau kunci tetap. Untuk toko, tentukan kolom tujuan dan batas panjang wajib jika ada.
 4. Baca laporan penyerahan terpisah untuk mengetahui apakah hasilnya siap digunakan atau masih berupa draf. Laporan itu memisahkan pemeriksaan file, tinjauan bahasa, dan pemeriksaan dalam game atau pratinjau toko, serta mencantumkan langkah berikutnya untuk setiap masalah yang belum selesai. Setujui istilah di glosarium proyek sebelum menggunakannya kembali.
+
+Gunakan [templat glosarium proyek](../game-localization/references/project-glossary-template.md) untuk memisahkan istilah yang disetujui dari usulan. Simpan file yang diperbarui dan lampirkan di chat berikutnya.
 
 **Contoh permintaan untuk lembar kerja**
 

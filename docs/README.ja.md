@@ -1,6 +1,6 @@
 # Game Localization
 
-![複数の言語の文字をやり取りする、2つのゲーム内会話パネルを描いた Game Localization のバナー](../assets/game-localization-banner.png)
+![Game Localization by Maled1kt](../assets/game-localization-banner.png)
 
 [English](../README.md) · [すべての言語](../README.md#languages)
 
@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.6.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.6.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.7.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.7.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. 原文と訳文のロケール、プラットフォーム、素材の種類、出力形式を指定します。必要に応じて文字数制限、スクリーンショット、話者情報、変数の例も添えます。
 3. 表では原文と訳文の列を指定し、新しいコピーを依頼します。ゲーム内テキストでは固定の ID やキーを、ストア文面では対象項目と厳密な長さ制限があればそれを伝えます。
 4. 結果が利用可能か、まだ下書きの段階かを、別に用意される引き継ぎメモで確認します。メモにはファイルのチェック、訳文のレビュー、ゲーム内またはストアプレビューでの確認の状況が個別に記載され、未解決の問題ごとに次の対応が示されます。用語はプロジェクト用語集で承認してから再利用します。
+
+[プロジェクト用語集のテンプレート](../game-localization/references/project-glossary-template.md)で、承認済みの用語と候補を分けて管理します。更新したファイルを保存し、次のチャットに添付してください。
 
 **スプレッドシート用プロンプト例**
 
