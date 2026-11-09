@@ -21,14 +21,14 @@ Separate files or locales with different outcomes.
 | --- | --- |
 | File checks | Say which keys, format, protected tokens, and limits were checked, and whether the check used a tool or was manual. Give coverage when known. For CSV findings, use the [issue guide](csv-qa.md#explain-csv-findings). If a tool could not run, report the manual scope and any pending checks. |
 | Language review | Say which meaning, style, and terminology checks were completed. Distinguish agent review from human review. Identify unresolved questions and draft or conflicting terms. Mark required review that lacks context or a reviewer as pending. |
-| In-game or preview review | Say what was actually inspected and its scope. If the needed build, screen, or store preview was unavailable, mark the check pending and name what to inspect. |
+| In-game or preview review | Say what was actually inspected and its scope. For in-game UI, use the [in-build QA checklist](in-build-qa.md) for steps, conditions, and pass criteria. Mark cases pending when the required evidence is unavailable. For a store preview, name the view and fields to inspect. |
 
 For each unresolved issue, give the string ID, the problem in plain language, and one next action. Use the file, field, or record number when there is no ID. Keep the summary short and put long issue lists in a separate report when file tools are available.
 
 ## Example handoff
 
-> **Ready for import.** `ui.ru-RU.csv` contains all 12 requested strings.
+> **Ready for import.** `ui.de-DE.csv` contains all 12 requested strings.
 >
 > - **File checks passed.** The CSV checker matched all 12 IDs and verified supported tokens. The column layout was also checked against the import schema.
 > - **Language review passed.** The agent checked meaning and applied the approved glossary to all applicable strings.
-> - **In-game review pending.** Open the pause menu in a test build and check that `MENU_008` fits on the button.
+> - **In-game review pending.** In `de-DE`, open the pause menu at the highest supported text scale and locate the resume button (`MENU_008`). Pass if the full label is visible inside the button without covering the input icon.

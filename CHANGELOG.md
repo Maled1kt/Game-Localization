@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.9 · 2026-11-09
+
+- Added prioritized in-game QA checklists with a screen, string ID, reproduction steps, and observable pass criteria for each case.
+- Added an optional single-line width estimate for plain UI text when the font and layout measurements are available. Build checks keep their own status.
+
 ## 0.1.8 · 2026-11-09
 
 - Added an Excel workflow that writes reviewed translations by ID to one existing target column in a new workbook copy.

@@ -35,6 +35,7 @@ def main():
     shared_files = [
         SKILL / "SKILL.md",
         SKILL / "scripts" / "check_csv.py",
+        SKILL / "scripts" / "estimate_ui_width.py",
         SKILL / "scripts" / "update_xlsx.py",
         *(first_run / file for file in ("README.md", "source.csv", "draft.de-DE.csv", "glossary.md")),
         *sorted((SKILL / "references").rglob("*.md")),

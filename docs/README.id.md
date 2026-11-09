@@ -22,8 +22,8 @@ Skill berisi petunjuk dan berkas rujukan. Skill ini berjalan tanpa kunci API pro
 
 | Lingkungan | Paket |
 | --- | --- |
-| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT atau Codex dengan izin unggah plugin | [ZIP plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude atau ruang kerja ChatGPT yang mengizinkan unggah skill mandiri | [ZIP skill mandiri](../packages/game-localization-skill-v0.1.9.zip) |
 | Codex lokal atau Claude Code | [Pasang dari folder sumber](#pemasangan-lokal-dengan-satu-perintah) |
 
 Buka tautan paket di GitHub dan pilih **Download raw file**. Unggah ZIP tanpa mengekstraknya.
@@ -77,6 +77,8 @@ Pada ChatGPT dan Claude yang dihosting, gunakan fitur unggah atau pasang pada ak
 2. Tentukan bahasa sumber dan sasaran, platform, jenis materi, dan format hasil. Sertakan batas karakter, tangkapan layar, keterangan penutur, atau contoh variabel jika perlu.
 3. Untuk lembar kerja, sebutkan kolom sumber dan sasaran serta minta salinan baru. Untuk string gim, berikan ID atau kunci tetap. Untuk toko, tentukan kolom tujuan dan batas panjang wajib jika ada.
 4. Baca laporan penyerahan terpisah untuk mengetahui apakah hasilnya siap digunakan atau masih berupa draf. Laporan itu memisahkan pemeriksaan file, tinjauan bahasa, dan pemeriksaan dalam game atau pratinjau toko, serta mencantumkan langkah berikutnya untuk setiap masalah yang belum selesai. Setujui istilah di glosarium proyek sebelum menggunakannya kembali.
+
+Untuk antarmuka game, laporan serah terima memuat daftar pemeriksaan berurutan menurut prioritas, dengan layar, ID string, langkah untuk mengulangi skenario, dan kriteria lulus. Utamakan nilai variabel yang panjang dan teks yang berisiko terpotong. Jika font dan lebar yang tersedia diketahui, skill dapat memperkirakan ruang yang diperlukan. [Pemeriksaan di dalam game](../game-localization/references/in-build-qa.md)
 
 Gunakan [templat glosarium proyek](../game-localization/references/project-glossary-template.md) untuk memisahkan istilah yang disetujui dari usulan. Simpan file yang diperbarui dan lampirkan di chat berikutnya.
 

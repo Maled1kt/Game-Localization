@@ -22,8 +22,8 @@ Taito sisältää ohjeet ja viitetiedostot. Se toimii ilman projektin API-avaint
 
 | Ympäristö | Paketti |
 | --- | --- |
-| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT tai Codex, jossa on lupa ladata laajennuksia | [ChatGPT-laajennuksen ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude tai ChatGPT-työtila, joka sallii erillisten taitojen lataamisen | [Erillisen taidon ZIP](../packages/game-localization-skill-v0.1.9.zip) |
 | Paikallinen Codex tai Claude Code | [Asenna lähdekansiosta](#asennus-paikallisille-agenteille-yhdellä-komennolla) |
 
 Avaa pakettilinkki GitHubissa ja valitse **Download raw file**. Lataa ZIP purkamatta sitä.
@@ -77,6 +77,8 @@ Käytä ChatGPT:n ja Clauden verkkopalveluissa tilisi lataus- tai asennustoimint
 2. Määritä lähde- ja kohdekielet, alusta, aineiston tyyppi ja tulostusmuoto. Lisää tarvittaessa merkkirajat, kuvakaappaukset, puhujatiedot tai muuttujien esimerkit.
 3. Nimeä laskentataulukon lähde- ja kohdesarakkeet ja pyydä uutta kopiota. Anna peliteksteille pysyvät tunnukset tai avaimet. Ilmoita kauppatekstin kohdekenttä ja mahdollinen tiukka pituusraja.
 4. Tarkista erillisestä luovutusraportista, onko tulos käyttövalmis vai vielä luonnos. Raportti erittelee tiedoston tarkistuksen, kielellisen tarkistuksen ja tarkistuksen pelissä tai kaupan esikatselussa. Se kertoo myös seuraavan toimenpiteen jokaiseen avoimeen ongelmaan. Hyväksy termit projektisanastossa ennen uudelleenkäyttöä.
+
+Pelin käyttöliittymän luovutusraportti sisältää tärkeysjärjestykseen asetetut tarkistukset. Kullekin annetaan näkymä, merkkijonon tunnus, toistovaiheet ja hyväksymiskriteeri. Ensimmäisenä tarkistetaan pitkät muuttujien arvot ja tekstit, jotka voivat leikkautua. Kun fontti ja käytettävissä oleva leveys tiedetään, taito voi arvioida tilantarpeen. [Tarkistukset pelissä](../game-localization/references/in-build-qa.md)
 
 Pidä hyväksytyt termit ja ehdotukset erillään [projektisanaston mallin](../game-localization/references/project-glossary-template.md) avulla. Tallenna päivitetty tiedosto ja liitä se seuraavaan keskusteluun.
 

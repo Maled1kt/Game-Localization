@@ -22,8 +22,8 @@ La compétence contient des instructions et des références. Elle fonctionne sa
 
 | Environnement | Paquet |
 | --- | --- |
-| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT ou Codex avec accès à l’import de plugins | [ZIP du plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude ou espace ChatGPT autorisant l’import de compétences autonomes | [ZIP de la compétence autonome](../packages/game-localization-skill-v0.1.9.zip) |
 | Codex local ou Claude Code | [Installer depuis le dossier source](#installation-des-agents-locaux-en-une-commande) |
 
 Sur GitHub, ouvrez le lien du paquet et choisissez **Download raw file**. Importez le ZIP sans le décompresser.
@@ -77,6 +77,8 @@ Dans ChatGPT et Claude hébergés, utilisez les commandes d’import ou d’inst
 2. Précisez langues source et cibles, plateforme, type de contenu et format de sortie. Ajoutez au besoin limites de caractères, captures, notes sur les locuteurs ou exemples de variables.
 3. Pour un classeur, indiquez les colonnes source et cible et demandez une nouvelle copie. Pour le jeu, fournissez des clés ou identifiants stables. Pour la boutique, indiquez le champ cible et la limite stricte éventuelle.
 4. Consultez le compte rendu séparé pour savoir si le résultat est prêt à l’emploi ou reste à l’état de brouillon. Il distingue le contrôle du fichier, la révision linguistique et la vérification dans le jeu ou dans l’aperçu de la boutique. Il indique la prochaine action pour chaque problème en suspens. Approuvez les termes dans le glossaire du projet avant de les réutiliser.
+
+Pour l’interface du jeu, le rapport de livraison contient une liste de vérifications classées par priorité. Chaque cas précise l’écran, l’identifiant de la chaîne, les étapes de reproduction et le critère de réussite. Les valeurs de variables longues et les textes susceptibles d’être tronqués passent en premier. Si la police et la largeur utile sont connues, la compétence peut estimer l’espace nécessaire. [Vérifications dans le jeu](../game-localization/references/in-build-qa.md)
 
 Utilisez le [modèle de glossaire de projet](../game-localization/references/project-glossary-template.md) pour séparer les termes approuvés des propositions. Enregistrez le fichier mis à jour et joignez-le à votre prochaine conversation.
 

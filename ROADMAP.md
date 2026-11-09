@@ -1,8 +1,8 @@
 # Game Localization roadmap
 
-**Current status.** P1.2 is complete. The `0.1.8` packages include an updater that writes translations by ID to a verified Excel workbook copy. [Excel workflow](game-localization/references/xlsx-qa.md) · [Changelog](CHANGELOG.md)
+**Current status.** P1.3 is complete. The `0.1.9` packages include prioritized in-build QA checklists and an optional UI width estimator. [In-build QA](game-localization/references/in-build-qa.md) · [Changelog](CHANGELOG.md)
 
-**Next task.** P1.3. Give testers specific in-build checks.
+**Next task.** P2.1. Process changes by ID.
 
 To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), inspect `git status`, and continue the next task. Update the status and identify the next task after verifying the work.
 
@@ -18,7 +18,7 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 
 - [x] **P1.1. Make the project glossary portable.** Provide a template with locale, context, and term status. Save approved decisions in a file for the next chat and list proposed terms separately. [Project glossary template](game-localization/references/project-glossary-template.md)
 - [x] **P1.2. Verify Excel workbooks.** For supported `.xlsx` files, write translations by ID to the requested column in a new copy and verify preservation of the rest of the workbook. Record the scope of a possible JSON workflow. [Excel workflow](game-localization/references/xlsx-qa.md) · [Tests](tests/test_update_xlsx.py)
-- [ ] **P1.3. Give testers specific in-build checks.** Identify the screen, string ID, and conditions for each check. Start with long substitutions and clipped text. Add width estimates when font and layout parameters are available.
+- [x] **P1.3. Give testers specific in-build checks.** Identify the screen, string ID, and conditions for each check. Start with long substitutions and clipped text. Add width estimates when font and layout parameters are available. [Checklist and examples](game-localization/references/in-build-qa.md)
 
 ## P2 · Translation updates and Steam
 
@@ -59,3 +59,10 @@ To resume work in a new session, read this file and [AGENTS.md](AGENTS.md), insp
 - Both ZIPs rebuilt byte for byte. The updater from each extracted ZIP wrote the expected cells. A separate workbook reader confirmed literal text, cell styles, column width, source cells, the neighboring formula, and the second sheet. All 60 archive links and 30 Excel guide links resolved locally.
 - Manual app verification is pending. In ChatGPT and Claude, attach a two-sheet workbook and ask for a new copy with one translated column. Open that copy in Excel, confirm that it opens without repair, and verify that the intended values, styles, formula, and second sheet are present.
 - A first JSON workflow is feasible for UTF-8 files whose top-level object maps stable keys to strings. Use a duplicate-aware parse, compare key coverage and protected tokens, and verify a new output file. Treat nested objects, arrays, mixed value types, and engine-specific formats as separate work. JSON editing is deferred and does not change the task order. [JSON object rules](https://www.rfc-editor.org/rfc/rfc8259#section-4)
+
+## Version 0.1.9 verification
+
+- All ten regression tests passed. Both ZIPs rebuilt byte for byte. All 60 archive links and 30 in-build guide links resolved locally.
+- The extracted German examples in both packages identify `TUT_014` with a long input binding and `MENU_005` with a narrow viewport. Both build checks remain pending in the fictional walkthrough.
+- The extracted estimator measured the short button label at 52 px and the substituted airlock prompt at 524 px against a 220 px budget in Segoe UI at 18 px. It rejected multiline input and right-to-left input without Raqm. The Raqm shaping path remains untested in the local runtime.
+- Manual app verification is pending. In ChatGPT and Claude, run the first-run prompt and check that the handoff includes the two cases, identifies their screens and IDs, gives steps and pass criteria, and keeps both pending while the build is unavailable.

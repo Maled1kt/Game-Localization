@@ -22,8 +22,8 @@ La skill contiene istruzioni e riferimenti. Funziona senza chiavi API di progett
 
 | Ambiente | Pacchetto |
 | --- | --- |
-| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT o Codex con autorizzazione al caricamento dei plugin | [ZIP del plugin ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude o spazi ChatGPT abilitati al caricamento di skill autonome | [ZIP della skill autonoma](../packages/game-localization-skill-v0.1.9.zip) |
 | Codex locale o Claude Code | [Installa dalla cartella sorgente](#installazione-locale-con-un-comando) |
 
 Su GitHub apri il link del pacchetto e scegli **Download raw file**. Carica lo ZIP senza estrarlo.
@@ -77,6 +77,8 @@ Nelle versioni ospitate di ChatGPT e Claude usa i controlli di caricamento o ins
 2. Specifica lingue di partenza e arrivo, piattaforma, tipo di contenuto e formato di consegna. Aggiungi se pertinenti limiti di caratteri, schermate, note sui personaggi o esempi di variabili.
 3. Per un foglio di calcolo indica le colonne di partenza e arrivo e chiedi una nuova copia. Per le stringhe del gioco fornisci ID o chiavi stabili. Per il negozio indica il campo e l’eventuale limite rigido.
 4. Leggi il resoconto separato per sapere se il risultato è pronto per l’uso o è ancora una bozza. Il resoconto distingue il controllo del file, la revisione linguistica e la verifica nel gioco o nell’anteprima del negozio. Indica il passo successivo per ogni problema aperto. Approva i termini nel glossario del progetto prima di riutilizzarli.
+
+Per l’interfaccia di gioco, il report di consegna include una lista di controlli in ordine di priorità, con schermata, ID della stringa, passaggi per riprodurre il caso e criterio di superamento. Si parte dai valori lunghi delle variabili e dai testi a rischio di taglio. Se sono noti il carattere e la larghezza utile, la skill può stimare lo spazio necessario. [Controlli in gioco](../game-localization/references/in-build-qa.md)
 
 Usa il [modello di glossario del progetto](../game-localization/references/project-glossary-template.md) per tenere separati i termini approvati e le proposte. Salva il file aggiornato e allegalo alla prossima chat.
 

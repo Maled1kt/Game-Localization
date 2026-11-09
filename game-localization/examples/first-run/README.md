@@ -14,6 +14,7 @@ Match the files by ID. Use ENGLISH and CONTEXT in source.csv, GERMAN in draft.de
 Use each nonblank MAX_LENGTH value as a limit in characters. Preserve the IDs, placeholders, tags, and the ID,GERMAN schema.
 Fix the rows with clear corrections. If a row needs a decision about meaning, keep its ID and leave the translation blank in the labeled draft. Ask me about it by ID.
 Return a new CSV called reviewed.de-DE.draft.csv and a separate handoff in English. Run the CSV checker if available. The game build is unavailable.
+Include an in-build checklist. The docking area supports the Interact binding Umschalt + Eingabe. Use it to plan a check of the airlock prompt.
 ```
 
 ## What to expect
@@ -33,7 +34,9 @@ The wording of the handoff can vary. It should give the same decisions and repor
 >
 > - **File checks need action.** The checker compared all 12 IDs. `{interact}` was restored in `TUT_014` and `MENU_005` now fits the 8-character limit. `MENU_006` is the only remaining blank translation.
 > - **Language review needs action.** The approved glossary was applied to the translated rows. Does `MENU_006` clear filters, delete a save, or do something else?
-> - **In-game review pending.** In a test build, check the next-step button and the docking prompt with the actual assigned input button.
+> - **In-game review pending.** In `de-DE`, bind Interact to `Umschalt + Eingabe` and approach the closed airlock in the docking area at the highest supported text scale. For `TUT_014`, verify that the whole binding and instruction are visible without clipping. For `MENU_005`, open the tutorial's next step at the narrowest supported viewport and check that `Weiter` appears in full inside the button. Width estimates need the font and usable width.
+
+See the [in-build checklist](../../references/in-build-qa.md) for the same checks as a table.
 
 To finish the example, reply with `MENU_006 clears the active filters. Update that row and rerun the checks.` A suitable translation is `Filter zurücksetzen`. The file can pass technical checks once that row is filled. In-game review still needs a build.
 

@@ -22,8 +22,8 @@ Game Localization 是一項代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 | 使用環境 | 安裝套件 |
 | --- | --- |
-| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.8.zip) |
+| 有外掛上傳權限的 ChatGPT 或 Codex | [ChatGPT 外掛 ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude 或允許上傳獨立技能的 ChatGPT 工作區 | [獨立技能 ZIP](../packages/game-localization-skill-v0.1.9.zip) |
 | 本機 Codex 或 Claude Code | [從原始碼資料夾安裝](#用一個指令安裝到本機代理) |
 
 在 GitHub 開啟套件連結並選擇 **Download raw file**。上傳時保留 ZIP 格式。
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. 指定來源和目標語言、平台、內容類型和輸出格式。視需要附上字元限制、畫面截圖、說話者說明或變數範例。
 3. 試算表請指定來源欄與目標欄，並要求建立副本。遊戲內文字請提供穩定的 ID 或鍵值。商店文案請指定欄位及硬性長度限制。
 4. 查看另外提供的交付說明，確認成果可以使用或仍是草稿。說明分別列出檔案檢查、譯文審校，以及遊戲內或商店預覽中的檢查，並為每個尚未解決的問題列出下一步。術語請先在專案詞彙表中核准，再重複使用。
+
+針對遊戲介面，交付報告會依優先順序列出檢查項目，包括畫面、字串 ID、重現步驟和通過條件。優先檢查較長的變數代入值和可能被截斷的文字。如果已知字型和文字可用寬度，技能可以估算所需空間。[遊戲內檢查指南](../game-localization/references/in-build-qa.md)
 
 使用[專案詞彙表範本](../game-localization/references/project-glossary-template.md)分開記錄已核准的術語和候選術語。儲存更新後的檔案，並在下次對話時附上。
 

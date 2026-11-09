@@ -32,8 +32,8 @@ The skill contains instructions and reference files. It requires no project API 
 
 | Where you work | Package |
 | --- | --- |
-| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT or Codex with plugin upload access | [ChatGPT plugin ZIP](packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude or eligible ChatGPT workspaces with standalone skill upload | [Standalone skill ZIP](packages/game-localization-skill-v0.1.9.zip) |
 | Local Codex or Claude Code | [Install from the source folder](#one-command-install-for-local-agents) |
 
 On GitHub, open the package link and choose **Download raw file**. Keep the ZIP intact for upload.
@@ -87,6 +87,8 @@ In hosted ChatGPT and Claude, use the account's upload or install controls. A ch
 2. Specify the source and target locales, platform, material type, and output format. Include character limits, screenshots, speaker notes, or variable examples where they matter.
 3. For a spreadsheet, name the source and target columns and ask for a new copy. For in-game strings, provide stable IDs or keys. For store text, include the target field and any hard length limit.
 4. Read the separate handoff to see whether the output is ready to use or still a draft. It reports file checks, language review, and review in the game or store preview separately, with a next action for each open issue. Approve terms in your project glossary before reusing them.
+
+For in-game UI, the handoff includes a prioritized checklist with screens, string IDs, reproduction steps, and pass criteria. It starts with long substitutions and text that could clip. If the font and usable width are known, the skill can estimate how much room the text needs. [In-build QA guide](game-localization/references/in-build-qa.md)
 
 Use the [project glossary template](game-localization/references/project-glossary-template.md) to keep approved terms and proposals separate. Save the updated file and attach it to your next chat.
 

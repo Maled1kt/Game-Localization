@@ -22,8 +22,8 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 | 利用環境 | パッケージ |
 | --- | --- |
-| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.8.zip) |
+| プラグインのアップロード権限がある ChatGPT または Codex | [ChatGPT プラグインの ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude または単体スキルのアップロードに対応する ChatGPT ワークスペース | [単体スキルの ZIP](../packages/game-localization-skill-v0.1.9.zip) |
 | ローカルの Codex または Claude Code | [ソースフォルダーからインストール](#ローカルエージェントに1コマンドでインストール) |
 
 GitHub でパッケージのリンクを開き、**Download raw file** を選択します。ZIP は展開せずにアップロードしてください。
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. 原文と訳文のロケール、プラットフォーム、素材の種類、出力形式を指定します。必要に応じて文字数制限、スクリーンショット、話者情報、変数の例も添えます。
 3. 表では原文と訳文の列を指定し、新しいコピーを依頼します。ゲーム内テキストでは固定の ID やキーを、ストア文面では対象項目と厳密な長さ制限があればそれを伝えます。
 4. 結果が利用可能か、まだ下書きの段階かを、別に用意される引き継ぎメモで確認します。メモにはファイルのチェック、訳文のレビュー、ゲーム内またはストアプレビューでの確認の状況が個別に記載され、未解決の問題ごとに次の対応が示されます。用語はプロジェクト用語集で承認してから再利用します。
+
+ゲーム UI の引き渡しレポートでは、画面、文字列 ID、再現手順、合格条件を優先順にまとめます。変数に長い値が入るケースや、文字が見切れそうな箇所を先に確認します。フォントとテキストに使える幅が分かれば、必要な幅を見積もれます。[ゲーム内の確認手順](../game-localization/references/in-build-qa.md)
 
 [プロジェクト用語集のテンプレート](../game-localization/references/project-glossary-template.md)で、承認済みの用語と候補を分けて管理します。更新したファイルを保存し、次のチャットに添付してください。
 

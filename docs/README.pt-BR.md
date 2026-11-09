@@ -22,8 +22,8 @@ A skill contém instruções e referências. Funciona sem chave de API do projet
 
 | Ambiente | Pacote |
 | --- | --- |
-| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT ou Codex com permissão para enviar plugins | [ZIP do plugin do ChatGPT](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude ou espaços do ChatGPT habilitados para enviar skills independentes | [ZIP da skill independente](../packages/game-localization-skill-v0.1.9.zip) |
 | Codex local ou Claude Code | [Instalar da pasta de origem](#instalação-local-com-um-comando) |
 
 No GitHub, abra o link do pacote e escolha **Download raw file**. Envie o ZIP sem extrair.
@@ -77,6 +77,8 @@ Nas versões hospedadas do ChatGPT e do Claude, use os controles de upload ou in
 2. Informe os idiomas de origem e destino, a plataforma, o tipo de conteúdo e o formato de saída. Inclua, quando fizer diferença, limites de caracteres, capturas de tela, notas sobre os falantes ou exemplos de variáveis.
 3. Para planilhas, indique as colunas de origem e destino e solicite uma nova cópia. Para textos do jogo, informe chaves ou IDs estáveis. Para a loja, indique o campo e o limite obrigatório, se houver.
 4. Consulte o relatório separado para saber se o resultado está pronto para uso ou ainda é um rascunho. O relatório apresenta separadamente a verificação do arquivo, a revisão linguística e a conferência no jogo ou na prévia da loja. Também indica o próximo passo para cada pendência. Aprove os termos no glossário do projeto antes de reutilizá-los.
+
+Para a interface do jogo, o relatório de entrega inclui uma lista de verificações por prioridade, com a tela, o ID da string, as etapas para reproduzir o cenário e o critério de aprovação. Os valores longos das variáveis e os textos que podem ser cortados vêm primeiro. Se a fonte e a largura disponível forem conhecidas, a habilidade pode estimar o espaço necessário. [Verificações no jogo](../game-localization/references/in-build-qa.md)
 
 Use o [modelo de glossário do projeto](../game-localization/references/project-glossary-template.md) para separar os termos aprovados das propostas. Salve o arquivo atualizado e anexe-o à próxima conversa.
 

@@ -129,6 +129,6 @@ Illustrative EN → ru-RU examples use fictional context.
 | --- | --- |
 | Technical QA | All strings are present and keys, structure, protected tokens, and constraints are intact. Use a format-aware check when available. Test substitutions with representative values when available. |
 | Target-language review | The text reads naturally in the scene or UI. After reading the target, compare it with the source and check all applicable approved terminology. For independent review, give a target-language editor the translation and game context without identifying how the translation was produced. |
-| In-build QA | Inspect the lines on screen or in the scene. For UI, check clipping, wrapping, scaling, fonts, and text direction where relevant. For subtitles, check display timing and speaker changes. |
+| In-build QA | Inspect the lines on screen or in the scene. Use the [in-build QA guide](in-build-qa.md) for UI checks. For subtitles, check display timing and speaker changes. |
 
 Use the [handoff guide](handoff.md) to report each check and the next action. A batch passes once required checks are complete and discrepancies are resolved or exceptions are agreed.

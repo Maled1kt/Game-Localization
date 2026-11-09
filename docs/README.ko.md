@@ -22,8 +22,8 @@ Game Localization은 ChatGPT, Codex, Claude에서 게임 텍스트를 번역, �
 
 | 사용 환경 | 패키지 |
 | --- | --- |
-| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.8.zip) |
+| 플러그인 업로드 권한이 있는 ChatGPT 또는 Codex | [ChatGPT 플러그인 ZIP](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude 또는 독립 스킬을 업로드할 수 있는 ChatGPT 워크스페이스 | [독립 스킬 ZIP](../packages/game-localization-skill-v0.1.9.zip) |
 | 로컬 Codex 또는 Claude Code | [소스 폴더에서 설치](#명령-하나로-로컬-에이전트에-설치) |
 
 GitHub에서 패키지 링크를 열고 **Download raw file**을 선택합니다. ZIP의 압축을 풀지 않고 업로드합니다.
@@ -77,6 +77,8 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 2. 원본과 대상 로캘, 플랫폼, 콘텐츠 유형 및 출력 형식을 지정합니다. 필요한 경우 글자 수 제한, 화면 캡처, 화자 정보, 변수 예시를 제공합니다.
 3. 스프레드시트에서는 원본 열과 대상 열을 지정하고 새 사본을 요청합니다. 게임 문자열에는 고정 ID 또는 키를 제공합니다. 스토어 문구에는 대상 필드와 엄격한 길이 제한이 있다면 함께 적습니다.
 4. 별도로 제공되는 인계 문서에서 결과물이 사용 가능한 상태인지, 아직 초안인지 확인합니다. 인계 문서에는 파일 점검, 번역문 검토, 게임 내 또는 스토어 미리보기 확인이 구분되어 있으며, 미해결 문제마다 다음에 할 일이 표시됩니다. 용어는 프로젝트 용어집에서 승인한 후 재사용합니다.
+
+게임 UI의 인계 보고서에는 화면, 문자열 ID, 재현 절차, 통과 기준을 우선순위에 따라 정리한 체크리스트가 포함됩니다. 변수에 긴 값이 들어가거나 텍스트가 잘릴 수 있는 경우부터 확인합니다. 글꼴과 사용 가능한 너비를 알면 필요한 공간을 추정할 수 있습니다. [게임 내 점검 가이드](../game-localization/references/in-build-qa.md)
 
 [프로젝트 용어집 템플릿](../game-localization/references/project-glossary-template.md)에서 승인된 용어와 제안 용어를 구분해 관리하세요. 업데이트한 파일을 저장한 뒤 다음 채팅에 첨부하세요.
 

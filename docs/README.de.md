@@ -22,8 +22,8 @@ Der Skill besteht aus Anleitungen und Referenzdateien. Er benötigt keinen Proje
 
 | Umgebung | Paket |
 | --- | --- |
-| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.8.zip) |
-| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.8.zip) |
+| ChatGPT oder Codex mit Plugin-Upload-Berechtigung | [ZIP für das ChatGPT-Plugin](../packages/game-localization-chatgpt-v0.1.9.zip) |
+| Claude oder berechtigte ChatGPT-Workspaces mit separatem Skill-Upload | [ZIP für den eigenständigen Skill](../packages/game-localization-skill-v0.1.9.zip) |
 | Lokaler Codex oder Claude Code | [Installation aus dem Quellordner](#installation-für-lokale-agenten-mit-einem-befehl) |
 
 Öffne den Paketlink auf GitHub und wähle **Download raw file**. Lade das ZIP ungeöffnet hoch.
@@ -77,6 +77,8 @@ Verwende im gehosteten ChatGPT und Claude die Upload- oder Installationsoptionen
 2. Gib Quell- und Zielsprachen, Plattform, Textsorte und Ausgabeformat an. Ergänze bei Bedarf Zeichenlimits, Screenshots, Sprecherhinweise oder Variablenbeispiele.
 3. Nenne bei Tabellen Quell- und Zielspalten und bitte um eine neue Kopie. Gib für Spieltexte stabile IDs oder Schlüssel an. Nenne für Shoptexte das Zielfeld und etwaige feste Längenlimits.
 4. Lies im separaten Übergabebericht, ob das Ergebnis einsatzbereit ist oder noch als Entwurf vorliegt. Der Bericht führt Dateiprüfung, sprachliche Prüfung und Prüfung im Spiel oder in der Shopvorschau getrennt auf und nennt für jedes offene Problem den nächsten Schritt. Gib Begriffe vor der Wiederverwendung im Projektglossar frei.
+
+Für die Spieloberfläche enthält der Übergabebericht eine priorisierte Checkliste mit Bildschirm, String-ID, Schritten zur Reproduktion und Prüfkriterien. Lange eingesetzte Werte und Text, der abgeschnitten werden könnte, kommen zuerst. Sind Schrift und nutzbare Breite bekannt, kann der Skill den Platzbedarf schätzen. [Prüfungen im Spiel](../game-localization/references/in-build-qa.md)
 
 Nutze die [Vorlage für das Projektglossar](../game-localization/references/project-glossary-template.md), um freigegebene Begriffe und Vorschläge getrennt zu halten. Speichere die aktualisierte Datei und hänge sie an deinen nächsten Chat an.
 
