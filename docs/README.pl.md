@@ -6,7 +6,9 @@ Game Localization to umiejętność agenta do tłumaczenia, redagowania i sprawd
 
 Otrzymasz tłumaczenie i osobny raport z kontroli.
 
-**[Instalacja](#instalacja)** · **[Wypróbuj przykład z 12 ciągami](../game-localization/examples/first-run/README.md)** · [Korzystanie z umiejętności](#korzystanie-z-umiejętności)
+**[Instalacja](#instalacja)** · **[Wypróbuj przykład z 12 ciągami](../game-localization/examples/first-run/README.md)** · [Korzystanie z umiejętności](#korzystanie-z-umiejętności) · [Wesprzyj autora](#wesprzyj-autora)
+
+Tę wersję pliku README przetłumaczono za pomocą Game Localization. Porównaj ją z angielskim oryginałem i oceń efekt.
 
 [English](../README.md) · [Wszystkie języki](../README.md#languages)
 
@@ -169,7 +171,7 @@ Aby zbudować oba ZIP-y z tego samego źródła, uruchom `python scripts/package
 
 **High+** oznacza High lub wyższy poziom dostępny w aplikacji. Wybierz model i poziom w aplikacji. Umiejętność działa niezależnie od tej preferencji. [Ustawienia modeli OpenAI](https://learn.chatgpt.com/docs/models) · [Poziomy rozumowania Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Aktualizacja i usuwanie](#aktualizacja-i-usuwanie) · [Wesprzyj autora](#wesprzyj-autora) · [Plan rozwoju](../ROADMAP.md) · [Historia zmian](../CHANGELOG.md)
+[Aktualizacja i usuwanie](#aktualizacja-i-usuwanie) · [Plan rozwoju](../ROADMAP.md) · [Historia zmian](../CHANGELOG.md)
 
 ## Licencja
 

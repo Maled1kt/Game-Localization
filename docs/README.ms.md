@@ -6,7 +6,9 @@ Game Localization ialah kemahiran ejen untuk menterjemah, menyunting dan menyema
 
 Anda menerima terjemahan dan laporan semakan berasingan.
 
-**[Pemasangan](#pemasangan)** · **[Cuba contoh 12 rentetan](../game-localization/examples/first-run/README.md)** · [Menggunakan kemahiran](#menggunakan-kemahiran)
+**[Pemasangan](#pemasangan)** · **[Cuba contoh 12 rentetan](../game-localization/examples/first-run/README.md)** · [Menggunakan kemahiran](#menggunakan-kemahiran) · [Sokong pengarang](#sokong-pengarang)
+
+Versi README ini diterjemahkan dengan Game Localization. Bandingkannya dengan teks asal dalam bahasa Inggeris untuk menilai hasilnya.
 
 [English](../README.md) · [Semua bahasa](../README.md#languages)
 
@@ -169,7 +171,7 @@ Untuk membina semula kedua-dua ZIP daripada sumber yang sama, jalankan `python s
 
 **High+** merujuk kepada High atau tahap lebih tinggi yang tersedia dalam aplikasi. Pilih model dan tahap penaakulan dalam aplikasi. Kemahiran berfungsi tanpa bergantung pada tetapan ini. [Tetapan model OpenAI](https://learn.chatgpt.com/docs/models) · [Tahap penaakulan Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Kemas kini atau alih keluar](#kemas-kini-atau-alih-keluar) · [Sokong pengarang](#sokong-pengarang) · [Pelan pembangunan](../ROADMAP.md) · [Log perubahan](../CHANGELOG.md)
+[Kemas kini atau alih keluar](#kemas-kini-atau-alih-keluar) · [Pelan pembangunan](../ROADMAP.md) · [Log perubahan](../CHANGELOG.md)
 
 ## Lesen
 

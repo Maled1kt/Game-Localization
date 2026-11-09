@@ -6,7 +6,9 @@ Game Localization est une compétence d’agent pour traduire, réviser et contr
 
 Vous recevez une traduction et un rapport de vérification séparé.
 
-**[Installation](#installation)** · **[Essayez l’exemple de 12 chaînes](../game-localization/examples/first-run/README.md)** · [Utiliser la compétence](#utiliser-la-compétence)
+**[Installation](#installation)** · **[Essayez l’exemple de 12 chaînes](../game-localization/examples/first-run/README.md)** · [Utiliser la compétence](#utiliser-la-compétence) · [Soutenir l’auteur](#soutenir-lauteur)
+
+Cette version du README a été traduite avec Game Localization. Comparez-la à l’original en anglais pour vous faire une idée du résultat.
 
 [English](../README.md) · [Toutes les langues](../README.md#languages)
 
@@ -169,7 +171,7 @@ Pour reconstruire les deux ZIP, exécutez `python scripts/package.py` à la raci
 
 **High+** désigne High ou un niveau supérieur disponible dans le client. Choisissez-y le modèle et le niveau. La compétence fonctionne indépendamment de ce réglage. [Réglages des modèles OpenAI](https://learn.chatgpt.com/docs/models) · [Niveaux de raisonnement de Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Mettre à jour ou supprimer](#mettre-à-jour-ou-supprimer) · [Soutenir l’auteur](#soutenir-lauteur) · [Plan de développement](../ROADMAP.md) · [Journal des modifications](../CHANGELOG.md)
+[Mettre à jour ou supprimer](#mettre-à-jour-ou-supprimer) · [Plan de développement](../ROADMAP.md) · [Journal des modifications](../CHANGELOG.md)
 
 ## Licence
 

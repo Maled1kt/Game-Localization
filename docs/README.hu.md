@@ -6,7 +6,9 @@ A Game Localization egy ügynökkészség videojátékok szövegeinek fordítás
 
 Fordítást és külön ellenőrzési jelentést kapsz.
 
-**[Telepítés](#telepítés)** · **[Próbáld ki a 12 szöveges példát](../game-localization/examples/first-run/README.md)** · [A készség használata](#a-készség-használata)
+**[Telepítés](#telepítés)** · **[Próbáld ki a 12 szöveges példát](../game-localization/examples/first-run/README.md)** · [A készség használata](#a-készség-használata) · [A szerző támogatása](#a-szerző-támogatása)
+
+A README ezen változatát a Game Localization segítségével fordítottuk le. Hasonlítsd össze az angol eredetivel, és ítéld meg az eredményt.
 
 [English](../README.md) · [Minden nyelv](../README.md#languages)
 
@@ -169,7 +171,7 @@ Mindkét ZIP újraépítéséhez futtasd a `python scripts/package.py` parancsot
 
 A **High+** a kliensben elérhető High vagy magasabb szintet jelöli. A modellt és a szintet a kliensben válaszd ki. A készség ettől a választástól függetlenül működik. [OpenAI modellbeállítások](https://learn.chatgpt.com/docs/models) · [Claude következtetési szintek](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Frissítés vagy eltávolítás](#frissítés-vagy-eltávolítás) · [A szerző támogatása](#a-szerző-támogatása) · [Fejlesztési terv](../ROADMAP.md) · [Változásnapló](../CHANGELOG.md)
+[Frissítés vagy eltávolítás](#frissítés-vagy-eltávolítás) · [Fejlesztési terv](../ROADMAP.md) · [Változásnapló](../CHANGELOG.md)
 
 ## Licenc
 

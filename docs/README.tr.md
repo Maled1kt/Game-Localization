@@ -6,7 +6,9 @@ Game Localization, ChatGPT, Codex ve Claude’da oyun metinlerini çevirmek, dü
 
 Çeviriyi ve ayrı bir kontrol raporunu alırsınız.
 
-**[Kurulum](#kurulum)** · **[12 dizelik örneği deneyin](../game-localization/examples/first-run/README.md)** · [Beceriyi kullanma](#beceriyi-kullanma)
+**[Kurulum](#kurulum)** · **[12 dizelik örneği deneyin](../game-localization/examples/first-run/README.md)** · [Beceriyi kullanma](#beceriyi-kullanma) · [Geliştiriciyi destekleyin](#geliştiriciyi-destekleyin)
+
+README’nin bu sürümü Game Localization ile çevrildi. İngilizce aslıyla karşılaştırıp sonucu değerlendirin.
 
 [English](../README.md) · [Tüm diller](../README.md#languages)
 
@@ -169,7 +171,7 @@ Barındırılan ChatGPT ve Claude sürümlerinde hesabın yükleme veya kurulum 
 
 **High+**, uygulamada bulunan High ya da daha yüksek düzeyi ifade eder. Modeli ve düzeyi uygulamada seçin. Beceri bu tercihten bağımsız çalışır. [OpenAI model ayarları](https://learn.chatgpt.com/docs/models) · [Claude akıl yürütme düzeyleri](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Güncelleme veya kaldırma](#güncelleme-veya-kaldırma) · [Geliştiriciyi destekleyin](#geliştiriciyi-destekleyin) · [Geliştirme planı](../ROADMAP.md) · [Değişiklik günlüğü](../CHANGELOG.md)
+[Güncelleme veya kaldırma](#güncelleme-veya-kaldırma) · [Geliştirme planı](../ROADMAP.md) · [Değişiklik günlüğü](../CHANGELOG.md)
 
 ## Lisans
 

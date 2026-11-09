@@ -6,7 +6,9 @@ Game Localization ist ein Agent Skill zum Übersetzen, Bearbeiten und Prüfen vo
 
 Du erhältst eine Übersetzung und einen separaten Prüfbericht.
 
-**[Installation](#installation)** · **[Beispiel mit 12 Strings ausprobieren](../game-localization/examples/first-run/README.md)** · [Skill verwenden](#skill-verwenden)
+**[Installation](#installation)** · **[Beispiel mit 12 Strings ausprobieren](../game-localization/examples/first-run/README.md)** · [Skill verwenden](#skill-verwenden) · [Autor unterstützen](#autor-unterstützen)
+
+Diese README-Version wurde mit Game Localization übersetzt. Vergleiche sie mit dem englischen Original und beurteile das Ergebnis selbst.
 
 [English](../README.md) · [Alle Sprachen](../README.md#languages)
 
@@ -169,7 +171,7 @@ Erstelle beide ZIP-Dateien aus derselben Quelle mit `python scripts/package.py` 
 
 **High+** steht für High oder eine höhere im Client verfügbare Stufe. Wähle Modell und Stufe im Client. Der Skill funktioniert unabhängig von dieser Einstellung. [OpenAI-Modelleinstellungen](https://learn.chatgpt.com/docs/models) · [Claude-Reasoning-Stufen](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Aktualisieren oder entfernen](#aktualisieren-oder-entfernen) · [Autor unterstützen](#autor-unterstützen) · [Entwicklungsplan](../ROADMAP.md) · [Änderungsprotokoll](../CHANGELOG.md)
+[Aktualisieren oder entfernen](#aktualisieren-oder-entfernen) · [Entwicklungsplan](../ROADMAP.md) · [Änderungsprotokoll](../CHANGELOG.md)
 
 ## Lizenz
 

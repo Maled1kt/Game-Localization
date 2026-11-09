@@ -6,7 +6,9 @@ Game Localization is een agentskill voor het vertalen, bewerken en controleren v
 
 Je krijgt een vertaling en een apart controlerapport.
 
-**[Installatie](#installatie)** · **[Probeer het voorbeeld met 12 tekenreeksen](../game-localization/examples/first-run/README.md)** · [De skill gebruiken](#de-skill-gebruiken)
+**[Installatie](#installatie)** · **[Probeer het voorbeeld met 12 tekenreeksen](../game-localization/examples/first-run/README.md)** · [De skill gebruiken](#de-skill-gebruiken) · [De maker steunen](#de-maker-steunen)
+
+Deze versie van de README is vertaald met Game Localization. Vergelijk deze met het Engelse origineel en beoordeel het resultaat zelf.
 
 [English](../README.md) · [Alle talen](../README.md#languages)
 
@@ -169,7 +171,7 @@ Bouw beide ZIP’s opnieuw uit dezelfde bron met `python scripts/package.py` in 
 
 **High+** staat voor High of hoger, afhankelijk van de opties in de client. Kies daar het model en niveau. De skill werkt onafhankelijk van deze voorkeur. [OpenAI-modelinstellingen](https://learn.chatgpt.com/docs/models) · [Redeneerniveaus van Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Bijwerken of verwijderen](#bijwerken-of-verwijderen) · [De maker steunen](#de-maker-steunen) · [Ontwikkelplan](../ROADMAP.md) · [Wijzigingslogboek](../CHANGELOG.md)
+[Bijwerken of verwijderen](#bijwerken-of-verwijderen) · [Ontwikkelplan](../ROADMAP.md) · [Wijzigingslogboek](../CHANGELOG.md)
 
 ## Licentie
 

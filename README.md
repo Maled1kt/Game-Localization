@@ -6,9 +6,11 @@ Game Localization is an Agent Skill for translating, editing, and reviewing vide
 
 Get a translation and a separate QA report.
 
-**[Install](#install)** · **[Try the 12-row example](game-localization/examples/first-run/README.md)** · [Use the skill](#use-the-skill)
+**[Install](#install)** · **[Try the 12-row example](game-localization/examples/first-run/README.md)** · [Use the skill](#use-the-skill) · [Support the author](#support-the-author)
 
 ## Languages
+
+The localized editions of this README were translated with Game Localization. Choose a language below to see how it reads.
 
 <details>
 <summary>Choose a language (30 editions)</summary>
@@ -192,7 +194,7 @@ To rebuild the catalog bundle and both ZIPs from the same source, run `python sc
 
 We use **High+** as shorthand for High or a higher setting exposed by the client. Select the model and effort in your client. The skill works independently of this preference. [OpenAI model settings](https://learn.chatgpt.com/docs/models) · [Claude effort levels](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Update or remove](#update-or-remove) · [Support the author](#support-the-author) · [Development roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md)
+[Update or remove](#update-or-remove) · [Development roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md)
 
 ## License
 

@@ -6,7 +6,9 @@ Game Localization je dovednost pro agenty, která překládá, upravuje a kontro
 
 Dostanete překlad a samostatnou zprávu o kontrolách.
 
-**[Instalace](#instalace)** · **[Vyzkoušejte příklad s 12 řetězci](../game-localization/examples/first-run/README.md)** · [Používání dovednosti](#používání-dovednosti)
+**[Instalace](#instalace)** · **[Vyzkoušejte příklad s 12 řetězci](../game-localization/examples/first-run/README.md)** · [Používání dovednosti](#používání-dovednosti) · [Podpora autora](#podpora-autora)
+
+Tato verze souboru README byla přeložena pomocí Game Localization. Porovnejte ji s anglickým originálem a posuďte výsledek.
 
 [English](../README.md) · [Všechny jazyky](../README.md#languages)
 
@@ -169,7 +171,7 @@ Oba ZIPy vytvoříte ze stejného zdroje příkazem `python scripts/package.py` 
 
 **High+** znamená High nebo vyšší úroveň dostupnou v aplikaci. Model a úroveň vyberte v aplikaci. Dovednost funguje nezávisle na této volbě. [Nastavení modelů OpenAI](https://learn.chatgpt.com/docs/models) · [Úrovně uvažování Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Aktualizace a odstranění](#aktualizace-a-odstranění) · [Podpora autora](#podpora-autora) · [Plán vývoje](../ROADMAP.md) · [Přehled změn](../CHANGELOG.md)
+[Aktualizace a odstranění](#aktualizace-a-odstranění) · [Plán vývoje](../ROADMAP.md) · [Přehled změn](../CHANGELOG.md)
 
 ## Licence
 

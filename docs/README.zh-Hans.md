@@ -6,7 +6,9 @@ Game Localization 是一项代理技能，可在 ChatGPT、Codex 和 Claude 中�
 
 你会收到译文和单独的检查报告。
 
-**[安装](#安装)** · **[试用 12 条字符串示例](../game-localization/examples/first-run/README.md)** · [使用技能](#使用技能)
+**[安装](#安装)** · **[试用 12 条字符串示例](../game-localization/examples/first-run/README.md)** · [使用技能](#使用技能) · [支持作者](#支持作者)
+
+此 README 版本由 Game Localization 翻译。欢迎对照英文原文，看看翻译效果。
 
 [English](../README.md) · [所有语言](../README.md#languages)
 
@@ -169,7 +171,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 **High+** 指客户端提供的 High 或更高推理级别。请在客户端选择模型和级别。技能可在不同级别下使用。 [OpenAI 模型设置](https://learn.chatgpt.com/docs/models) · [Claude 推理级别](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[更新或卸载](#更新或卸载) · [支持作者](#支持作者) · [开发计划](../ROADMAP.md) · [更新日志](../CHANGELOG.md)
+[更新或卸载](#更新或卸载) · [开发计划](../ROADMAP.md) · [更新日志](../CHANGELOG.md)
 
 ## 许可证
 

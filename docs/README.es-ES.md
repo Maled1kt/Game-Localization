@@ -6,7 +6,9 @@ Game Localization es una habilidad para agentes que permite traducir, editar y r
 
 Recibes una traducción y un informe de comprobación por separado.
 
-**[Instalación](#instalación)** · **[Prueba el ejemplo de 12 cadenas](../game-localization/examples/first-run/README.md)** · [Usar la habilidad](#usar-la-habilidad)
+**[Instalación](#instalación)** · **[Prueba el ejemplo de 12 cadenas](../game-localization/examples/first-run/README.md)** · [Usar la habilidad](#usar-la-habilidad) · [Apoyar al autor](#apoyar-al-autor)
+
+Esta versión del README se ha traducido con Game Localization. Compárala con el original en inglés y valora el resultado.
 
 [English](../README.md) · [Todos los idiomas](../README.md#languages)
 
@@ -169,7 +171,7 @@ Para reconstruir los dos ZIP desde el mismo código fuente, ejecuta `python scri
 
 **High+** se refiere a High o a un nivel superior que ofrezca el cliente. Elige el modelo y el nivel en el cliente. La habilidad funciona con independencia de esta preferencia. [Configuración de modelos de OpenAI](https://learn.chatgpt.com/docs/models) · [Niveles de razonamiento de Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Actualizar o quitar](#actualizar-o-quitar) · [Apoyar al autor](#apoyar-al-autor) · [Plan de desarrollo](../ROADMAP.md) · [Historial de cambios](../CHANGELOG.md)
+[Actualizar o quitar](#actualizar-o-quitar) · [Plan de desarrollo](../ROADMAP.md) · [Historial de cambios](../CHANGELOG.md)
 
 ## Licencia
 

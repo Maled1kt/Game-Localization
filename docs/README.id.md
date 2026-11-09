@@ -6,7 +6,9 @@ Game Localization adalah skill agen untuk menerjemahkan, menyunting, dan meninja
 
 Kamu akan menerima terjemahan dan laporan pemeriksaan terpisah.
 
-**[Pemasangan](#pemasangan)** · **[Coba contoh 12 string](../game-localization/examples/first-run/README.md)** · [Menggunakan skill](#menggunakan-skill)
+**[Pemasangan](#pemasangan)** · **[Coba contoh 12 string](../game-localization/examples/first-run/README.md)** · [Menggunakan skill](#menggunakan-skill) · [Dukung pembuat](#dukung-pembuat)
+
+Versi README ini diterjemahkan dengan Game Localization. Bandingkan dengan versi asli berbahasa Inggris dan nilai sendiri hasilnya.
 
 [English](../README.md) · [Semua bahasa](../README.md#languages)
 
@@ -169,7 +171,7 @@ Untuk membangun ulang kedua ZIP dari sumber yang sama, jalankan `python scripts/
 
 **High+** berarti High atau tingkat lebih tinggi yang tersedia di aplikasi. Pilih model dan tingkat penalaran di aplikasi. Skill berjalan terlepas dari pengaturan ini. [Pengaturan model OpenAI](https://learn.chatgpt.com/docs/models) · [Tingkat penalaran Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Memperbarui atau menghapus](#memperbarui-atau-menghapus) · [Dukung pembuat](#dukung-pembuat) · [Rencana pengembangan](../ROADMAP.md) · [Riwayat perubahan](../CHANGELOG.md)
+[Memperbarui atau menghapus](#memperbarui-atau-menghapus) · [Rencana pengembangan](../ROADMAP.md) · [Riwayat perubahan](../CHANGELOG.md)
 
 ## Lisensi
 

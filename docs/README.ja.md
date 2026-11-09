@@ -6,7 +6,9 @@ Game Localization は、ChatGPT、Codex、Claude でゲームテキストを翻�
 
 訳文とチェック結果のレポートを別々に受け取れます。
 
-**[インストール](#インストール)** · **[12 件のサンプルを試す](../game-localization/examples/first-run/README.md)** · [スキルの使い方](#スキルの使い方)
+**[インストール](#インストール)** · **[12 件のサンプルを試す](../game-localization/examples/first-run/README.md)** · [スキルの使い方](#スキルの使い方) · [作者を支援する](#作者を支援する)
+
+この README は Game Localization で翻訳しました。英語の原文と見比べて、翻訳の仕上がりをご確認ください。
 
 [English](../README.md) · [すべての言語](../README.md#languages)
 
@@ -169,7 +171,7 @@ npx skills add https://github.com/Maled1kt/game-localization/tree/main/game-loca
 
 **High+** は、クライアントで選べる High 以上の設定を指します。モデルと推論レベルはクライアントで選択してください。スキルはこの設定にかかわらず使えます。 [OpenAI モデル設定](https://learn.chatgpt.com/docs/models) · [Claude の推論レベル](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[更新と削除](#更新と削除) · [作者を支援する](#作者を支援する) · [開発計画](../ROADMAP.md) · [変更履歴](../CHANGELOG.md)
+[更新と削除](#更新と削除) · [開発計画](../ROADMAP.md) · [変更履歴](../CHANGELOG.md)
 
 ## ライセンス
 

@@ -6,7 +6,9 @@ Game Localization on agenttitaito pelitekstien kääntämiseen, muokkaamiseen ja
 
 Saat käännöksen ja erillisen tarkistusraportin.
 
-**[Asennus](#asennus)** · **[Kokeile 12 merkkijonon esimerkkiä](../game-localization/examples/first-run/README.md)** · [Taidon käyttäminen](#taidon-käyttäminen)
+**[Asennus](#asennus)** · **[Kokeile 12 merkkijonon esimerkkiä](../game-localization/examples/first-run/README.md)** · [Taidon käyttäminen](#taidon-käyttäminen) · [Tue tekijää](#tue-tekijää)
+
+Tämä README-versio on käännetty Game Localizationilla. Vertaa sitä englanninkieliseen alkuperäiseen ja arvioi tulosta itse.
 
 [English](../README.md) · [Kaikki kielet](../README.md#languages)
 
@@ -169,7 +171,7 @@ Luo molemmat ZIPit samasta lähteestä suorittamalla `python scripts/package.py`
 
 **High+** tarkoittaa asiakassovelluksen High-tasoa tai sitä korkeampaa tasoa. Valitse malli ja taso sovelluksessa. Taito toimii asetuksesta riippumatta. [OpenAI:n malliasetukset](https://learn.chatgpt.com/docs/models) · [Clauden päättelytasot](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Päivittäminen tai poistaminen](#päivittäminen-tai-poistaminen) · [Tue tekijää](#tue-tekijää) · [Kehityssuunnitelma](../ROADMAP.md) · [Muutosloki](../CHANGELOG.md)
+[Päivittäminen tai poistaminen](#päivittäminen-tai-poistaminen) · [Kehityssuunnitelma](../ROADMAP.md) · [Muutosloki](../CHANGELOG.md)
 
 ## Lisenssi
 

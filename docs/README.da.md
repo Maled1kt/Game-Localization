@@ -6,7 +6,9 @@ Game Localization er en agentfærdighed til oversættelse, redigering og gennemg
 
 Du får en oversættelse og en separat kontrolrapport.
 
-**[Installation](#installation)** · **[Prøv eksemplet med 12 strenge](../game-localization/examples/first-run/README.md)** · [Brug færdigheden](#brug-færdigheden)
+**[Installation](#installation)** · **[Prøv eksemplet med 12 strenge](../game-localization/examples/first-run/README.md)** · [Brug færdigheden](#brug-færdigheden) · [Støt ophavspersonen](#støt-ophavspersonen)
+
+Denne version af README er oversat med Game Localization. Sammenlign den med den engelske original, og bedøm selv resultatet.
 
 [English](../README.md) · [Alle sprog](../README.md#languages)
 
@@ -169,7 +171,7 @@ Gendan begge ZIP-filer fra samme kilde med `python scripts/package.py` i reposit
 
 **High+** betyder High eller et højere niveau i klienten. Vælg model og niveau i klienten. Færdigheden virker uafhængigt af indstillingen. [OpenAI-modelindstillinger](https://learn.chatgpt.com/docs/models) · [Claudes ræsonneringsniveauer](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Opdater eller fjern](#opdater-eller-fjern) · [Støt ophavspersonen](#støt-ophavspersonen) · [Udviklingsplan](../ROADMAP.md) · [Ændringslog](../CHANGELOG.md)
+[Opdater eller fjern](#opdater-eller-fjern) · [Udviklingsplan](../ROADMAP.md) · [Ændringslog](../CHANGELOG.md)
 
 ## Licens
 

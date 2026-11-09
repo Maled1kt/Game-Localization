@@ -6,7 +6,9 @@ Game Localization là kỹ năng dành cho tác nhân để dịch, biên tập 
 
 Bạn nhận được bản dịch và báo cáo kiểm tra riêng.
 
-**[Cài đặt](#cài-đặt)** · **[Thử ví dụ 12 chuỗi](../game-localization/examples/first-run/README.md)** · [Sử dụng kỹ năng](#sử-dụng-kỹ-năng)
+**[Cài đặt](#cài-đặt)** · **[Thử ví dụ 12 chuỗi](../game-localization/examples/first-run/README.md)** · [Sử dụng kỹ năng](#sử-dụng-kỹ-năng) · [Ủng hộ tác giả](#ủng-hộ-tác-giả)
+
+Phiên bản README này được dịch bằng Game Localization. Hãy so sánh với bản gốc tiếng Anh để đánh giá kết quả.
 
 [English](../README.md) · [Tất cả ngôn ngữ](../README.md#languages)
 
@@ -169,7 +171,7 @@ Trên ChatGPT và Claude trực tuyến, dùng chức năng tải lên hoặc c�
 
 **High+** là cách gọi tắt mức High hoặc cao hơn trong ứng dụng. Chọn mô hình và mức suy luận trong ứng dụng. Kỹ năng hoạt động độc lập với lựa chọn này. [Thiết lập mô hình OpenAI](https://learn.chatgpt.com/docs/models) · [Mức suy luận của Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Cập nhật hoặc gỡ bỏ](#cập-nhật-hoặc-gỡ-bỏ) · [Ủng hộ tác giả](#ủng-hộ-tác-giả) · [Kế hoạch phát triển](../ROADMAP.md) · [Nhật ký thay đổi](../CHANGELOG.md)
+[Cập nhật hoặc gỡ bỏ](#cập-nhật-hoặc-gỡ-bỏ) · [Kế hoạch phát triển](../ROADMAP.md) · [Nhật ký thay đổi](../CHANGELOG.md)
 
 ## Giấy phép
 

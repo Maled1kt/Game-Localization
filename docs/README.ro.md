@@ -6,7 +6,9 @@ Game Localization este o competență pentru agenți care traduce, editează și
 
 Primești traducerea și un raport de verificare separat.
 
-**[Instalare](#instalare)** · **[Încearcă exemplul cu 12 șiruri](../game-localization/examples/first-run/README.md)** · [Folosirea competenței](#folosirea-competenței)
+**[Instalare](#instalare)** · **[Încearcă exemplul cu 12 șiruri](../game-localization/examples/first-run/README.md)** · [Folosirea competenței](#folosirea-competenței) · [Sprijină autorul](#sprijină-autorul)
+
+Această versiune a fișierului README a fost tradusă cu Game Localization. Compar-o cu originalul în engleză și evaluează rezultatul.
 
 [English](../README.md) · [Toate limbile](../README.md#languages)
 
@@ -169,7 +171,7 @@ Pentru a reconstrui ambele ZIP-uri din aceeași sursă, rulează `python scripts
 
 **High+** înseamnă High sau un nivel superior disponibil în aplicație. Alege modelul și nivelul în aplicație. Competența funcționează independent de această alegere. [Setări modele OpenAI](https://learn.chatgpt.com/docs/models) · [Niveluri de raționament Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Actualizare sau eliminare](#actualizare-sau-eliminare) · [Sprijină autorul](#sprijină-autorul) · [Plan de dezvoltare](../ROADMAP.md) · [Istoricul modificărilor](../CHANGELOG.md)
+[Actualizare sau eliminare](#actualizare-sau-eliminare) · [Plan de dezvoltare](../ROADMAP.md) · [Istoricul modificărilor](../CHANGELOG.md)
 
 ## Licență
 

@@ -6,7 +6,9 @@ Game Localization è una skill per agenti che traduce, revisiona e verifica test
 
 Ricevi una traduzione e un report di verifica separato.
 
-**[Installazione](#installazione)** · **[Prova l’esempio con 12 stringhe](../game-localization/examples/first-run/README.md)** · [Usare la skill](#usare-la-skill)
+**[Installazione](#installazione)** · **[Prova l’esempio con 12 stringhe](../game-localization/examples/first-run/README.md)** · [Usare la skill](#usare-la-skill) · [Sostenere l’autore](#sostenere-lautore)
+
+Questa versione del README è stata tradotta con Game Localization. Confrontala con l’originale in inglese e valuta il risultato.
 
 [English](../README.md) · [Tutte le lingue](../README.md#languages)
 
@@ -169,7 +171,7 @@ Per ricreare i due ZIP, esegui `python scripts/package.py` dalla radice del repo
 
 **High+** indica High o un livello superiore offerto dal client. Seleziona modello e livello nel client. La skill funziona indipendentemente da questa preferenza. [Modelli OpenAI](https://learn.chatgpt.com/docs/models) · [Livelli di ragionamento di Claude](https://platform.claude.com/docs/en/build-with-claude/effort)
 
-[Aggiornare o rimuovere](#aggiornare-o-rimuovere) · [Sostenere l’autore](#sostenere-lautore) · [Piano di sviluppo](../ROADMAP.md) · [Registro delle modifiche](../CHANGELOG.md)
+[Aggiornare o rimuovere](#aggiornare-o-rimuovere) · [Piano di sviluppo](../ROADMAP.md) · [Registro delle modifiche](../CHANGELOG.md)
 
 ## Licenza
 
